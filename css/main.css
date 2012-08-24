@@ -51,3 +51,11 @@ article.node section .user-info .user-details {
   padding-top: 10px;
   margin: 0px 0px 10px 90px;
 }
+
+#header {
+  font-size: 14px;
+}
+
+#header #logo {
+  font-size: 22px;
+}
