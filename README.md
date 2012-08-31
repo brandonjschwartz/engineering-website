@@ -22,11 +22,9 @@ Create or edit a blog post. all posts are in src/documents/posts
     for example
     touch src/documents/posts/best-restaurants.html.md
 
-Make sure it looks good on your localhost
+if it looks good on your localhost commit and push your changes
 
-git add . && git commit -am "restaurants" && git push
-
-Your changes are live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
+watch it live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 High five!
 
