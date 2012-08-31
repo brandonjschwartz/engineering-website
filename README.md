@@ -93,6 +93,8 @@ We use markdown for writing blog posts.
     * no
     * numbers
 
+    this is a example of a [link](http://www.google.com)
+
 ## How does it work?
 
 it uses [DocPad](https://github.com/bevry/docpad) - a static site generator that watches
