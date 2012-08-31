@@ -27,6 +27,9 @@ Make sure it looks good on your localhost
 
 git add . && git commit -am "restaurants" && git push
 
+Your changes are live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
+
+High five!
 
 ## Example for blog post
 
