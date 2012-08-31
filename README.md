@@ -1,9 +1,8 @@
 # [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
-This is our Engineering website.    
-Everyone at YP is welcome to contribute.   
-create or modify a post, push it and it's live.     
-yes, it's that simple.
+This is our Engineering website. Everyone at YP is welcome to contribute.  
+clone this repo, create or modify a post, push it and it's live.   
+yes, it's that simple.  
 
 ## How to add/edit a blog post?
 
