@@ -7,8 +7,8 @@ This is a static site that was generated using [DocPad](https://github.com/bevry
 1. Clone the project and run the server
 
   ``` bash
-	git clone https://github.com/oren/oren.github.com.git
-	cd oren.github.com.git
+  git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
+	cd engineering-website
 	npm install
 	docpad run
 	```
@@ -69,6 +69,26 @@ We use markdown for our post.
   * Mini Kabob
 	```
 
+
+## Install on engineering.np.wc1.yellowpages.com
+
+1. sudo rootsh -iu nextgen
+
+1. tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg 
+
+1. tpkg -i git
+
+1. Clone the project
+
+  ``` bash
+  git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
+	cd engineering-website
+	npm install
+  npm install docpad
+  ./node_modules/docpad/bin/docpad run
+	```
+
+1. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 
 Thanks, the YP team loves you.
