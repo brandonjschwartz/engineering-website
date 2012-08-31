@@ -6,7 +6,7 @@ yes, it's that simple.
 
 ## How to add/edit a blog post?
 
-1. Clone the project and run the server
+Clone the project and run the server
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
@@ -14,13 +14,13 @@ yes, it's that simple.
     npm install 
     docpad run 
 
-2. Open [http://localhost:9778/](http://localhost:9778/)
+Open [http://localhost:9778/](http://localhost:9778/)
 
-3. Add your post to src/documents/posts. for example: best-restaurants.html.md
+Add your post to src/documents/posts. for example: best-restaurants.html.md
 
-4. Make sure it looks good on your localhost
+Make sure it looks good on your localhost
 
-5. git add . && git commit -am "restaurants" && git push
+git add . && git commit -am "restaurants" && git push
 
 
 ## Example for blog post
@@ -82,13 +82,13 @@ your blog post is public.
 
 ## Install on engineering.np.wc1.yellowpages.com
 
-1. sudo rootsh -iu nextgen
+sudo rootsh -iu nextgen
 
-2. tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg 
+tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg 
 
-3. tpkg -i git
+tpkg -i git
 
-4. Clone the project
+Clone the project
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
 
@@ -98,11 +98,11 @@ your blog post is public.
     
     npm install docpad
     
-5. Run the site
+Run the site
 
     ./node_modules/docpad/bin/docpad run
 
-6. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
+Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 ## Run the git updater
 
