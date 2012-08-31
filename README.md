@@ -13,11 +13,15 @@ Clone the project and run the server on your laptop
     cd engineering-website 
     install node - http://nodejs.org
     npm install 
+    npm install docpad -g
     docpad run 
 
 Open [http://localhost:9778/](http://localhost:9778/)
 
-Add your post to src/documents/posts. for example: best-restaurants.html.md
+Create or edit a blog post. all posts are in src/documents/posts
+    
+    for example
+    touch src/documents/posts/best-restaurants.html.md
 
 Make sure it looks good on your localhost
 
