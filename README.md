@@ -1,6 +1,6 @@
 # [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
-This is our Engineering website.
+This is our Engineering website. 
 Everyone at YP can modify it. create or modify a post, push it and it's live.  
 yes, it's that simple.
 
