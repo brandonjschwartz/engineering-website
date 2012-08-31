@@ -1,29 +1,26 @@
-[YP Engineering Website](http://oren.github.com/)
--------------------------------------------------
+# [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
 This is a static site that was generated using [DocPad](https://github.com/bevry/docpad)
 
-How to add/edit a blog post?
-----------------------------
+## How to add/edit a blog post?
 
-# Clone the project and run the server
+* Clone the project and run the server
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git 
     cd engineering-website 
     npm install 
     docpad run 
 
-# Open [http://localhost:9778/](http://localhost:9778/)
+* Open [http://localhost:9778/](http://localhost:9778/)
 
-# Add your post to src/documents/posts. for example: best-restaurants.html.md
+* Add your post to src/documents/posts. for example: best-restaurants.html.md
 
-# Make sure it looks good on your localhost
+* Make sure it looks good on your localhost
 
-# git commit -am "restaurants" && git push
+* git commit -am "restaurants" && git push
 
 
-Example for blog post
----------------------
+## Example for blog post
 
 We use markdown for our post.
 
@@ -68,8 +65,7 @@ We use markdown for our post.
     * Far Niente Ristorante
     * Mini Kabob
 
-Install on engineering.np.wc1.yellowpages.com
----------------------------------------------
+## Install on engineering.np.wc1.yellowpages.com
 
 1. sudo rootsh -iu nextgen
 
@@ -90,13 +86,11 @@ Install on engineering.np.wc1.yellowpages.com
 
 6. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
-Run the git updater
--------------------
+## Run the git updater
 
 1. node updater/server &
 
-Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
-------------------------------------------------------------------------------------------------------
+## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
 
     http://engineering.np.wc1.yellowpages.com:3000/update
 
