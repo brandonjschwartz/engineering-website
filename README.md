@@ -6,20 +6,20 @@ This is a static site that was generated using [DocPad](https://github.com/bevry
 How to add/edit a blog post?
 ----------------------------
 
-1. Clone the project and run the server
+# Clone the project and run the server
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git 
     cd engineering-website 
     npm install 
     docpad run 
 
-2. Open [http://localhost:9778/](http://localhost:9778/)
+# Open [http://localhost:9778/](http://localhost:9778/)
 
-3. Add your post to src/documents/posts. for example: best-restaurants.html.md
+# Add your post to src/documents/posts. for example: best-restaurants.html.md
 
-4. Make sure it looks good on your localhost
+# Make sure it looks good on your localhost
 
-5. git commit -am "restaurants" && git push
+# git commit -am "restaurants" && git push
 
 
 Example for blog post
