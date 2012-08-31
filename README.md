@@ -1,8 +1,9 @@
-# [YP Engineering Website](http://oren.github.com/)
+[YP Engineering Website](http://oren.github.com/)
+=================================================
 This is a static site that was generated using [DocPad](https://github.com/bevry/docpad)
 
-
-## How to add/edit a blog post?
+How to add/edit a blog post?
+----------------------------
 
 1. Clone the project and run the server
 
@@ -13,16 +14,17 @@ This is a static site that was generated using [DocPad](https://github.com/bevry
 	docpad run
 	```
 
-1. Open [http://localhost:9778/](http://localhost:9778/)
+2. Open [http://localhost:9778/](http://localhost:9778/)
 
-1. Add your post to src/documents/posts. for example: best-restaurants.html.md
+3. Add your post to src/documents/posts. for example: best-restaurants.html.md
 
-1. Make sure it looks good on your localhost
+4. Make sure it looks good on your localhost
 
-1. git commit -am "restaurants" && git push
+5. git commit -am "restaurants" && git push
 
 
-## Example for blog post
+Example for blog post
+---------------------
 
 We use markdown for our post.
 
@@ -70,15 +72,16 @@ We use markdown for our post.
 	```
 
 
-## Install on engineering.np.wc1.yellowpages.com
+Install on engineering.np.wc1.yellowpages.com
+---------------------------------------------
 
 1. sudo rootsh -iu nextgen
 
-1. tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg 
+2. tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg 
 
-1. tpkg -i git
+3. tpkg -i git
 
-1. Clone the project
+4. Clone the project
 
   ``` bash
   git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
@@ -88,18 +91,22 @@ We use markdown for our post.
   ./node_modules/docpad/bin/docpad run &
 	```
 
-1. Run the site
+5. Run the site
   ``` bash
   ./node_modules/docpad/bin/docpad run
 	```
 
-1. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
+6. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
-## Run the git updater
+Run the git updater
+-------------------
 
 1. node updater/server &
 
-## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+------------------------------------------------------------------------------------------------------
+
   http://engineering.np.wc1.yellowpages.com:3000/update
+
 
 Thanks, the YP team loves you.
