@@ -8,10 +8,10 @@ How to add/edit a blog post?
 
 1. Clone the project and run the server
 
-    git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
-    cd engineering-website
-    npm install
-    docpad run
+    git clone git@git.corp.attinteractive.com:dstools/engineering-website.git 
+    cd engineering-website 
+    npm install 
+    docpad run 
 
 2. Open [http://localhost:9778/](http://localhost:9778/)
 
