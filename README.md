@@ -88,6 +88,11 @@ We use markdown for our post.
   ./node_modules/docpad/bin/docpad run
 	```
 
+1. Run the site
+  ``` bash
+  ./node_modules/docpad/bin/docpad run
+	```
+
 1. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 
