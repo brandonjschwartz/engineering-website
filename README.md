@@ -1,7 +1,8 @@
 # [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
-This is our Engineering website.  
-Everyone at YP can modify it. create or modify a post, push it and it's live.  
+This is our Engineering website.    
+Everyone at YP is welcome to contribute.   
+create or modify a post, push it and it's live.     
 yes, it's that simple.
 
 ## How to add/edit a blog post?
@@ -10,7 +11,7 @@ Clone the project and run the server
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
-    [install node](http://nodejs.org/)
+    install node - http://nodejs.org
     npm install 
     docpad run 
 
@@ -91,11 +92,8 @@ tpkg -i git
 Clone the project
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
-
     cd engineering-website
-    
     npm install
-    
     npm install docpad
     
 Run the site
@@ -106,7 +104,7 @@ Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1
 
 ## Run the git updater
 
-this little node.js server provide a single end-point: POST /update
+This little node.js server provide a single end-point: POST /update  
 all it does is 'git pull'
 
     node updater/server &
