@@ -97,9 +97,7 @@ We use markdown for our post.
 
 ## Run the git updater
 
-1. cd updater
-
-1. node server &
+1. node updater/server &
 
 ## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
   http://engineering.np.wc1.yellowpages.com:3000/update
