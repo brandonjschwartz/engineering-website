@@ -11,13 +11,13 @@
 -------------------------------------------------------------- */
 
 input.text, input[type=text], input[type=search], input[type=password], input[type=url], input[type=email] {
-	padding: 2px;
-	line-height: 16px;
-	height: 16px;
-	border: 1px solid #7C7C7C;
-	border-color: #7C7C7C #C3C3C3 #DDDDDD;
+    padding: 2px;
+    line-height: 16px;
+    height: 16px;
+    border: 1px solid #7C7C7C;
+    border-color: #7C7C7C #C3C3C3 #DDDDDD;
 }
 
 textarea {
-	padding: 2px;
+    padding: 2px;
 }
