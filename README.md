@@ -85,7 +85,7 @@ We use markdown for our post.
 	cd engineering-website
 	npm install
   npm install docpad
-  ./node_modules/docpad/bin/docpad run
+  ./node_modules/docpad/bin/docpad run &
 	```
 
 1. Run the site
@@ -95,5 +95,13 @@ We use markdown for our post.
 
 1. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
+## Run the git updater
+
+1. cd updater
+
+1. node server &
+
+## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+  http://engineering.np.wc1.yellowpages.com:3000/update
 
 Thanks, the YP team loves you.
