@@ -1,17 +1,17 @@
 # [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
-This is a static site that was generated using [DocPad](https://github.com/bevry/docpad)
+This is our Engineering website.
+Everyone at YP can modify it. create or modify a post, push it and it's live.  
+yes, it's that simple.
 
 ## How to add/edit a blog post?
 
 1. Clone the project and run the server
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
-
     cd engineering-website 
-    
+    [install node](http://nodejs.org/)
     npm install 
-    
     docpad run 
 
 2. Open [http://localhost:9778/](http://localhost:9778/)
@@ -20,7 +20,7 @@ This is a static site that was generated using [DocPad](https://github.com/bevry
 
 4. Make sure it looks good on your localhost
 
-5. git commit -am "restaurants" && git push
+5. git add . && git commit -am "restaurants" && git push
 
 
 ## Example for blog post
@@ -68,6 +68,18 @@ We use markdown for our post.
     * Far Niente Ristorante
     * Mini Kabob
 
+
+## How does it work?
+
+it uses [DocPad](https://github.com/bevry/docpad) - a static site generator that watches
+changes on 'src' folder, and generate a website into 'out' folder.
+
+let's say you added a blog post localy. when you push your changes, 
+the git repo on the server is getting the update thanks to a post-recieve hook.
+this hook is making a post request to a little node.js api that is doing 'git pull'.
+as soon as it's pulling your changes, DocPad regenerate the site into the 'out' folder and 
+your blog post is public.
+
 ## Install on engineering.np.wc1.yellowpages.com
 
 1. sudo rootsh -iu nextgen
@@ -79,19 +91,22 @@ We use markdown for our post.
 4. Clone the project
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
-    cd engineering-website
-    npm install
-    npm install docpad
-    ./node_modules/docpad/bin/docpad run &
 
+    cd engineering-website
+    
+    npm install
+    
+    npm install docpad
+    
 5. Run the site
+
     ./node_modules/docpad/bin/docpad run
 
 6. Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 ## Run the git updater
 
-1. node updater/server &
+    node updater/server &
 
 ## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
 
