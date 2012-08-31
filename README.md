@@ -1,6 +1,6 @@
 # [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
 
-This is our Engineering website. 
+This is our Engineering website.  
 Everyone at YP can modify it. create or modify a post, push it and it's live.  
 yes, it's that simple.
 
@@ -106,6 +106,9 @@ Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1
 
 ## Run the git updater
 
+this little node.js server provide a single end-point: POST /update
+all it does is 'git pull'
+
     node updater/server &
 
 ## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
@@ -113,4 +116,4 @@ Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1
     http://engineering.np.wc1.yellowpages.com:3000/update
 
 
-Thanks, the YP team loves you.
+Thanks, the YP team loves you!
