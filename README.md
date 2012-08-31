@@ -7,7 +7,7 @@ yes, it's that simple.
 
 ## How to add/edit a blog post?
 
-Clone the project and run the server
+Clone the project and run the server on your laptop
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
@@ -26,7 +26,7 @@ git add . && git commit -am "restaurants" && git push
 
 ## Example for blog post
 
-We use markdown for our post.
+We use markdown for writing blog posts.
 
     ---
     title: The best restaurants in Glendale
@@ -35,6 +35,8 @@ We use markdown for our post.
     author_name: 'Liz'
     layout: post
     ---
+
+    # The best restaurants in Glendale
 
     After many months of eating, hours of analyzing hundreds of dishes, 
     and untold numbers of discussions, we have compiled a list of the most compelling places to dine in Denver—and beyond. 
@@ -63,12 +65,31 @@ We use markdown for our post.
     
     We hope our choices, and the order in which they’re placed, incites discussion—not to mention many dinners out.
     
-    Here are the top 3
+    ## Here are the top 3
    
     * Raffi's Place Restaurant
     * Far Niente Ristorante
     * Mini Kabob
 
+
+## Markdown cheatsheet
+
+  ```bash
+  # Header 1
+  ## Header 2
+  ### Header 3 
+  #### Header 4
+  ##### Header 5
+
+  1. this
+  1. is 
+  1. a numbered list
+
+  * list
+  * with
+  * no
+  * numbers
+  ```
 
 ## How does it work?
 
