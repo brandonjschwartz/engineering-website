@@ -74,22 +74,20 @@ We use markdown for writing blog posts.
 
 ## Markdown cheatsheet
 
-  ```bash
-  # Header 1
-  ## Header 2
-  ### Header 3 
-  #### Header 4
-  ##### Header 5
+    # Header 1
+    ## Header 2
+    ### Header 3 
+    #### Header 4
+    ##### Header 5
 
-  1. this
-  1. is 
-  1. a numbered list
+    1. this
+    1. is 
+    1. a numbered list
 
-  * list
-  * with
-  * no
-  * numbers
-  ```
+    * list
+    * with
+    * no
+    * numbers
 
 ## How does it work?
 
