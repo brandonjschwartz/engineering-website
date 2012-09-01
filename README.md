@@ -123,7 +123,7 @@ Clone the project
     
 Run the site
 
-    ./node_modules/docpad/bin/docpad run &
+    ./node_modules/docpad/bin/docpad run --env static &
 
 Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
