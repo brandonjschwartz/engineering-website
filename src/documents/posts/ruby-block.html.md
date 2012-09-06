@@ -1,13 +1,13 @@
 ---
 layout: post
-title: ruby blocks are awesome
+title: ruby blocks are awesome!
 author_image: './images/andrew.jpg'
 author_name: 'Andrew Kim'
 summery: blab aoeu aeouh oeuaeou aeouaoeu
 tags: ['intro','post']
 ---
 
-toehusaeoaeohuseountahoeushaeowooo
+# toehusaeoaeohuseountahoeushaeowooo
 
 * aeouaeou
 * aeouaeouou
@@ -19,8 +19,8 @@ toehusaeoaeohuseountahoeushaeowooo
     aoeu
 ```
 
-mmmm
-====
+## mmmm
+
 
 mmm
 ---
