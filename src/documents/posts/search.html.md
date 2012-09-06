@@ -14,9 +14,9 @@ tags: ['intro','post']
 * real-time
 
 ```js```
-    aoeuaeo
-    aoeuaeou
-    aoeu
+    function() {
+      console.log('he');
+    }
 ```
 
 ## mmmm
