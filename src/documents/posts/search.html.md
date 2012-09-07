@@ -1,6 +1,6 @@
 ---
 layout: post
-title: our search is awoseme
+title: our search is awoseme..
 author_image: './images/andrew.jpg'
 author_name: 'Daniel'
 summery: blab aoeu aeouao
