@@ -1,0 +1,5 @@
+#!/bin/bash
+
+forever start ./node_modules/docpad/bin/docpad run --env static
+forever start updater/server.js
+
