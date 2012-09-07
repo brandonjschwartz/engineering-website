@@ -126,6 +126,14 @@ Run the site
 
     forever start ./node_modules/docpad/bin/docpad run --env static
 
+you can run the docpad and the updater at the same time using:
+
+  source scripts/start
+
+and
+
+  source scripts/stop
+
 Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
 ## Run the git updater
