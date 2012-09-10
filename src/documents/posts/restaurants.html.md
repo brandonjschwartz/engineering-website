@@ -5,10 +5,10 @@ author_image: './images/liz.jpg'
 author_name: 'Liz'
 layout: post
 tags: ['intro','post']
+request: true
 ---
 
-blab bla
-----------------------
+# blab bla
 
 * oeuoe
 * eouoeu
@@ -17,8 +17,14 @@ blab bla
     git bla
 
 
-```javascript
+```js
   function bla(){
     console.log('bla');
   };
+```
+
+```ruby
+def hello
+  puts 'he'
+end
 ```
