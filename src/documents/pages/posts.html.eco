@@ -1,20 +1,13 @@
 ---
 title: Posts
-layout: default
+layout: page
 pageOrder: 2
 ---
 
-<div id="body" class="with-sidebar">
 <nav class="linklist">
 	<% for document in @getCollection('posts').toJSON(): %>
-    <article id="post" class="post">
-      <h1><%= document.title %></h1>
-      <div class="post-content"><%- @content %></div>
-    </article>
-
 		<li><span><%= document.date.toShortDateString() %></span>
 		&raquo;
 		<a href="<%= document.url %>"><%= document.title %></a></li>
 	<% end %>
 </nav>
-</div>
