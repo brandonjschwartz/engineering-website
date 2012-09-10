@@ -8,20 +8,8 @@ tags: ['intro','post']
 request: true
 ---
 
-# blab bla
-
-* oeuoe
-* eouoeu
-
-    git clone
-    git bla
 
 
-```js
-  function bla(){
-    console.log('bla');
-  };
-```
 
 ```ruby
 def hello
