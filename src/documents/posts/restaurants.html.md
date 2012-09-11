@@ -6,6 +6,7 @@ author_name: 'Liz'
 layout: post
 tags: ['intro','post']
 request: true
+date: 2012-12-20
 ---
 
 
