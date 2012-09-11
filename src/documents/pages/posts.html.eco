@@ -9,5 +9,6 @@ pageOrder: 2
 		<li><span><%= document.date.toShortDateString() %></span>
 		&raquo;
 		<a href="<%= document.url %>"><%= document.title %></a></li>
+      <%- document.contentRenderedWithoutLayouts %>
 	<% end %>
 </nav>
