@@ -5,10 +5,54 @@
   <meta charset="utf-8">
 
   <link rel="shortcut icon" href="/images/favicon.png">
-
+  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap.css" />
+  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
+  <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
   <title>YP Engineering</title>
 </head>
 <body>
+  <!-- Navbar -->
+  <div class="navbar navbar-fixed-top navbar-inverse">
+      <div class="navbar-inner">
+        <div class="container">
+          <a id="yp-logo" class="brand">
+            <img src="/images/yp-logo.png" alt="YP"  />
+          </a>
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class="active">
+                <a href="./index.html">
+                  <i class='icon-home'></i>
+                  Home
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class='icon-white icon-file'></i>
+                  Blog
+                </a>
+              </li>
+              <li>
+                <a>
+                  <i class='icon-white icon-star'></i>
+                  Careers
+                </a>
+              </li>
+            </ul>
+            
+            <div class="navbar-search pull-right">
+              <input type="text" placeholder="Looking for something?" class="search-query" />
+            </div>
+            
+          </div>
+        </div>
+      
+      </div>
+  </div>
+  <!-- Navbar -->
+  
   <%- @content %>
+  
+  <img src="/images/too_cool.png" id="too-cool" />
 </body>
 </html>
