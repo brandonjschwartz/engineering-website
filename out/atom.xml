@@ -3,7 +3,7 @@
     <title>Your Website</title>
     <link href="http://website.com/atom.xml" rel="self"/>
     <link href="http://website.com"/>
-    <updated>2012-09-12T20:27:38.418Z</updated>
+    <updated>2012-09-13T16:17:01.155Z</updated>
     <id>http://website.com</id>
     <author>
         <name>Your Name</name>
@@ -12,10 +12,10 @@
 
     
         <entry>
-            <title>maintianable javascript!</title>
-            <link href="http://website.com//posts/maintain-js.html"/>
-            <updated>2012-12-25T00:00:00.226Z</updated>
-            <id>http://website.com//posts/maintain-js.html</id>
+            <title>maintianable javascript</title>
+            <link href="http://website.com//posts/maintain-js"/>
+            <updated>2012-12-25T00:00:00.971Z</updated>
+            <id>http://website.com//posts/maintain-js</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;
@@ -268,7 +268,7 @@
 
     &lt;div id='body'&gt;
   &lt;article id=&quot;post&quot; class=&quot;post&quot;&gt;
-    &lt;h1&gt;maintianable javascript!&lt;/h1&gt;
+    &lt;h1&gt;maintianable javascript&lt;/h1&gt;
     &lt;div class=&quot;post-content&quot;&gt;&lt;p&gt;toehusaeoaeohuseountahoeushaeowooo
 
 &lt;/p&gt;
@@ -317,9 +317,9 @@
     
         <entry>
             <title>hello</title>
-            <link href="http://website.com//posts/hello.html"/>
-            <updated>2012-12-24T00:00:00.202Z</updated>
-            <id>http://website.com//posts/hello.html</id>
+            <link href="http://website.com//posts/hello"/>
+            <updated>2012-12-24T00:00:00.926Z</updated>
+            <id>http://website.com//posts/hello</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;
@@ -606,9 +606,9 @@
     
         <entry>
             <title>Driving technical change</title>
-            <link href="http://website.com//posts/driving-technical-change.html"/>
-            <updated>2012-12-23T00:00:00.219Z</updated>
-            <id>http://website.com//posts/driving-technical-change.html</id>
+            <link href="http://website.com//posts/driving-technical-change"/>
+            <updated>2012-12-23T00:00:00.968Z</updated>
+            <id>http://website.com//posts/driving-technical-change</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;
@@ -904,9 +904,9 @@
     
         <entry>
             <title>our search is awoseme..</title>
-            <link href="http://website.com//posts/search.html"/>
-            <updated>2012-12-22T00:00:00.249Z</updated>
-            <id>http://website.com//posts/search.html</id>
+            <link href="http://website.com//posts/search"/>
+            <updated>2012-12-22T00:00:00.988Z</updated>
+            <id>http://website.com//posts/search</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;
@@ -1206,9 +1206,9 @@
     
         <entry>
             <title>ruby blocks are awesome!</title>
-            <link href="http://website.com//posts/ruby-block.html"/>
-            <updated>2012-12-21T00:00:00.247Z</updated>
-            <id>http://website.com//posts/ruby-block.html</id>
+            <link href="http://website.com//posts/ruby-block"/>
+            <updated>2012-12-21T00:00:00.984Z</updated>
+            <id>http://website.com//posts/ruby-block</id>
             <content type="html">&lt;!DOCTYPE html&gt;
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;
@@ -1508,9 +1508,9 @@
     
         <entry>
             <title>the best restaurants in Glendale</title>
-            <link href="http://website.com//posts/restaurants.html"/>
-            <updated>2012-12-20T00:00:00.241Z</updated>
-            <id>http://website.com//posts/restaurants.html</id>
+            <link href="http://website.com//posts/restaurants"/>
+            <updated>2012-12-20T00:00:00.980Z</updated>
+            <id>http://website.com//posts/restaurants</id>
             <content type="html">
 &lt;html lang=&quot;en&quot; dir=&quot;ltr&quot; class=&quot;js&quot;&gt;
   &lt;head&gt;

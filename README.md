@@ -8,12 +8,11 @@ yes, it's that simple.
 
 Clone the project and run the server on your laptop
 
-    git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
-    cd engineering-website 
-    install node - http://nodejs.org
-    npm install 
-    npm install docpad -g
-    docpad run 
+  $ git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
+  $ cd engineering-website 
+  # install node - http://nodejs.org
+  $ npm install # install all dependencies
+  $ nod_modules/docpad/bin/docpad run 
 
 Open [http://localhost:9778/](http://localhost:9778/)
 
