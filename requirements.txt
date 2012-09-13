@@ -1,1 +1,1 @@
-pypments
+pygments
