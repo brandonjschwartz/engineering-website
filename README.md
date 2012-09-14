@@ -158,18 +158,26 @@ all it does is 'git pull'
     forever list
     forever stop 0
 
-## Heroku commands
+## pushing to remotes
 
-  push to production
+push to our github
 
-    git push origin master
+    git push github master
 
-  push to stage
+push to stage
 
     git push stage master
 
-  create a stage environment
+push to production
+
+    git push origin master
+
+### creating remotes
+
+create a stage remote
 
     heroku create --remote=stage
 
-Thanks, the YP team loves you!
+create a github remote
+
+    git remote add github git@git.corp.attinteractive.com:dstools/engineering-website.git
