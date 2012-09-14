@@ -157,6 +157,16 @@ all it does is 'git pull'
 
 ## Heroku commands
 
-git push origin master
+  push to production
+
+    git push origin master
+
+  push to stage
+
+    git push stage master
+
+  create a stage environment
+
+    heroku create --remote=stage
 
 Thanks, the YP team loves you!
