@@ -7,6 +7,9 @@ tags: ['intro','post']
 date: 2012-12-25
 ---
 
+hello wednesday
+hello thursday
+
 toehusaeoaeohuseountahoeushaeowooo
 
 * aeouaeou
