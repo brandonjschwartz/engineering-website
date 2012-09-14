@@ -139,18 +139,18 @@ and
 
 Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 
-## Run the git updater
+### Run the git updater
 
 This little node.js server provide a single end-point: POST /update  
 all it does is 'git pull'
 
     forever start updater/server
 
-## Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
 
     http://engineering.np.wc1.yellowpages.com:3000/update
 
-## using forever
+### using forever
 
 [forever](https://github.com/nodejitsu/forever) is a package that make sure your scripts are always running.
 
@@ -158,7 +158,7 @@ all it does is 'git pull'
     forever list
     forever stop 0
 
-## pushing to remotes
+### pushing to remotes
 
 push to our github
 
