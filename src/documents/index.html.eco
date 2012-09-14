@@ -1,6 +1,8 @@
 --- yaml
 layout: 'default'
 title: 'Home'
+dynamic: true
+pageOrder: 2
 ---  
 
 <!-- <div class="jumbotron masthead">
@@ -25,49 +27,32 @@ title: 'Home'
   <div class="row">
     <div id="posts-list" class="span9">      
     
-      <div class='post'>
-        <aside class='date'>
-          <span class='month'>Sep</span>
-          <span class='day'>28</span>
-        </aside>
-        <article class='body'>
-          <header class='title'>Simple programming rules I like</header>
-          <section class='content'>
-            <p>It was while reading this <a href="http://jgneuf.wordpress.com/2011/12/20/all-programmers-are-self-taught/">post</a> that I found a comment by Patrick Balleux which I really like and want to share with everyone</p>
-            <p><em>“Good coding style is often limited by the language and the time allowed to solve the problem.</em></p>
-            <p><em>Bad code is often generated with short dead lines and by dreamers.   When I say “dreamers”, I’m thinking about those trying to prove the  world that they can create an amazing new framework where their code  will solve everything.</em></p>
-            <p><em>I follow those simple rules:</em></p>
-            <p><em>- make it work, then make it clean, then make it fast</em><br><em> - if it looks cool, this is a bad idea</em><br><em> - if it does everything, it will do nothing</em><br><em> - if it need comments, it’s badly coded</em></p>
-            <p><em>Code should be easy to understand.  Would you read a book if you were  required to use a dictionary to understand each line?  Same applies to  code.</em></p>
-            <p><em>The quality of code often represents the understanding of the issue  to solve.  The first step if to have a clean design, well documented.   No coding should happen if you cannot understand the requirements first.</em></p>
-            <p><em>My 2 cents”</em></p>
-            <p><br><em>Patrick Balleux<br></em></p>            
-          </section>
-        </article>
-      </div>
-      
-      <div class='post'>
-        <aside class='date'>
-          <span class='month'>Sep</span>
-          <span class='day'>28</span>
-        </aside>
-        <article class='body'>
-          <header class='title'>Simple programming rules I like</header>
-          <section class='content'>
-            <p>It was while reading this <a href="http://jgneuf.wordpress.com/2011/12/20/all-programmers-are-self-taught/">post</a> that I found a comment by Patrick Balleux which I really like and want to share with everyone</p>
-            <p><em>“Good coding style is often limited by the language and the time allowed to solve the problem.</em></p>
-            <p><em>Bad code is often generated with short dead lines and by dreamers.   When I say “dreamers”, I’m thinking about those trying to prove the  world that they can create an amazing new framework where their code  will solve everything.</em></p>
-            <p><em>I follow those simple rules:</em></p>
-            <p><em>- make it work, then make it clean, then make it fast</em><br><em> - if it looks cool, this is a bad idea</em><br><em> - if it does everything, it will do nothing</em><br><em> - if it need comments, it’s badly coded</em></p>
-            <p><em>Code should be easy to understand.  Would you read a book if you were  required to use a dictionary to understand each line?  Same applies to  code.</em></p>
-            <p><em>The quality of code often represents the understanding of the issue  to solve.  The first step if to have a clean design, well documented.   No coding should happen if you cannot understand the requirements first.</em></p>
-            <p><em>My 2 cents”</em></p>
-            <p><br><em>Patrick Balleux<br></em></p>            
-          </section>
-        </article>
-      </div>
-    
+      <% for document in @getCollection('posts').createChildCollection().setPaging({limit:5,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
+        <div class='post'>
+          <aside class='date'>
+            <span class='month'>Apr<%#= document.date.toShortDateString() %></span>
+            <span class='day'>28</span>
+          </aside>
+          <article class='body'>
+            <header class='title'><a href="<%= document.url %>"><%= document.title %></a></header>
+            <section class='content'>
+              <%- document.contentRenderedWithoutLayouts %>
+            </section>
+          </article>
+        </div>
+
+      <% end %>
+
+      <% if (@req.query.page or 1) > 1: %>
+        <a href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">prev</a>
+      <% end %>
+
+      <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
+        <a href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
+      <% end %>
+
     </div>
+
     <div class="span3 bs-docs-sidebar">
       <ul id="site-navigation" class="nav nav-tabs nav-stacked">
         <li>

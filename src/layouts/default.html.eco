@@ -22,19 +22,11 @@
             <ul class="nav">
               <li class="active">
                 <a href="./index.html">
-                  <i class='icon-home'></i>
                   Home
                 </a>
               </li>
               <li>
                 <a>
-                  <i class='icon-white icon-file'></i>
-                  Blog
-                </a>
-              </li>
-              <li>
-                <a>
-                  <i class='icon-white icon-star'></i>
                   Careers
                 </a>
               </li>
