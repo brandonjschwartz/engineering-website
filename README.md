@@ -155,4 +155,8 @@ all it does is 'git pull'
     forever list
     forever stop 0
 
+## Heroku commands
+
+git push origin master
+
 Thanks, the YP team loves you!
