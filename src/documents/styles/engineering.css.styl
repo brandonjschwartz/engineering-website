@@ -1,0 +1,143 @@
+gradient_background(start_color, stop_color)
+  background linear-gradient(top, start_color, stop_color); /* Standard (W3C) */
+  background -moz-linear-gradient(center top, start_color, stop_color); /* FF */
+  background -webkit-gradient(linear, left top, left bottom, from(start_color), to(stop_color)); /* Chrome, Safari */
+  background -o-linear-gradient(top, start_color, stop_color); /* Opera */
+
+body
+  background #f0f0f0
+  font-family Arial
+  font-size 12px
+  padding-top 46px
+  
+.navbar-inverse
+  .navbar-inner
+    gradient_background(#444, #141414)
+    box-shadow 0 1px 0 #555 inset
+    border-bottom 1px solid #111
+    
+.navbar-inverse 
+  border-bottom 5px solid #F1B61C
+  .nav 
+    a
+      border-right 1px solid #222
+      border-left 1px solid #444
+      
+      i
+        margin-right 6px
+      
+    .active 
+      > a
+        background #555
+        box-shadow 0 4px 15px -2px #222 inset
+
+.jumbotron
+  border-top 1px solid #B78A17
+  color #404040
+  background none
+  box-shadow 0 0 0
+  padding 40px 0
+  font-size 22px
+  line-height 37px
+  text-align left
+  text-shadow 0 0 0
+  font-family Georgia
+  
+  h2
+    font-style oblique
+    font-size 30px
+    margin-bottom 30px
+
+.page-content 
+  margin-top 40px
+  
+.post 
+  margin 0 0 60px
+  padding 30px 25px
+  background #fff
+  border-radius 5px
+  border 1px solid #ccc
+  overflow hidden
+  
+  .date
+    float left
+    text-align center
+    width 54px
+    height 64px
+    background url(/images/calendar.png) no-repeat
+    
+    .month
+      display block
+      color #fff
+      font-size 10px
+      font-weight bold
+      text-transform uppercase
+      
+    .day
+      display block
+      font-size 28px
+      padding 10px 4px
+  
+  .body
+    margin-left 90px
+    
+    .title
+      font-size 25px
+      font-family Georgia
+      font-style oblique
+    
+    .content
+      p 
+        margin 15px 0
+
+#yp-logo
+  float left
+  padding 0
+  margin-top 3px
+  margin-right 25px
+  
+  img
+    width 38px
+
+#vitruvian
+  float left
+  margin-right 60px
+  width 330px
+
+#engineering-definition
+  margin-bottom 30px
+  
+#too-cool
+  position fixed
+  right 0
+  bottom 0
+  
+.nav-tabs.nav-stacked > li > a
+  border 1px solid #ccc
+  
+#site-navigation
+  li 
+    a
+      background #fff
+  
+#hero
+  background url(/images/pizza.jpeg) no-repeat center center
+  height 400px
+  margin-bottom 30px
+  border-radius 5px
+  border 1px solid #777
+  box-shadow 0 9px 15px rgba(0, 0, 0, .8) inset
+  position relative
+  
+  .caption
+    position absolute
+    bottom 0
+    left 0
+    right 0
+    padding 8px 10px
+    color #fff
+    background rgba(0, 0, 0, .5)
+    margin 0
+    font-weight bold
+    text-align center
+    border-top 1px solid rgba(0, 0, 0, .2)

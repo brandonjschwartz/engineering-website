@@ -1,114 +1,70 @@
 --- yaml
 layout: 'default'
 title: 'Home'
----
+dynamic: true
+pageOrder: 2
+---  
 
-  <div id="body" class="with-sidebar">
-    <div class="wrapper">
-      <div id="main">
-        <div>
-          <img src="/images/left.jpg">
-          <img src="/images/right.png">
+<!-- <div class="jumbotron masthead">
+  <div class="container">
+    <img src="/images/vitruvian.png" alt="Vitruvian" id="vitruvian">
+    <h2>engineering &nbsp; /ˌenjəˈni(ə)riNG/</h2>
+    <div id="engineering-definition">
+      The application of scientific and mathematical principles to practical ends such as the design, manufacture, and operation of efficient and economical structures, machines, processes, and systems.
+    </div>
+    <div>
+      Merriam-Webster dictionary
+    </div>
+  </div>
+</div> -->
+
+<div class="container page-content">
+
+  <div id="hero">
+    <p class="caption">YP at Hackathon. Who wants pizza?</p>
+  </div>
+
+  <div class="row">
+    <div id="posts-list" class="span9">      
+    
+      <% for document in @getCollection('posts').createChildCollection().setPaging({limit:5,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
+        <div class='post'>
+          <aside class='date'>
+            <span class='month'>Apr<%#= document.date.toShortDateString() %></span>
+            <span class='day'>28</span>
+          </aside>
+          <article class='body'>
+            <header class='title'><a href="<%= document.url %>"><%= document.title %></a></header>
+            <section class='content'>
+              <%- document.contentRenderedWithoutLayouts %>
+            </section>
+          </article>
         </div>
 
-        <div id="content" class="page-main">
+      <% end %>
 
-          <% for document in @getCollection('posts').toJSON()[0..4]: %>
-            <article id="article-99" class="node node-article node-promoted node-teaser en clearfix" role="article" about="" typeof="sioc:Item foaf:Document">
-              <header>
-                <h2 property="dc:title" datatype="" class="article-title">
-                  <a href="<%= document.url %>"><%= document.title %></a>
-                </h2>
-                <span class="date"><%= document.date.toShortDateString() %></span>
-              </header>
-              <section>
-                <div class="article-info">
-                  <div class="user-info">
-                    <div class="avatar-wrapper">
-                      <a href="" class="avatar" target="_blank">
-                        <img height="100" width="100" src=<%= document.author_image %>>
-                      </a>
-                    </div>
-                    <div class="user-details">
-                      <p><a class="username" href="" target="_blank"><%= document.author_name %></a></p>
-                      <p>Senior Software Engineer</p>
-                    </div>
-                    <div class="clear"></div>
-                  </div><%= document.summery %>
-                  <div class="tags">
-                    <div class="clear"></div>
-                  </div>
-                </div>
-              </section>
-            </article>
-          <% end %>
+      <% if (@req.query.page or 1) > 1: %>
+        <a href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">prev</a>
+      <% end %>
 
-          <li class="pager-next"><a rel="next" title="show all posts" href="pages/posts.html">Show All</a></li>
-          </ul></div>  </div>
+      <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
+        <a href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
+      <% end %>
 
-      <div id="extra">
-          
-  <div class="grid_6 region region-sidebar-second">
-    
-    <section id="block-block-17" class="block block-block" style="border: none; ">
+    </div>
 
-  <div>
-    <p class='tech-talk'>Recent Tech-talk</p>
-    
-    <p style="margin: 0; padding: 0;">
-      <iframe width="305" height="200" src="http://www.youtube.com/embed/B33xK6nXQtc" frameborder="0" allowfullscreen></iframe>
-    </p>  
-  </div>
-
-<section id="block-block-4" class="block block-block">
-
-  <h2 class='work'>Work With Us at YP</h2>
-    
-  <div>
-    <style type="text/css">
-  #jobs-at-yp-container {
-     margin-left: 5px;
-  }
-  #jobs-at-yp {
-     padding-left: 0px;
-     margin-bottom: 0;
-  }
-  #jobs-at-yp li {
-     list-style: none;
-     padding-bottom: 5px;
-  }</style>
-  <p>
-    &nbsp;</p>
-  <div class="block-details" id="jobs-at-yp-container" >
-    <ul id="jobs-at-yp">
-      <li>
-        <a href="" target="_blank">Software Engineer - Applications</a></li>
-      <li>
-        <a href="" target="_blank">Software Engineer - Mobile Applications</a></li>
-      <li>
-        <a href="" target="_blank">Front End Engineer - Applications</a></li>
-      <li>
-        <a href="" target="_blank">Software Engineer - Systems and Infrastructure</a></li>
-      <li>
-        <a href="" target="_blank">Software Engineer - Tools</a></li>
-      <li>
-        <a href="" target="_blank">Performance Engineer</a></li>
-      <li>
-        <a href="" target="_blank">Software Engineer in Test</a></li>
-      <li>
-        <a href="" target="_blank">Release QA</a></li>
-    </ul>
-  </div>
-  <div style="text-align: right; margin-right: 10px; margin-bottom: 10px;">
-    <a href="" target="_blank">See More »</a></div>  </div>
-
-</section>
-
-  </div>
-      </div>
+    <div class="span3 bs-docs-sidebar">
+      <ul id="site-navigation" class="nav nav-tabs nav-stacked">
+        <li>
+          <a>Home</a>
+        </li>
+        <li>
+          <a>Careers</a>
+        </li>
+        <li>
+          <a>Our Pictures</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
-
-  
-
