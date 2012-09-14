@@ -27,7 +27,10 @@ watch it live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineeri
 
 High five!
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 1d97ed63fdbd6849ed63c747893122f315e4d958
 ## Example for blog post
 
 We use markdown for writing blog posts.
