@@ -40,10 +40,6 @@
               </li>
             </ul>
             
-            <div class="navbar-search pull-right">
-              <input type="text" placeholder="Looking for something?" class="search-query" />
-            </div>
-            
           </div>
         </div>
       
@@ -51,8 +47,8 @@
   </div>
   <!-- Navbar -->
   
+
   <%- @content %>
   
-  <img src="/images/too_cool.png" id="too-cool" />
 </body>
 </html>
