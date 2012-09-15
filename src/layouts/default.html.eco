@@ -6,37 +6,29 @@
 
   <link rel="shortcut icon" href="/images/favicon.png">
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
+  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap-responsive.css" />
   <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
   <title>YP Engineering</title>
 </head>
 <body>
   <!-- Navbar -->
-  <div class="navbar navbar-fixed-top navbar-inverse">
-      <div class="navbar-inner">
-        <div class="container">
-          <a id="yp-logo" class="brand">
-            <img src="/images/yp-logo.png" alt="YP"  />
-          </a>
-          <div class="nav-collapse collapse">
-            <ul class="nav">
-              <li class="active">
-                <a href="./index.html">
-                  Home
-                </a>
-              </li>
-              <li>
-                <a>
-                  Careers
-                </a>
-              </li>
-            </ul>
-            
-          </div>
+  <header class='navbar'>
+    <div class='navbar-inner'>
+      <div class='container'>
+        <div class='brand' id='yp-brand'>
+          <img src="/images/logo.png">
+          <span>Engineering</span>
         </div>
-      
+        <ul class='nav pull-right'>
+          <li>
+            <a>
+              Careers
+            </a>
+          </li>
+        </ul>
       </div>
-  </div>
+    </div>
+  </header>
   <!-- Navbar -->
   
 

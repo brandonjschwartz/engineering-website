@@ -5,44 +5,30 @@ dynamic: true
 pageOrder: 2
 ---  
 
-<!-- <div class="jumbotron masthead">
-  <div class="container">
-    <img src="/images/vitruvian.png" alt="Vitruvian" id="vitruvian">
-    <h2>engineering &nbsp; /ˌenjəˈni(ə)riNG/</h2>
-    <div id="engineering-definition">
-      The application of scientific and mathematical principles to practical ends such as the design, manufacture, and operation of efficient and economical structures, machines, processes, and systems.
-    </div>
-    <div>
-      Merriam-Webster dictionary
-    </div>
-  </div>
-</div> -->
-
-<div class="container page-content">
-
-  <div id="hero">
-    <p class="caption">YP at Hackathon. Who wants pizza?</p>
-  </div>
-
-  <div class="row">
-    <div id="posts-list" class="span9">      
+<div id='main-content'>
+  <div class='row-fluid' id='blog'>
+    <div class='span9'>
     
-      <% for document in @getCollection('posts').createChildCollection().setPaging({limit:5,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
-        <div class='post'>
-          <aside class='date'>
-            <span class='month'>Apr<%#= document.date.toShortDateString() %></span>
-            <span class='day'>28</span>
-          </aside>
-          <article class='body'>
-            <header class='title'><a href="<%= document.url %>"><%= document.title %></a></header>
-            <section class='content'>
-              <%- document.contentRenderedWithoutLayouts %>
-            </section>
-          </article>
-        </div>
-
+    <% for document in @getCollection('posts').createChildCollection().setPaging({limit:5,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
+      <article class='blog-post'>
+        <header class='clearfix'>
+          <a class='title' href='<%= document.url %>'><%= document.title %></a>
+          <time>
+            <i class='icon-calendar'></i>
+            September 14, 2012
+            <span class='author'>
+              <img src="/images/tri.jpg">
+              Tri Vuong
+            </span>
+          </time>
+        </header>
+        <section class='body'>
+          <%= document.contentRenderWithoutLayouts %>
+        </section>
+      </article>
+      
       <% end %>
-
+      
       <% if (@req.query.page or 1) > 1: %>
         <a href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">prev</a>
       <% end %>
@@ -50,21 +36,22 @@ pageOrder: 2
       <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
         <a href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
       <% end %>
-
+      
+      
     </div>
-
-    <div class="span3 bs-docs-sidebar">
-      <ul id="site-navigation" class="nav nav-tabs nav-stacked">
-        <li>
-          <a>Home</a>
-        </li>
-        <li>
-          <a>Careers</a>
-        </li>
-        <li>
-          <a>Our Pictures</a>
-        </li>
-      </ul>
+    <div class='span3' id='yp-life'>
+      <h3>Life @ YP</h3>
+      <div class='image-grid'>
+        <img src="/images/workplace/1.jpg">
+        <img src="/images/workplace/2.jpg">
+        <img src="/images/workplace/3.jpg">
+        <img src="/images/workplace/4.jpg">
+        <img src="/images/workplace/5.jpg">
+        <img src="/images/workplace/6.jpg">
+        <img src="/images/workplace/7.jpg">
+        <img src="/images/workplace/8.jpg">
+        <img src="/images/workplace/9.jpg">
+      </div>
     </div>
   </div>
 </div>
