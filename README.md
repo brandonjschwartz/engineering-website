@@ -27,10 +27,6 @@ watch it live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineeri
 
 High five!
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 1d97ed63fdbd6849ed63c747893122f315e4d958
 ## Example for blog post
 
 We use markdown for writing blog posts.
@@ -131,11 +127,11 @@ Run the site
 
 you can run the docpad and the updater at the same time using:
 
-  source scripts/start
+    source scripts/start
 
 and
 
-  source scripts/stop
+    source scripts/stop
 
 Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
 

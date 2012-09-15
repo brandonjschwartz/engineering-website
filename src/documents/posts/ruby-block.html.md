@@ -14,10 +14,12 @@ date: 2012-12-21
 * aeouaeouou
 * real-time
 
-```js```
-    aoeuaeo
-    aoeuaeou
-    aoeu
+```javascript
+
+  function foo() {
+    console.log('hiheheh');
+  };
+
 ```
 
 ## mmmm
