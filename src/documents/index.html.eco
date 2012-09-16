@@ -5,6 +5,15 @@ dynamic: true
 pageOrder: 2
 ---  
 
+<div id='hero'>
+  <div class='image-container'>
+    <img src="/images/hero/hero.jpg">
+  </div>
+  <div class='caption'>
+    Team YP at Hackathon. Who's hungry?
+  </div>
+</div>
+
 <div id='main-content'>
   <div class='row-fluid' id='blog'>
     <div class='span9'>
@@ -52,6 +61,19 @@ pageOrder: 2
         <img src="/images/workplace/8.jpg">
         <img src="/images/workplace/9.jpg">
       </div>
+      
+      <h3>Contact Us</h3>
+      <ul class='unstyled' id='social-networks'>
+        <li>
+          <a href='https://twitter.com/YP' target='_blank'>Twitter</a>
+        </li>
+        <li>
+          <a href='https://www.facebook.com/YP' target='_blank'>Facebook</a>
+        </li>
+        <li>
+          <a href='http://www.linkedin.com/company/yp' target='_blank'>Linkedin</a>
+        </li>
+      </ul>
     </div>
   </div>
 </div>
