@@ -3,7 +3,7 @@ title: upcoming node.js events
 author_name: 'oren'
 author_image: './images/oren.png'
 layout: post
-date: 2012-12-30
+date: 2012-09-13
 ---
 
 

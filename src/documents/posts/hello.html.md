@@ -5,7 +5,7 @@ author_name: 'Adam'
 author_image: './images/adam.png'
 layout: post
 tags: ['intro','post']
-date: 2012-12-24
+date: 2012-09-11
 ---
 
 This is a **blog post**
