@@ -7,6 +7,7 @@
   <link rel="shortcut icon" href="/images/favicon.png">
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap.css" />
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
   <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
   <title>YP Engineering</title>
 </head>
@@ -33,6 +34,31 @@
   
 
   <%- @content %>
+  
+  <!-- Footer -->
+  <footer class='footer'>
+    <div class='container'>
+      <p class='pull-right'>
+        <a href='#'>Back to top</a>
+      </p>
+      <ul class='unstyled'>
+        <li>
+          <a target="_blank" href="http://www.att.com/gen/privacy-policy?pid=2506">Privacy Policy</a>
+          |
+          <a href="/news/press-and-media/">Press and Media</a>
+          |
+          <a href="/careers/">Careers</a>
+          |
+          <a href="/about/contact-us/">Contact Us</a>
+        </li>
+        <li>&copy; 2012 YP Intellectual Property, LLC. All rights reserved.</li>
+        <li>YP, the YP logo and all other YP marks contained herein are trademarks of YP Intellectual Property LLC and/or YP affiliated companies.</li>
+        <li>AT&T, the AT&T Logo and all AT&T related marks are trademarks of AT&T Inc. or AT&T affiliated companies. All other marks contained</li>
+        <li>herein are the property of their respective owners.</li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Footer -->
   
 </body>
 </html>
