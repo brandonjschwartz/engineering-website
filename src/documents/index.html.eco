@@ -32,7 +32,7 @@ pageOrder: 2
           </time>
         </header>
         <section class='body'>
-          <%= document.contentRenderWithoutLayouts %>
+          <%- document.contentRenderedWithoutLayouts %>
         </section>
       </article>
       
