@@ -7,6 +7,8 @@ authorImage: 'http://www.gravatar.com/avatar/a12a578a22e2c7b61745b4e52906fe3d?s=
 layout: post
 ---
 
+![angular](http://angularjs.org/img/AngularJS-large.png)
+
 Look at your recent javascript codebase and tell me the true. isn't it a total and utter mess?
 I don't blame you. Javascript is a language of amatures. script kiddies at the 90' copy pasted
 cappy code into crappy websites and it somehow worked. the trend continued throw the new millenuim and up until 
