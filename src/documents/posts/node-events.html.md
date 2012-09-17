@@ -29,5 +29,5 @@ http://krtconf.com/
 
 San Francisco, Nov 10-12  
 48 hours of node hackathon. you can join remotely  
-http://nodeknockout.com/# oeuaoeueouaoeu  
+http://nodeknockout.com/
 
