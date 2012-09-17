@@ -36,14 +36,10 @@
         </div>
         <ul class='nav pull-right'>
           <li>
-            <a>
-              TechTalks
-            </a>
+            <a target="_blank" href="http://www.youtube.com/user/yptechtalks">TechTalks</a>
           </li>
           <li>
-            <a>
-              Careers
-            </a>
+            <a target="_blank" href="http://corporate.yp.com/careers/">Careers</a>
           </li>
         </ul>
       </div>
