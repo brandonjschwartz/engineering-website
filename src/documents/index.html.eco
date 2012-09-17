@@ -23,11 +23,10 @@ pageOrder: 2
         <header class='clearfix'>
           <a class='title' href='<%= document.url %>'><%= document.title %></a>
           <time>
-            <i class='icon-calendar'></i>
-            September 14, 2012
+            <%= document.date.toShortDateString() %>
             <span class='author'>
-              <img src="/images/tri.jpg">
-              Tri Vuong
+              <img src="<%= document.authorImage %>">
+              <%= document.authorName %>
             </span>
           </time>
         </header>

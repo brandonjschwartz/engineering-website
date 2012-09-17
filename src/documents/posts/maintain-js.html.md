@@ -1,7 +1,8 @@
 ---
 layout: post
 title: maintianable javascript
-author_image: './images/shri.jpg'
+authorImage: './images/shri.jpg'
+authorName: 'josh'
 tags: ['intro','post']
 date: 2012-09-10
 ---
