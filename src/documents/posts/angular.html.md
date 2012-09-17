@@ -1,10 +1,10 @@
 ---
-title: HTML on Steroids with Angular.js
-authorName: 'Ronin'
-authorImage: './images/adam.png'
-layout: post
-tags: ['intro','post']
 date: 2012-09-15
+title: HTML on Steroids with Angular.js
+authorLink: 'Ronin'
+authorName: 'Ronin'
+authorImage: 'http://www.gravatar.com/avatar/a12a578a22e2c7b61745b4e52906fe3d?s=140&d=http%3A%2F%2Fgithub.com%2Fimages%2Fgravatars%2Fgravatar-140.png'
+layout: post
 ---
 
 Look at your recent javascript codebase and tell me the true. isn't it a total and utter mess?
