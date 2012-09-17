@@ -1,4 +1,4 @@
-# [YP Engineering Website](http://engineering.np.wc1.yellowpages.com:9778/)
+# [YP Engineering Website](http://engineering-website.herokuapp.com/)
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
 clone this repo, create or modify a post, push it and it's live.   
@@ -23,9 +23,10 @@ Create or edit a blog post. all posts are in src/documents/posts
 
 if it looks good on your localhost commit and push your changes
 
-watch it live [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
+    git push github master
 
-High five!
+High five! we will push your post to [the engineering website](http://engineering-website.herokuapp.com/) as soon as we review it.
+
 
 ## Example for blog post
 

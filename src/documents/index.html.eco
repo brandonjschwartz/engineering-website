@@ -13,7 +13,7 @@ pageOrder: 2
         <time>
           <%= document.date.toShortDateString() %>
         </time>
-        <a class='author' href='<%= document.authorLink %>'>
+        <a class='author' href='<%= document.authorLink %>' target="_blank">
           <img src="<%= document.authorImage %>"> <%= document.authorName %>
         </a>
       </header>
