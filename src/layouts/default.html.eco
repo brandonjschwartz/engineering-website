@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
   <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
-  <title>YP Engineering</title>
+  <title><%= @document.title %> | YP Engineering</title>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
