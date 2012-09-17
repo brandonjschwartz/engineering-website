@@ -30,10 +30,10 @@
   <header class='navbar'>
     <div class='navbar-inner'>
       <div class='container'>
-        <div class='brand' id='yp-brand'>
+        <a class='brand' id='yp-brand' href="/">
           <img src="/images/logo.png">
           <span>Engineering</span>
-        </div>
+        </a>
         <ul class='nav pull-right'>
           <li>
             <a target="_blank" href="http://www.youtube.com/user/yptechtalks">TechTalks</a>

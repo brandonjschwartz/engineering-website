@@ -12,13 +12,10 @@ pageOrder: 2
         <h2><a class='title' href='<%= document.url %>'><%= document.title %></a></h2>
         <time>
           <%= document.date.toShortDateString() %>
-          <span class='author'>
-            <a class='title' href='<%= document.authorLink %>'>
-              <img src="<%= document.authorImage %>">
-              <%= document.authorName %>
-            </a>
-          </span>
         </time>
+        <a class='author' href='<%= document.authorLink %>'>
+          <img src="<%= document.authorImage %>"> <%= document.authorName %>
+        </a>
       </header>
       <section class='body'>
         <%- document.contentRenderedWithoutLayouts %>
@@ -27,11 +24,13 @@ pageOrder: 2
   
     <% end %>
   
-    <% if (@req.query.page or 1) > 1: %>
-      <a href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">prev</a>
-    <% end %>
+    <div class="pagination pagination-centered">
+      <% if (@req.query.page or 1) > 1: %>
+        <a class="btn btn-warning" href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">previous</a>
+      <% end %>
 
-    <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
-      <a href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
-    <% end %>
+      <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
+        <a class="btn btn-warning" href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
+      <% end %>
+    </div>
 </div>

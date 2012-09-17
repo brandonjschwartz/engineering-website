@@ -4,6 +4,7 @@ body {
 }
 a {
   color: #399dd8;
+  outline: none;
 }
 .container {
   width: 1000px;
@@ -88,21 +89,14 @@ a {
   display: block;
   color: #fbc21a;
 }
-.blog-post header .author {
-  width: 100px;
-  overflow: hidden;
-  text-align: right;
-}
 .blog-post header .author img {
-  vertical-align: middle;
   width: 16px;
   border-radius: 5px;
-  margin: 0 4px 0 8px;
-}
-.blog-post header time {
-  display: block;
+  margin: -1px 4px 0 8px;
 }
 .blog-post .body {
+  white-space: normal;
+  word-wrap: break-word;
   background: #f8f8f8;
   padding: 20px 30px;
   line-height: 23px;

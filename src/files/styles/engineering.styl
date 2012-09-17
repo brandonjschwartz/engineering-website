@@ -6,6 +6,7 @@ body {
 
 a {
   color: #399DD8;
+  outline: none;
 }
 
 .container {
@@ -113,24 +114,17 @@ a {
     }
     
     .author {
-      width: 100px;
-      overflow: hidden;
-      text-align: right;
-      
       img {
-        vertical-align: middle;
         width: 16px;
         border-radius: 5px;
-        margin:0 4px 0 8px;
+        margin:-1px 4px 0 8px;
       }
-    }
-    
-    time {
-      display: block;
     }
   }
   
   .body {
+    white-space: normal;
+    word-wrap: break-word;
     background: #f8f8f8;
     padding: 20px 30px;
     line-height: 23px;
