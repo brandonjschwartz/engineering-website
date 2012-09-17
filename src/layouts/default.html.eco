@@ -23,6 +23,11 @@
         <ul class='nav pull-right'>
           <li>
             <a>
+              Engineering Talks
+            </a>
+          </li>
+          <li>
+            <a>
               Careers
             </a>
           </li>
@@ -95,11 +100,11 @@
         <li>
           <a target="_blank" href="http://www.att.com/gen/privacy-policy?pid=2506">Privacy Policy</a>
           |
-          <a href="/news/press-and-media/">Press and Media</a>
+          <a target="_blank" href="http://corporate.yp.com/news/press-and-media/">Press and Media</a>
           |
-          <a href="/careers/">Careers</a>
+          <a target="_blank" href="http://corporate.yp.com/careers/">Careers</a>
           |
-          <a href="/about/contact-us/">Contact Us</a>
+          <a target="_blank" href="http://corporate.yp.com/about/contact-us/">Contact Us</a>
         </li>
         <li>&copy; 2012 YP Intellectual Property, LLC. All rights reserved.</li>
         <li>YP, the YP logo and all other YP marks contained herein are trademarks of YP Intellectual Property LLC and/or YP affiliated companies.</li>
