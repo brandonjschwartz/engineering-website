@@ -19,6 +19,7 @@ despite it's [shortcoming](http://www.google.com)
 * declerative
 * plain old js objects
 * testable
+* blaaoeuoe
 
 ```javascript
   function() {
