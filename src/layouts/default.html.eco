@@ -6,8 +6,8 @@
 
   <link rel="shortcut icon" href="/images/favicon.png">
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap.css" />
-  <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/bootstrap-responsive.css" />
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
+  <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
   <title>YP Engineering</title>
 </head>
@@ -32,8 +32,58 @@
   </header>
   <!-- Navbar -->
   
+  <div id='hero'>
+    <div class='image-container'>
+      <img src="/images/hero/hero.jpg">
+    </div>
+    <div class='caption'>
+      Team YP at Hackathon. Who's hungry?
+    </div>
+  </div>
+  
+  <!-- Main content -->
+  <div id='site-content-body' class='container'>
+    <div class='row-fluid'>
+      <%- @content %>
+      <!-- Sidebar -->
+      <div class='pull-right span3 sidebar'>
+        <h3>Life @ YP</h3>
+        <div class='image-grid'>
+          <img src="/images/workplace/1.jpg">
+          <img src="/images/workplace/2.jpg">
+          <img src="/images/workplace/3.jpg">
+          <img src="/images/workplace/4.jpg">
+          <img src="/images/workplace/5.jpg">
+          <img src="/images/workplace/6.jpg">
+          <img src="/images/workplace/7.jpg">
+          <img src="/images/workplace/8.jpg">
+          <img src="/images/workplace/9.jpg">
+        </div>
 
-  <%- @content %>
+        <h3>Contact Us</h3>
+        <ul id="social-networks" class="unstyled">
+          <li>
+            <i class="icon-twitter"></i>
+            <a target="_blank" href="https://twitter.com/YP">Twitter</a>
+          </li>
+          <li>
+            <i class="icon-facebook"></i>
+            <a target="_blank" href="https://www.facebook.com/YP">Facebook</a>
+          </li>
+          <li>
+            <i class="icon-linkedin"></i>
+            <a target="_blank" href="http://www.linkedin.com/company/yp">Linkedin</a>
+          </li>
+          <li>
+            <i class="icon-github"></i>
+            <a target="_blank" href="https://github.com/yp-engineering">Github</a>
+          </li>
+        </ul>
+      </div>
+      <!-- Sidebar -->
+    </div>
+  </div>
+  <!-- Main content -->
   
   <!-- Footer -->
   <footer class='footer'>
