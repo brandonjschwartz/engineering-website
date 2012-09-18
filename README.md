@@ -4,6 +4,12 @@ This is our Engineering website. Everyone at YP is welcome to contribute.
 clone this repo, create or modify a post and push it. 
 we'll get an email and we promise to publish it right away.
 
+```ruby
+require 'kitty'
+cat = Kitty.new("Hello")
+puts cat.miaoo
+```
+
 ## How to add/edit a blog post?
 
 Clone the project and run the server on your laptop
@@ -123,7 +129,7 @@ We use markdown for writing blog posts.
 
 this is a example of a [link](http://www.google.com)
 
-adding an image:
+and that's how to add an image:
 
 ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
 
