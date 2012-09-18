@@ -13,7 +13,7 @@ You will need to clone the project and run the website on your laptop
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
     npm install # installs all dependencies
-    nod_modules/docpad/bin/docpad run 
+    ./scripts/start
 
 Open [http://localhost:9778/](http://localhost:9778/) to view the website
 
