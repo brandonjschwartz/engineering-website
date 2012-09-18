@@ -10,10 +10,26 @@ Clone the project and run the server on your laptop
 
 install node - http://nodejs.org
 
+> Installing node.js and engineering-website on Ubuntu
+>
+> This is what I had to do to get things working.
+>
+>    $ sudo apt-get install python-software-properties
+>    $ sudo add-apt-repository ppa:chris-lea/node.js
+>    $ sudo apt-get update
+>    $ sudo apt-get install nodejs npm
+>    $ git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
+>    $ sudo npm install -g
+>    $ sudo npm install contextify -g
+>    $ sudo npm install jsdom -g
+>    $ sudo npm rebuild -g
+>    $ ./node_modules/docpad/bin/docpad run
+>
+
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
     npm install # installs all dependencies
-    nod_modules/docpad/bin/docpad run 
+    ./node_modules/docpad/bin/docpad run
 
 Open [http://localhost:9778/](http://localhost:9778/)
 
