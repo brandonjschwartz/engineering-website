@@ -140,10 +140,6 @@ code:
 ## How does it work?
 
 it uses [DocPad](https://github.com/bevry/docpad) - a static site generator that watches
-changes on 'src' folder, and generate a website into 'out' folder.
+changes on 'src' folder, and generate a website into 'out' folder.  
+Docpad also run a node server (express.js) that serve the content of 'out' folder.
 
-let's say you added a blog post localy. when you push your changes, 
-the git repo on the server is getting the update thanks to a post-recieve hook.
-this hook is making a post request to a little node.js api that is doing 'git pull'.
-as soon as it's pulling your changes, DocPad regenerate the site into the 'out' folder and 
-your blog post is public.
