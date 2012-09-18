@@ -77,11 +77,11 @@ We use markdown for writing blog posts.
 
 ## Markdown cheatsheet
 
-    # Header 1
-    ## Header 2
-    ### Header 3 
-    #### Header 4
-    ##### Header 5
+    # Header h1
+    ## Header h2
+    ### Header h3 
+    #### Header h4
+    ##### Header h5
 
     1. this
     1. is 
@@ -96,6 +96,26 @@ We use markdown for writing blog posts.
     
     and that's how to add an image
     ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
+
+# Header h1
+## Header h2
+### Header h3 
+#### Header h4
+##### Header h5
+
+1. this
+1. is 
+1. a numbered list
+
+* list
+* with
+* no
+* numbers
+
+this is a example of a [link](http://www.google.com)
+
+and that's how to add an image
+![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
 
 ## How does it work?
 
