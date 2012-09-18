@@ -23,9 +23,11 @@ Create or edit a blog post. all posts are in src/documents/posts
 
 if it looks good on your localhost commit and push your changes
 
-    git push github master
+    git add .
+    git commit -am "best restaurants"
+    git push
 
-High five!  
+You are awesome! 
 An email will be sent to us and we will publish your post to [the engineering website](http://engineering-website.herokuapp.com/) as soon as we can.
 
 
@@ -43,29 +45,13 @@ We use markdown for writing blog posts.
     ---
 
     After many months of eating, hours of analyzing hundreds of dishes, 
-    and untold numbers of discussions, we have compiled a list of the most compelling places to dine in Denver—and beyond. 
+    and untold numbers of discussions, we have compiled a list of the most compelling places to dine in Glendale—and beyond. 
     We hope our choices, and the order in which they’re ranked, incite discussion—not to mention many nights out on the town.
 
     When we set out to rank restaurants for our second annual 25 Best Restaurants list, 
     we didn’t expect there to be a huge shift from 2010’s roundup. Boy, were we wrong. 
     The last year has seen a tremendous number of new—and very good—restaurants open, 
     and the local dining scene has continued to mature and rocket upward. 
-
-    The result: a list that sings the praises of seven restaurants that weren’t included last year 
-    (either because they weren’t open or because the kitchens have stepped up their games). 
-    There was also a significant amount of upward—and downward—movement, and inevitably, a few places fell off the list entirely. 
-    In putting together this ranking, we do everything we can to make an inherently subjective process—choosing a good restaurant—more objective. 
-
-    We assign points to every dish we try, average them, and give each restaurant an overall food score. 
-    We allot points for service (knowledge, attentiveness, friendliness) and ambience 
-    (comfort, noise level, and how inviting the space is). 
-    We recognize that restaurants thrive or die on something as indefinable as “vibe,”
-    so we also assign a “rave rating” to each establishment.  
-    
-    Finally, once we’ve narrowed the choices to 30-some contenders, we spend hours analyzing the picks, discussing dining trends, 
-    revisiting places (over and over and over again), 
-    and shuffling restaurants up or down in ranking. In short, the list you hold in your hands is the culmination of many 
-    months of eating, hundreds of dishes, and an untold number of hours evaluating, scoring, and debating. 
     
     We hope our choices, and the order in which they’re placed, incites discussion—not to mention many dinners out.
     
@@ -74,7 +60,6 @@ We use markdown for writing blog posts.
     * Raffi's Place Restaurant
     * Far Niente Ristorante
     * Mini Kabob
-
 
 ## Markdown cheatsheet
 
