@@ -17,49 +17,38 @@ date: 2012-09-18
 It's important to note that by default httperf only tests the standard http payload of your application -- e.g. the rendered HTML of the URL you are testing. Much like "curl", it does not load assets (images, javascript or css) by default. In this document, I will be referring to this as the "**base payload**". There are ways to configure it to load additional requests as part of the same session, which I will be covering. 
 
 
-#### Sections:
-* [Standard Usage](#standard_usage)
-* [Testing Pages with AJAX](#testing_pages_with_ajax)
-* [Replaying Production Logs](#replaying_production_logs)
-* [Best Practices](#best_practices)
-* [Automating httperf with Ruby](#automating_with_ruby)
-
-<a name="standard_usage"></a>
 ### Standard Usage
-
 **Basic command-line usage:**
 
-        $ httperf --server www.rubyops.net --port 80 --num-conns 10 --rate 1
+    $ httperf --server www.rubyops.net --port 80 --num-conns 10 --rate 1
 
 **Results:**
 
-        httperf --client=0/1 --server=www.rubyops.net --port=80 --uri=/ --rate=1 \ 
-                --send-buffer=4096 --recv-buffer=16384 --num-conns=10 --num-calls=1
+    httperf --client=0/1 --server=www.rubyops.net --port=80 --uri=/ --rate=1 \ 
+            --send-buffer=4096 --recv-buffer=16384 --num-conns=10 --num-calls=1
 
-        Maximum connect burst length: 1
+    Maximum connect burst length: 1
 
-        Total: connections 10 requests 10 replies 10 test-duration 9.286 s
+    Total: connections 10 requests 10 replies 10 test-duration 9.286 s
 
-        Connection rate: 1.1 conn/s (928.6 ms/conn, <=1 concurrent connections)
-        Connection time [ms]: min 284.2 avg 303.2 max 376.2 median 284.5 stddev 38.4
-        Connection time [ms]: connect 91.8
-        Connection length [replies/conn]: 1.000
+    Connection rate: 1.1 conn/s (928.6 ms/conn, <=1 concurrent connections)
+    Connection time [ms]: min 284.2 avg 303.2 max 376.2 median 284.5 stddev 38.4
+    Connection time [ms]: connect 91.8
+    Connection length [replies/conn]: 1.000
 
-        Request rate: 1.1 req/s (928.6 ms/req)
-        Request size [B]: 68.0
+    Request rate: 1.1 req/s (928.6 ms/req)
+    Request size [B]: 68.0
 
-        Reply rate [replies/s]: min 1.0 avg 1.0 max 1.0 stddev 0.0 (1 samples)
-        Reply time [ms]: response 99.1 transfer 112.3
-        Reply size [B]: header 241.0 content 29147.0 footer 0.0 (total 29388.0)
-        Reply status: 1xx=0 2xx=10 3xx=0 4xx=0 5xx=0
+    Reply rate [replies/s]: min 1.0 avg 1.0 max 1.0 stddev 0.0 (1 samples)
+    Reply time [ms]: response 99.1 transfer 112.3
+    Reply size [B]: header 241.0 content 29147.0 footer 0.0 (total 29388.0)
+    Reply status: 1xx=0 2xx=10 3xx=0 4xx=0 5xx=0
 
-        CPU time [s]: user 1.99 system 7.27 (user 21.5% system 78.3% total 99.7%)
-        Net I/O: 31.0 KB/s (0.3*10^6 bps)
+    CPU time [s]: user 1.99 system 7.27 (user 21.5% system 78.3% total 99.7%)
+    Net I/O: 31.0 KB/s (0.3*10^6 bps)
 
-        Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
-        Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
-
-> 
+    Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+    Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
 
 
 In this example, I'm running ten connections _[\-\-num-conns 10]_ through [www.rubyops.net](http://www.rubyops.net/) _[\-\-server www.rubyops.net]_ at a rate of one connection per second _[\-\-rate 1]_. 
@@ -75,7 +64,6 @@ Breaking down the results, I typically focus on the following rows:
 
 While my examples don't include this, using the "\-\-hog" flag when running httperf on a host dedicated to generating load is a very good idea. This tells httperf to use as many TCP connections as possible, thus avoiding bottlenecks. This flag should probably be omitted if generating load on the same box your application is running on.
 
-<a name="testing_pages_with_ajax"></a>
 ### Testing Pages with AJAX
 
 In more advanced usages you can create a a series of URIs to pass to emulate a single session. This is particularly useful when you're performance testing a page with several AJAX calls. 
@@ -84,14 +72,14 @@ To do this, you need to create a connections file with all URIs you want to hit.
 
 **sessions.log**
 
-        /
-                /foo
-                /bar
-                /bah
+    /
+            /foo
+            /bar
+            /bah
 
 You then need specify the log file you want to use in the place of "\-\-uri" to tell 'httperf' what paths to use.
 
-        httperf --server www.rubyops.net --wsesslog 10,1,sessions.log
+    httperf --server www.rubyops.net --wsesslog 10,1,sessions.log
 
 
 Obviously, I'm not implementing "/foo", "/bar" and "/bah" as AJAX on my site, but you get the idea. 
@@ -100,33 +88,32 @@ So what am I doing here? With "\-\-wsesslog", the first to field is the number o
 
 Okay, simple enough. So what does 'httperf' do with that? Well instead of trying to explain it myself, I'm going quote  [httperf's man page](http://www.hpl.hp.com/research/linux/httperf/httperf-man.txt); *"When \-\-wsess or \-\-wsesslog is specified, httperf generates and measures sessions instead of individual calls and additional statistics are printed at the end of a test."*
 
-<a name="replaying_production_logs"></a>
 ### Replaying Production Logs
 
 Httperf makes replaying production logs somewhat simple with the "\-\-wlog" option, which is used to generate a sequence of URIs to access. The one oddity, and why I say "somewhat simple" is that it expects an ASCII NUL separated [\0] file (as opposed to "new line" separated [\n], see examples below for details).
 
 The first step is to generate your list. I use [Nginx](/tag/nginx), so that's what I'm going to focus on here. That said, this should be pretty adaptable to most web servers. Here's the command I use to generate a traffic log from Nginx's access.log:
 
-        $ awk '{ print $7 }' /path/to/logs/access.log > urls.log
+    $ awk '{ print $7 }' /path/to/logs/access.log > urls.log
 
 This assumes -- of course -- that your request path is in the seventh column.
 
 In rare caces you need to clean up a leading or trailing quote like so:
 
-        $ awk '{ print $7 }' /path/to/logs/access.log | sed 's/^\"//g' | \
-                sed 's/\"$//g' > urls.log
+    $ awk '{ print $7 }' /path/to/logs/access.log | sed 's/^\"//g' | \
+      sed 's/\"$//g' > urls.log
 
 
 So with that, we have a list of URIs from [www.rubyops.net](http://www.rubyops.net/), which we've called "urls.log". From this, we need to generate a file which is ASCII NUL separated which we'll call "wlog.log":
 
 Start with urls.log.
 
-        /
-        /tag
-        /tag/ruby
-        /archive
-        /2012
-        /2012/07
+     /
+     /tag
+     /tag/ruby
+     /archive
+     /2012
+     /2012/07
 
 Convert it to wlog.log -- replace line breaks with ASCII NUL characters.
 
@@ -138,7 +125,6 @@ Now we can run our test.
         
 Note, the "Y" (or "N") switch is simply telling httperf to loop through the urls in your log file (or not).
 
-<a name="best_practices"></a>
 ### Best Practices
 
 I don't claim to be an expert in this area (**AT ALL**), however, here a few things I've picked up in my travels, which has made my life easier in regards to performance testing best practices. They aren't always hard rules and I've broken all of them out of necessity at one point or another.
