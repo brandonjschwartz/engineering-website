@@ -6,6 +6,12 @@ a {
   color: #399dd8;
   outline: none;
 }
+pre {
+  background: #333;
+}
+pre code {
+  color: #0f0;
+}
 .container {
   width: 1000px;
   margin: 0 auto;
