@@ -6,16 +6,16 @@ we'll get an email and we promise to publish it right away.
 
 ## How to add/edit a blog post?
 
-Clone the project and run the server on your laptop
+You will need to clone the project and run the website on your laptop
 
-install node - http://nodejs.org
+[install node](http://nodejs.org)
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
     npm install # installs all dependencies
     nod_modules/docpad/bin/docpad run 
 
-Open [http://localhost:9778/](http://localhost:9778/)
+Open [http://localhost:9778/](http://localhost:9778/) to view the website
 
 Create or edit a blog post. all posts are in src/documents/posts
     
