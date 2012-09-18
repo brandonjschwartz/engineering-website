@@ -1,8 +1,8 @@
 # [YP Engineering Website](http://engineering-website.herokuapp.com/)
 
-This is our Engineering website. Everyone at YP is welcome to contribute.
-clone this repo, create or modify a post and push it. 
-we'll get an email and we promise to publish it right away.
+This is our Engineering website. Everyone at YP is welcome to contribute.  
+clone this repo, create or modify a post and push it.  
+we'll get an email and we promise to publish it right away.  
 
 ## How to add/edit a blog post?
 
