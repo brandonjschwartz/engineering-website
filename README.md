@@ -4,6 +4,8 @@ This is our Engineering website. Everyone at YP is welcome to contribute.
 clone this repo, create or modify a post and push it.  
 we'll get an email and we promise to publish it right away.  
 
+*note: if you can't push this repository, email me - ogolan@yp.com and i'll add you.*
+
 ## How to add/edit a blog post?
 
 You will need to clone the project and run the website on your laptop
