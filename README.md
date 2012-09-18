@@ -178,3 +178,8 @@ create a stage remote
 create a github remote
 
     git remote add github git@git.corp.attinteractive.com:dstools/engineering-website.git
+
+## running as production on heroku
+
+    heroku config:add NODE_ENV=production --app engineering-website
+    heroku config:add NODE_ENV=production --app stage-engineering-website
