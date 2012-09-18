@@ -95,7 +95,16 @@ We use markdown for writing blog posts.
     this is a example of a [link](http://www.google.com)
     
     and that's how to add an image
+
     ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
+
+    code
+
+    ```ruby 
+    def hello
+      puts 'kitty'
+    end
+    ```
 
 # Header h1
 ## Header h2
@@ -114,8 +123,17 @@ We use markdown for writing blog posts.
 
 this is a example of a [link](http://www.google.com)
 
-and that's how to add an image
+adding an image
+
 ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
+
+code
+
+```ruby 
+def hello
+  puts 'kitty'
+end
+```
 
 ## How does it work?
 
