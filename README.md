@@ -25,7 +25,8 @@ if it looks good on your localhost commit and push your changes
 
     git push github master
 
-High five! we will push your post to [the engineering website](http://engineering-website.herokuapp.com/) as soon as we can.
+High five!  
+An email will be sent to us and we will publish your post to [the engineering website](http://engineering-website.herokuapp.com/) as soon as we can.
 
 
 ## Example for blog post
@@ -112,14 +113,17 @@ We use markdown for writing blog posts.
 #### Header h4
 ##### Header h5
 
+
 1. this
 1. is 
 1. a numbered list
+
 
 * list
 * with
 * no
 * numbers
+
 
 this is a example of a [link](http://www.google.com)
 
