@@ -6,7 +6,7 @@ pageOrder: 2
 ---  
 
 <div class='pull-left span9'>
-  <% for document in @getCollection('posts').createChildCollection().setPaging({limit:5,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
+  <% for document in @getCollection('posts').createChildCollection().setPaging({limit:10,page:parseInt(@req.query.page,10) or 1}).query().toJSON(): %>
     <article class='blog-post'>
       <header class='clearfix'>
         <h2><a class='title' href='<%= document.url %>'><%= document.title %></a></h2>
@@ -29,7 +29,7 @@ pageOrder: 2
         <a class="btn btn-warning" href="?page=<%-(parseInt(@req.query.page,10) or 1)-1%>">previous</a>
       <% end %>
 
-      <% if @getCollection('posts').createChildCollection().setPaging({limit:5,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
+      <% if @getCollection('posts').createChildCollection().setPaging({limit:10,page:(parseInt(@req.query.page,10) or 1)+1}).query().length: %>
         <a class="btn btn-warning" href="?page=<%-(parseInt(@req.query.page,10) or 1)+1%>">next</a>
       <% end %>
     </div>
