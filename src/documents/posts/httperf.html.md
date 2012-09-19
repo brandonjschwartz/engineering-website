@@ -1,10 +1,10 @@
 ---
-layout: post
+date: 2012-09-18
 title: Performance Testing with Httperf
 authorLink: http://github.com/jmervine
 authorName: 'Josh'
 authorImage: 'https://secure.gravatar.com/avatar/ed808193b8c2c8516715816f90a005b2?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
-date: 2012-09-18
+layout: post
 ---
 
 ### Introduction

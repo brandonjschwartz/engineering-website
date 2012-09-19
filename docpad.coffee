@@ -2,6 +2,15 @@
 # It is simply a CoffeeScript Object which is parsed by CSON
 docpadConfig = {
 
+  enablePlugins:
+    livereload: true
+
+  plugins:
+   livereload:
+     enabled: true
+     environments:
+       development: 
+         enabled: true
 	# =================================
 	# Template Data
 	# These are variables that will be accessible via our templates
