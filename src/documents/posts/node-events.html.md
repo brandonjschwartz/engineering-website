@@ -7,7 +7,7 @@ authorImage: 'https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0ba
 layout: post
 ---
 
-Just in case you find yourself in any of the locations below..  
+Just in case you find yourself in any of the locations below...  
 
 Shanghai, Sep 14-16  
 first node conference in China  
