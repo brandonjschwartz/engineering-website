@@ -7,8 +7,6 @@ authorImage: 'https://secure.gravatar.com/avatar/cf4e42d9d740e60fd29c039d4a8805c
 layout: post
 ---
 
-uoeueo
-
 Here's my screen cheat sheet. It's simultaneous incredibly useful and ridiculous to configure.  
 Actually reminds me of my other favorite tool with this syndrome: vim.
 
