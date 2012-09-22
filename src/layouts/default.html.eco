@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="/vendor/twitter-bootstrap/css/docs.css" />
   <link rel="stylesheet" type="text/css" href="/vendor/font-awesome/css/font-awesome.css" />
   <link rel="stylesheet" type="text/css" href="/styles/engineering.css" />
+  <link href="/vendor/lightbox2/css/lightbox.css" rel="stylesheet" />
   
   <title><%= @document.title %> | YP Engineering</title>
   <!--[if lt IE 9]>
@@ -83,15 +84,15 @@
       <div class='pull-right span3 sidebar'>
         <h3>Life @ YP</h3>
         <div class='image-grid'>
-         <a target="_blank" href="http://i.imgur.com/nAoul.jpg"><img src="http://i.imgur.com/vnTcl.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/PbIdQ.jpg"><img src="http://i.imgur.com/VWpUV.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/sAxiL.jpg"><img src="http://i.imgur.com/HMXUb.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/4o90R.jpg"><img src="http://i.imgur.com/1bl3F.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/anTPT.jpg"><img src="http://i.imgur.com/7Bjom.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/1CqMG.jpg"><img src="http://i.imgur.com/HWWiN.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/V8A4K.jpg"><img src="http://i.imgur.com/oMXXh.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/Y6B3C.jpg"><img src="http://i.imgur.com/CbXxh.jpg"></a>
-         <a target="_blank" href="http://i.imgur.com/Y6Oso.jpg"><img src="http://i.imgur.com/wyXS0.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="hackaty hack!" href="http://i.imgur.com/nAoul.jpg"><img src="http://i.imgur.com/vnTcl.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="pizza time" href="http://i.imgur.com/PbIdQ.jpg"><img src="http://i.imgur.com/VWpUV.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="LA Ruby Meetup" href="http://i.imgur.com/sAxiL.jpg"><img src="http://i.imgur.com/HMXUb.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="Mark and Clarke" href="http://i.imgur.com/4o90R.jpg"><img src="http://i.imgur.com/1bl3F.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="Ricco and Alex" href="http://i.imgur.com/anTPT.jpg"><img src="http://i.imgur.com/7Bjom.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="Win" href="http://i.imgur.com/1CqMG.jpg"><img src="http://i.imgur.com/HWWiN.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="Race" href="http://i.imgur.com/V8A4K.jpg"><img src="http://i.imgur.com/oMXXh.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="Habitat for Humanity" href="http://i.imgur.com/Y6B3C.jpg"><img src="http://i.imgur.com/CbXxh.jpg"></a>
+         <a target="_blank" rel="lightbox[a]" title="lunch" href="http://i.imgur.com/Y6Oso.jpg"><img src="http://i.imgur.com/wyXS0.jpg"></a>
         </div>
 
         <h3>Contact Us</h3>
@@ -140,7 +141,9 @@
     </div>
   </footer>
   <!-- Footer -->
-  
+
+  <script src="http://code.jquery.com/jquery-1.8.1.min.js"></script>
+  <script src="/vendor/lightbox2/js/lightbox.js"></script>
 </body>
 </html>
 
