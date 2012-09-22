@@ -67,10 +67,11 @@
   
   <div id='hero'>
     <div class='image-container'>
-      <img src="http://i.imgur.com/4Ouzq.jpg">
+      <img src="http://i.imgur.com/G5aVQ.png">
     </div>
     <div class='caption'>
-      Team YP at Hackathon. Who's hungry?
+      <span>Hackathon 2012</span>
+      <span class='right'>Casual dress code</span>
     </div>
   </div>
   

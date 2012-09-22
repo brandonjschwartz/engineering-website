@@ -133,5 +133,8 @@ pre code {
   background: rgba(0,0,0,0.5);
   padding: 5px;
   color: #fff;
-  text-align: right;
+  color: #9e9d9d;
+}
+#hero .caption .right {
+  float: right;
 }
