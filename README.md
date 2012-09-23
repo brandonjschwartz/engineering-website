@@ -1,4 +1,5 @@
-# [YP Engineering Website](http://engineering-website.herokuapp.com/)
+# YP Engineering Website
+http://engineering-website.herokuapp.com/
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
 clone this repo, create or modify a post and push it.  
@@ -30,7 +31,7 @@ if it looks good on your localhost commit and push your changes
     git push
 
 You are awesome! 
-An email will be sent to us and we will publish your post to [the engineering website](http://engineering-website.herokuapp.com/) as soon as we can.
+An email will be sent to us and we will publish your post http://engineering-website.herokuapp.com as soon as we can.
 
 
 ## Example for blog post
@@ -65,28 +66,53 @@ We use markdown for writing blog posts.
 
 ## Markdown cheatsheet
 
-    # Header h1
-    ## Header h2
-    ### Header h3 
-    #### Header h4
-    ##### Header h5
+**headers**
 
-    1. this
-    1. is 
-    1. a numbered list
+    # this is an h1 header
+    ## this is an h2 header
+    ### this is an h3 header
+    #### this is an h4 header
+    ##### this is an h5 header
 
-    * list
-    * with
-    * no
-    * numbers
+# this is an h1 header
+## this is an h2 header
+### this is an h3 header
+#### this is an h4 header
+##### this is an h5 header
 
-    this is a example of a [link](http://www.google.com)
+**list**
+
+    * chipotle
+    * poquito mas
+    * olive garden
+
+* chipotle
+* poquito mas
+* olive garden
+
+**numbered lists**
+
+    1. apple
+    1. grape
+    1. tomato
+
+1. apple
+1. grape
+1. tomato
+
+**link**
+
+    what a great [website](http://www.google.com)
+
+what a great [website](http://www.google.com)
     
-    and that's how to add an image:
+**image**
 
     ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
 
-    code:
+![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
+
+**code:**
 
     ```ruby
     require 'kitty'
@@ -94,39 +120,20 @@ We use markdown for writing blog posts.
     puts cat.miaoo
     ```
 
-# Header h1
-## Header h2
-### Header h3 
-#### Header h4
-##### Header h5
+```ruby
+require 'kitty'
+cat = Kitty.new("Hello")
+puts cat.miaoo
+```
 
+**line break** (2 spaces after the first line)
 
-1. this
-1. is 
-1. a numbered list
-
-
-* list
-* with
-* no
-* numbers
-
-
-this is a example of a [link](http://www.google.com)
-
-and that's how to add an image:
-
-![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
-
-code:
-
-    require 'kitty'
-    cat = Kitty.new("Hello")
-    puts cat.miaoo
+    hello  
+    world
 
 ## How does it work?
 
-it uses [DocPad](https://github.com/bevry/docpad) - a static site generator that watches
+it uses [DocPad](https://github.com/bevry/docpad) - a site generator that watches
 changes on 'src' folder, and generate a website into 'out' folder.  
 Docpad also run a node server (express.js) that serve the content of 'out' folder.
 
