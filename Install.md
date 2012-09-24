@@ -3,6 +3,7 @@
     sudo rootsh -iu nextgen  # install as nextgen
 
 install node
+
     git clone git://github.com/creationix/nvm.git ~/nvm
     . ~/nvm/nvm.sh  # add to .bashrc
 
