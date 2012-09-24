@@ -13,7 +13,7 @@ Clone the project
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
     cd engineering-website
     npm install
-    sudo npm install forever -g
+    npm install forever -g
     
 run
 
