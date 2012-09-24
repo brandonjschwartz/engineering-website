@@ -1,5 +1,5 @@
 # YP Engineering Website
-[engineering.yp.com](engineering.yp.com)
+[engineering.yp.com](http://www.engineering.yp.com)
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
 clone this repo, create or modify a post and push it.  
