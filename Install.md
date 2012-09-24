@@ -32,55 +32,30 @@ stop
     forever stop 0
     forever stopall
 
-### pushing to remotes
+### push to production
 
-push to our github
+create a production remote
 
-    git push github master
+    git remote add github git@git.corp.attinteractive.com:dstools/engineering-website-prod.git
 
-push to stage
+when you want to push to production
 
-    git push stage master
+    git push production master
 
-push to production
-
-    git push origin master
-
-### creating remotes
-
-create a stage remote
-
-    heroku create --remote=stage
-
-create a github remote
-
-    git remote add github git@git.corp.attinteractive.com:dstools/engineering-website.git
-
-## Heroku (depricated)
-
-### running as production on heroku
-
-    heroku config:add NODE_ENV=production --app engineering-website
-    heroku config:add NODE_ENV=production --app stage-engineering-website
-
-### heroku commands
-
-    heroku config -s --app stage-engineering-website
-    heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git --app stage-engineering-website
-   
 ### Run the git updater
 
 This little node.js server provide a single end-point: POST /update  
-all it does is 'git pull'
+all it does is 'git pull' and restart the docpad server
 
     forever start updater/server
 
-### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website-prod/edit)
 
 test
 
     curl -X POST http://engineering.np.wc1.yellowpages.com:3000/update
 
 add on github's post-recieve hooks section
+
     http://engineering.np.wc1.yellowpages.com:3000/update
 
