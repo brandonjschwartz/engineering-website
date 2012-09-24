@@ -24,12 +24,12 @@ function gitPull() {
 
   git.on('exit', function (code) {
     console.log('git child process exited with code ' + code);
-    setTimeout(restartDocpad, 3000);
+    restartDocpad();
   });
 };
 
 function restartDocpad() {
-  var forever = spawn('forever', ['restart', '0']);
+  var forever = spawn('forever', ['restart', 'node_modules/docpad/bin/docpad-server']);
 
   forever.stdout.on('data', function (data) {
     console.log('forever stdout: ' + data);
@@ -41,6 +41,5 @@ function restartDocpad() {
 
   forever.on('exit', function (code) {
     console.log('forever child process exited with code ' + code);
-    forever = spawn('forever', ['restart', 'node_modules/docpad/bin/docpad-server']);
   });
 };
