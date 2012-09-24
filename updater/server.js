@@ -41,6 +41,6 @@ function restartDocpad() {
 
   forever.on('exit', function (code) {
     console.log('forever child process exited with code ' + code);
-    forever = spawn('forever', ['restart', '0']);
+    forever = spawn('forever', ['restart', 'node_modules/docpad/bin/docpad-server']);
   });
 };

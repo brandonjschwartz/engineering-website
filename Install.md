@@ -15,10 +15,14 @@ Clone the project
     npm install
     sudo npm install forever -g
     
-Run
+run
 
     NODE_ENV=production forever start node_modules/docpad/bin/docpad-server
     forever start updater/server.js
+
+stop
+
+    forever stopall
 
 ### using forever
 
