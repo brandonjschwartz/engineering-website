@@ -17,8 +17,7 @@ Clone the project
     
 run
 
-    NODE_ENV=production forever start node_modules/docpad/bin/docpad-server
-    forever start updater/server.js
+    source scripts/production-start
 
 stop
 
