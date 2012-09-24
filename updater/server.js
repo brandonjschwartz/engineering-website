@@ -24,7 +24,7 @@ function gitPull() {
 
   git.on('exit', function (code) {
     console.log('git child process exited with code ' + code);
-    restartDocpad();
+    setTimeout(restartDocpad, 3000);
   });
 };
 
