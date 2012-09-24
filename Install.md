@@ -1,48 +1,22 @@
-### heroku commands
-
-    heroku config -s --app stage-engineering-website
-    heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git --app stage-engineering-website
-   
 ## Install on engineering.np.wc1.yellowpages.com
 
-    sudo chown -R nextgen:nextgen /home/t/lib/node_modules # this will let you install node global packages. this command might not be needed.
-    sudo npm install forever -g
-    sudo rootsh -iu nextgen
+    sudo rootsh -iu nextgen  # install as nextgen
 
-    tpkg -i nodejs-0.8.8-1-centos5-x86_64.tpkg # install node.js
-    tpkg -i git 
+install node
+    git clone git://github.com/creationix/nvm.git ~/nvm
+    . ~/nvm/nvm.sh  # add to .bashrc
 
 Clone the project
 
+    cd
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git
     cd engineering-website
     npm install
-    npm install docpad
+    sudo npm install forever -g
     
-Run the site
+Run
 
-    forever start ./node_modules/docpad/bin/docpad run --env static
-
-you can run the docpad and the updater at the same time using:
-
-    source scripts/start
-
-and
-
-    source scripts/stop
-
-Open [http://engineering.np.wc1.yellowpages.com:9778/](http://engineering.np.wc1.yellowpages.com:9778/)
-
-### Run the git updater
-
-This little node.js server provide a single end-point: POST /update  
-all it does is 'git pull'
-
-    forever start updater/server
-
-### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
-
-    http://engineering.np.wc1.yellowpages.com:3000/update
+    NODE_ENV=production forever start node_modules/docpad/bin/docpad-server
 
 ### using forever
 
@@ -51,6 +25,7 @@ all it does is 'git pull'
     forever start <script name>
     forever list
     forever stop 0
+    forever stopall
 
 ### pushing to remotes
 
@@ -76,7 +51,26 @@ create a github remote
 
     git remote add github git@git.corp.attinteractive.com:dstools/engineering-website.git
 
-## running as production on heroku
+## Heroku (depricated)
+
+### running as production on heroku
 
     heroku config:add NODE_ENV=production --app engineering-website
     heroku config:add NODE_ENV=production --app stage-engineering-website
+
+### heroku commands
+
+    heroku config -s --app stage-engineering-website
+    heroku config:add BUILDPACK_URL=https://github.com/ddollar/heroku-buildpack-multi.git --app stage-engineering-website
+   
+### Run the git updater
+
+This little node.js server provide a single end-point: POST /update  
+all it does is 'git pull'
+
+    forever start updater/server
+
+### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
+
+    http://engineering.np.wc1.yellowpages.com:3000/update
+
