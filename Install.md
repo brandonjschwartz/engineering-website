@@ -73,5 +73,10 @@ all it does is 'git pull'
 
 ### Add post-recieve url on [github](https://git.corp.attinteractive.com/dstools/engineering-website/edit)
 
+test
+
+    curl -X POST http://engineering.np.wc1.yellowpages.com:3000/update
+
+add on github's post-recieve hooks section
     http://engineering.np.wc1.yellowpages.com:3000/update
 
