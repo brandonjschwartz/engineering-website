@@ -1,5 +1,5 @@
 # YP Engineering Website
-http://engineering-website.herokuapp.com/
+[http://engineering.yp.com](http://engineering.yp.com)
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
 clone this repo, create or modify a post and push it.  
