@@ -120,11 +120,9 @@ what a great [website](http://www.google.com)
     puts cat.miaoo
     ```
 
-```ruby
-require 'kitty'
-cat = Kitty.new("Hello")
-puts cat.miaoo
-```
+    require 'kitty'
+    cat = Kitty.new("Hello")
+    puts cat.miaoo
 
 **line break** (2 spaces after the first line)
 
