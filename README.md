@@ -119,6 +119,7 @@ what a great [website](http://www.google.com)
     cat = Kitty.new("Hello")
     puts cat.miaoo
     ```
+.
 
     require 'kitty'
     cat = Kitty.new("Hello")
