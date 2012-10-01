@@ -27,9 +27,10 @@ if it looks good on your localhost commit and push your changes
     git commit -am "best restaurants"
     git push
 
-You are awesome! 
-An email will be sent to us and we will publish your post http://engineering-website.herokuapp.com as soon as we can.
+now go to your repository on github and sumbit a pull request (hit the 'pull request' button)  
+fill in a title and a comment for the rquest and hit the 'send pull request' button.
 
+That's it! you are awesome.
 
 ## Example for blog post
 
