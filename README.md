@@ -139,6 +139,3 @@ what a great [website](http://www.google.com)
 it uses [DocPad](https://github.com/bevry/docpad) - a site generator that watches
 changes on 'src' folder, and generate a website into 'out' folder.  
 Docpad also run a node server (express.js) that serve the content of 'out' folder.
-
-
-
