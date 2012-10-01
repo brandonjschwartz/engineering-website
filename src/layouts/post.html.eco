@@ -1,0 +1,36 @@
+---
+layout: default
+---
+
+<div class='pull-left span9'>
+  <article class="blog-post">
+    <header class="clearfix">
+      <h1><a href="#" class="title"><%= @document.title %></a></h1>
+      <time>
+        <%= @document.date.toShortDateString() %>
+        <span class='author'>
+          <img src="<%= @document.authorImage %>">
+          <%= @document.authorName %>
+        </span>
+      </time>
+    </header>
+    <section class="body">
+      <%- @content %>
+    </section>
+  </article>
+
+  <footer>
+    <% if  @document.relatedDocuments and @document.relatedDocuments.length: %>
+    <section id="related">
+      <h3>Related Posts</h3>
+      <nav class="linklist">
+        <% for document in @document.relatedDocuments: %>
+          <li><span><%= document.date.toShortDateString() %></span>
+          &raquo;
+          <a href="<%= document.url %>"><%= document.title %></a></li>
+        <% end %>
+      </nav>
+    </section>
+    <% end %>
+  </footer>
+</div>
