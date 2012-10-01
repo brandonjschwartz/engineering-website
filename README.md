@@ -1,17 +1,21 @@
 # YP Engineering Website
-[engineering.yp.com](http://www.engineering.yp.com)
+[engineering.yp.com](http://engineering.yp.com)
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
-Fork the repo, add a blog post and sumbit a pull request.
 
 ## How to add/edit a blog post?
 
-Fork the repo using the **Fork** botton at the top right corner.
+You have 2 options - forking the repo and submiting a pull request or email me a markdown file.
 
-[install node](http://nodejs.org)
+### 1. fork and sumbit pull request
+
+Fork the repo using the **Fork** botton at the top right corner.
 
     git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
     cd engineering-website 
+
+[install node](http://nodejs.org)
+
     npm install # installs all dependencies
     ./scripts/start
 
@@ -28,9 +32,11 @@ if it looks good on your localhost commit and push your changes
     git push
 
 now go to your repository on github and sumbit a pull request (hit the 'pull request' button)  
-fill in a title and a comment for the rquest and hit the 'send pull request' button.
+fill in a title and a comment for the request and hit the 'send pull request' button.
 
-That's it! you are awesome.
+### 2. email me a markdown file
+
+write your blog post using markdown (see example below) and email me - ogolan@yp.com
 
 ## Example for blog post
 
