@@ -11,7 +11,7 @@ You have 2 options - forking the repo and submiting a pull request or email me a
 
 Fork the repo using the **Fork** botton at the top right corner.
 
-    git clone git@git.corp.attinteractive.com:dstools/engineering-website.git  
+    git clone git@github.com/<you>/engineering-website.git
     cd engineering-website 
 
 [install node](http://nodejs.org)
