@@ -2,14 +2,11 @@
 [engineering.yp.com](http://www.engineering.yp.com)
 
 This is our Engineering website. Everyone at YP is welcome to contribute.  
-clone this repo, create or modify a post and push it.  
-we'll get an email and we promise to publish it right away.  
-
-**note: if you can't push this repository, email me - ogolan@yp.com and i'll add you.**
+Fork the repo, add a blog post and sumbit a pull request.
 
 ## How to add/edit a blog post?
 
-You will need to clone the project and run the website on your laptop
+Fork the repo using the **Fork** botton at the top right corner.
 
 [install node](http://nodejs.org)
 
