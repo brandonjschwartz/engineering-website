@@ -1,0 +1,11 @@
+article.blog-post
+  header.clearfix
+    h2
+      a.title(href=post.url) #{post.title}
+    time #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+    a.author(href=post.authorLink, target='_blank')
+      img(src=post.authorImage) 
+      | #{post.authorName}
+
+  section.body
+    != post.content

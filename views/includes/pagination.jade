@@ -1,0 +1,10 @@
+ul.pagination
+
+  - var pages = getPageCount()
+
+  if page > 1
+      a(href=pageUrl(parseInt(page) - 1)) Prev
+
+  if page < pages
+      a(href=pageUrl(parseInt(page) + 1)) Next
+

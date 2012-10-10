@@ -1,0 +1,128 @@
+!!! 5
+html(lang='en')
+head
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
+    link(rel='shortcut icon', href='/img/favicon.png')
+    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.css')
+    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
+    // link(rel='stylesheet', href='/css/normalize.css')
+    link(rel='stylesheet', href='/css/font-awesome.css')
+    link(rel='stylesheet', href='/css/engineering.css')
+    // link(rel='stylesheet', href='/css/layout.css')
+    link(rel='stylesheet', href='/css/prettify.css')
+    link(href='/vendor/lightbox2/css/lightbox.css', rel='stylesheet')
+    title
+    //if lt IE 9
+      script
+        // Help IE < 9 understand HTML5 tags
+        (function() {
+        var html5_tags = ["article", "section", "time", "header", "footer"];
+        for (var i=0; i < html5_tags.length; i++) {
+        document.createElement(html5_tags[i]);
+        }
+        }).call(this);
+    script(type='text/javascript')
+      // Auto hide the address bar on Mobile Safari
+      window.addEventListener("load",function() {
+      setTimeout(function(){
+      window.scrollTo(0, 1);
+      }, 0);
+      });
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34877454-1']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+  body
+    header.navbar
+      .navbar-inner
+        .container
+          a#yp-brand.brand(href='/')
+            img(src='/img/logo.png')
+            span Engineering
+          ul.nav.pull-right
+            li
+              a(target='_blank', href='http://www.youtube.com/user/yptechtalks') TechTalks
+            li
+              a(target='_blank', href='http://corporate.yp.com/careers/') Careers
+
+    #hero
+      .image-container
+        img(src='http://i.imgur.com/G5aVQ.png')
+      .caption
+        span Hackathon 2012
+        span.right Casual dress code
+
+    // Main content 
+    #site-content-body.container
+      .row-fluid
+        .pull-left.span9
+          block content
+        .pull-right.span3.sidebar
+          h3 Life @ YP
+          .image-grid
+            a(target='_blank', rel='lightbox[a]', title='hackaty hack!', href='http://i.imgur.com/nAoul.jpg')
+              img(src='http://i.imgur.com/vnTcl.jpg')
+            a(target='_blank', rel='lightbox[a]', title='pizza time', href='http://i.imgur.com/PbIdQ.jpg')
+              img(src='http://i.imgur.com/VWpUV.jpg')
+            a(target='_blank', rel='lightbox[a]', title='LA Ruby Meetup', href='http://i.imgur.com/sAxiL.jpg')
+              img(src='http://i.imgur.com/HMXUb.jpg')
+            a(target='_blank', rel='lightbox[a]', title='Mark and Clarke', href='http://i.imgur.com/4o90R.jpg')
+              img(src='http://i.imgur.com/1bl3F.jpg')
+            a(target='_blank', rel='lightbox[a]', title='Ricco and Alex', href='http://i.imgur.com/anTPT.jpg')
+              img(src='http://i.imgur.com/7Bjom.jpg')
+            a(target='_blank', rel='lightbox[a]', title='Win', href='http://i.imgur.com/1CqMG.jpg')
+              img(src='http://i.imgur.com/HWWiN.jpg')
+            a(target='_blank', rel='lightbox[a]', title='Race', href='http://i.imgur.com/V8A4K.jpg')
+              img(src='http://i.imgur.com/oMXXh.jpg')
+            a(target='_blank', rel='lightbox[a]', title='Habitat for Humanity', href='http://i.imgur.com/Y6B3C.jpg')
+              img(src='http://i.imgur.com/CbXxh.jpg')
+            a(target='_blank', rel='lightbox[a]', title='lunch', href='http://i.imgur.com/Y6Oso.jpg')
+              img(src='http://i.imgur.com/wyXS0.jpg')
+          h3 Contact Us
+          ul#social-networks.unstyled
+            li
+              i.icon-twitter
+              a(target='_blank', href='https://twitter.com/YP') Twitter
+            li
+              i.icon-facebook
+              a(target='_blank', href='https://www.facebook.com/YP') Facebook
+            li
+              i.icon-linkedin
+              a(target='_blank', href='http://www.linkedin.com/company/yp') Linkedin
+            li
+              i.icon-github
+              a(target='_blank', href='https://github.com/yp-engineering') Github
+
+
+    // Footer
+    footer.footer
+      .container
+        p.pull-right
+          a(href='#') Back to top
+        ul.unstyled
+          li
+            a(target='_blank', href='http://www.att.com/gen/privacy-policy?pid=2506') Privacy Policy
+            | |
+            a(target='_blank', href='http://corporate.yp.com/news/press-and-media/') Press and Media
+            | |
+            a(target='_blank', href='http://corporate.yp.com/careers/') Careers
+            | |
+            a(target='_blank', href='http://corporate.yp.com/about/contact-us/') Contact Us
+          li © 2012 YP Intellectual Property, LLC. All rights reserved.
+
+    script(src='http://code.jquery.com/jquery-1.8.1.min.js')
+    script(src='/vendor/lightbox2/js/lightbox.js')
+    script(src='/js/jquery.sharrre.js')
+    script(src='/js/jquery.tweet.js')
+    script(src='/js/jquery.ghRepo.js')
+    script(src='/js/prettify.js')
+    script(src='/js/ui.js')
+
+
