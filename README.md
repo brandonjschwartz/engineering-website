@@ -21,9 +21,9 @@ Fork the repo using the **Fork** botton at the top right corner.
 
 Open [http://localhost:9778/](http://localhost:9778/) to view the website
 
-Create or edit a blog post. all posts are in src/documents/posts
+Create or edit a blog post. all posts are in _posts
     
-    touch src/documents/posts/best-restaurants.html.md
+    touch _posts/best-restaurants.html.md
 
 if it looks good on your localhost commit and push your changes
 
@@ -133,9 +133,3 @@ what a great [website](http://www.google.com)
 
     hello  
     world
-
-## How does it work?
-
-it uses [DocPad](https://github.com/bevry/docpad) - a site generator that watches
-changes on 'src' folder, and generate a website into 'out' folder.  
-Docpad also run a node server (express.js) that serve the content of 'out' folder.
