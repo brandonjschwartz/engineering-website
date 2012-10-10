@@ -65,26 +65,17 @@ head
         .pull-left.span9
           block content
         .pull-right.span3.sidebar
-          h3 Life @ YP
-          .image-grid
-            a(target='_blank', rel='lightbox[a]', title='hackaty hack!', href='http://i.imgur.com/nAoul.jpg')
-              img(src='http://i.imgur.com/vnTcl.jpg')
-            a(target='_blank', rel='lightbox[a]', title='pizza time', href='http://i.imgur.com/PbIdQ.jpg')
-              img(src='http://i.imgur.com/VWpUV.jpg')
-            a(target='_blank', rel='lightbox[a]', title='LA Ruby Meetup', href='http://i.imgur.com/sAxiL.jpg')
-              img(src='http://i.imgur.com/HMXUb.jpg')
-            a(target='_blank', rel='lightbox[a]', title='Mark and Clarke', href='http://i.imgur.com/4o90R.jpg')
-              img(src='http://i.imgur.com/1bl3F.jpg')
-            a(target='_blank', rel='lightbox[a]', title='Ricco and Alex', href='http://i.imgur.com/anTPT.jpg')
-              img(src='http://i.imgur.com/7Bjom.jpg')
-            a(target='_blank', rel='lightbox[a]', title='Win', href='http://i.imgur.com/1CqMG.jpg')
-              img(src='http://i.imgur.com/HWWiN.jpg')
-            a(target='_blank', rel='lightbox[a]', title='Race', href='http://i.imgur.com/V8A4K.jpg')
-              img(src='http://i.imgur.com/oMXXh.jpg')
-            a(target='_blank', rel='lightbox[a]', title='Habitat for Humanity', href='http://i.imgur.com/Y6B3C.jpg')
-              img(src='http://i.imgur.com/CbXxh.jpg')
-            a(target='_blank', rel='lightbox[a]', title='lunch', href='http://i.imgur.com/Y6Oso.jpg')
-              img(src='http://i.imgur.com/wyXS0.jpg')
+          h3 Filter By Category
+            ul
+              li
+                a(href=tagUrl('tech')) #{'Tech'}
+              li
+                a(href=tagUrl('product')) #{'Product'}
+              li
+                a(href=tagUrl('culture')) #{'Culture'}
+              li
+                a(href=tagUrl('people')) #{'People'}
+
           h3 Contact Us
           ul#social-networks.unstyled
             li
