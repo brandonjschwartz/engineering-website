@@ -1,8 +1,10 @@
+- function monthInWord(num) { var monthNames = [ "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December" ]; return monthNames[num] }
+
 article.blog-post
   header.clearfix
     h2
       a.title(href=post.url) #{post.title}
-    time #{post.date.getMonth()+1}.#{post.date.getDate()}.#{post.date.getFullYear()}
+    time #{monthInWord(post.date.getMonth())} #{post.date.getDate()}, #{post.date.getFullYear()}
     a.author(href=post.authorLink, target='_blank')
       img(src=post.authorImage) 
       | #{post.authorName}
