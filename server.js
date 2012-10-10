@@ -40,4 +40,3 @@ function notFoundFn ( req, res ) {
 }
 
 console.log('Server listening on port ' + '3000');
-console.log('Environment: ' + process.env.NODE_ENV);

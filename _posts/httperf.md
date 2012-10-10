@@ -1,12 +1,12 @@
 {{{
   "title" : "Performance Testing with Httperf",
+  "authorName": "Josh",
+  "authorLink": "http://github.com/jmervine",
+  "authorImage": "https://secure.gravatar.com/avatar/ed808193b8c2c8516715816f90a005b2?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
   "tags" : [ "tech" ],
   "date" : "9-18-2012"
 }}}
 
-  "authorName": "Josh",
-  "authorLink": "http://github.com/jmervine",
-  "authorImage": "https://secure.gravatar.com/avatar/ed808193b8c2c8516715816f90a005b2?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
 
 ### Introduction
 

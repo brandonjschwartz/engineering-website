@@ -1,12 +1,11 @@
 {{{
   "title" : "Screen Cheatsheet",
+  "authorName": "min",
+  "authorLink": "https://github.com/retiman",
+  "authorImage": "https://secure.gravatar.com/avatar/cf4e42d9d740e60fd29c039d4a8805c9?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
   "tags" : [ "tech" ],
   "date" : "9-19-2012"
 }}}
-
-  "authorName: "min",
-  "authorLink: "https://github.com/retiman",
-  "authorImage: "https://secure.gravatar.com/avatar/cf4e42d9d740e60fd29c039d4a8805c9?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
 
 Here's my screen cheat sheet. It's simultaneous incredibly useful and ridiculous to configure.  
 Actually reminds me of my other favorite tool with this syndrome: vim.

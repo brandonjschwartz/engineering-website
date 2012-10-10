@@ -1,15 +1,13 @@
 {{{
   "title" : "Ruby Meetup",
+  "authorName": "Alf",
+  "authorLink": "https://github.com/amikula",
+  "authorImage": "https://secure.gravatar.com/avatar/cad7410d6634edd4174b277027830790?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
   "tags" : [ "culture" ],
   "date" : "9-17-2012"
 }}}
 
-  "authorName: "Alf",
-  "authorLink: "https://github.com/amikula",
-  "authorImage: "https://secure.gravatar.com/avatar/cad7410d6634edd4174b277027830790?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
-
 ![meetup](http://i.imgur.com/sAxiL.jpg)
-
 
 On Thursday, October 11, 2012 we will be hosting the monthly Ruby meetup at our office in Glendale.  
 Come hungry and enjoy great food and awesome hackers!

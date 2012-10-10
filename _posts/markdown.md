@@ -1,12 +1,11 @@
 {{{
   "title" : "Preview markdown files locally",
+  "authorName": "Oren",
+  "authorLink": "https://github.com/oren",
+  "authorImage": "https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
   "tags" : [ "tech" ],
   "date" : "9-15-2012"
 }}}
-
-  "authorName: "Oren",
-  "authorLink: "https://github.com/oren",
-  "authorImage": "https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png"
 
 I don't like to push my markdown files to github every time i make a change, just to realize 
 I forgot a space or something tiny like that.. and my 'git log' is cluttered with 'readme' commits.    
