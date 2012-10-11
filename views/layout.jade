@@ -66,17 +66,17 @@ head
           block content
         .pull-right.span3.sidebar
           h3 Filter By Category
-            ul
-              li
-                a(href=tagUrl('tech')) #{'Tech'}
-              li
-                a(href=tagUrl('product')) #{'Product'}
-              li
-                a(href=tagUrl('culture')) #{'Culture'}
-              li
-                a(href=tagUrl('people')) #{'People'}
+          ul.categories
+            li.tech
+              a(href=tagUrl('tech')) #{'Tech'}
+            li.product
+              a(href=tagUrl('product')) #{'Product'}
+            li.culture
+              a(href=tagUrl('culture')) #{'Culture'}
+            li.people
+              a(href=tagUrl('people')) #{'People'}
 
-          h3 Contact Us
+          h3.contact Contact Us
           ul#social-networks.unstyled
             li
               i.icon-twitter
@@ -96,7 +96,7 @@ head
     footer.footer
       .container
         p.pull-right
-          a(href='#') Back to top
+          a.back-to-top(href='#') Back to top
         ul.unstyled
           li
             a(target='_blank', href='http://www.att.com/gen/privacy-policy?pid=2506') Privacy Policy

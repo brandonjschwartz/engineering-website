@@ -162,3 +162,73 @@ pre {
 article header a {
   margin-left: 10px;
 }
+
+.sidebar .contact {
+  margin-top: 30px;
+}
+
+.sidebar ul {
+  list-style-type: none;  
+  margin-left: 0;
+}
+
+.categories li {
+  padding-left: 40px;
+  padding-bottom: 20px;
+  /* padding-top: 10px; */
+  line-height: 30px;
+}
+
+.sidebar ul li{
+  /* padding-left: 40px; */
+  -webkit-background-size: 30px auto !important;
+  -moz-background-size: 30px auto !important;
+  background-size: 30px auto !important;
+}
+
+.sidebar .tech {
+  background: url(../img/tag-tech.png) no-repeat 0 0;
+}
+
+.sidebar .product {
+  background: url(../img/tag-product.png) no-repeat 0 0;
+}
+
+.sidebar .culture {
+  background: url(../img/tag-culture.png) no-repeat 0 0;
+}
+
+.sidebar .people {
+  background: url(../img/tag-people.png) no-repeat 0 0;
+}
+
+/* ipad landscape */
+@media (max-width: 1024px) {
+  .container { width: 100%; }
+  #site-content-body .span9 {
+    width: 80%;
+  }
+  #site-content-body .span3 {
+    width: 15%;
+  }
+  .sidebar h3 {
+    font-size: 20px;
+  }
+}
+
+/* ipad portrait */
+@media (max-width: 768px) {
+}
+
+/* smartphones */
+@media (max-width: 600px) {
+  #hero { display: none; }
+  article header h2 {font-size: 24px; }
+  #site-content-body .span9 { width: 100%; }
+  #site-content-body .span3 { width: 0%; }
+  .sidebar h3 { display: none;}
+  .sidebar ul { display: none;}
+  .pagination { margin-left: 20px; }
+  .back-to-top {margin-right: 20px; }
+}
+
