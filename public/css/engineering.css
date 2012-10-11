@@ -8,6 +8,7 @@ body {
   font-size: 100%;
   font-weight: 200;
   color: #333;
+  overflow-x: hidden;
 }
 
 a {
@@ -21,17 +22,16 @@ a {
 /*   color: #0f0; */
 /* } */
 .container {
-  width: 1000px;
   margin: 0 auto;
 }
 .navbar .navbar-inner {
   border-radius: 0;
   background: #fff;
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding: 5px 0;
 }
-.navbar .container {
-  width: 1000px;
+.navbar .navbar-inner  .container {
+  width: 76%;
+  margin: 0 auto;
 }
 .navbar .nav {
   margin: 4px 0 0;
@@ -43,6 +43,12 @@ a {
   padding: 5px 12px;
   border-radius: 5px;
 }
+
+.footer .container {
+  width: 76%;
+  margin: 0 auto;
+}
+
 #yp-brand {
   float: left;
   padding: 0;
@@ -61,6 +67,7 @@ a {
 }
 #site-content-body {
   margin-top: 30px;
+  width: 76%
 }
 #site-content-body .span9 {
   width: 73%;
@@ -124,14 +131,14 @@ a {
 #hero {
   border-radius: 5px;
   margin: 0 auto;
-  width: 1000px;
+  width: 76%;
   background: #fff;
-  height: 200px;
   overflow: hidden;
   position: relative;
 }
 #hero img {
   display: block;
+  width: 100%
 }
 #hero .caption {
   position: absolute;
@@ -186,7 +193,7 @@ article header a {
   background-size: 30px auto !important;
 }
 
-.sidebar .tech {
+.sidebar .tech, .tag-tech {
   background: url(../img/tag-tech.png) no-repeat 0 0;
 }
 
@@ -204,10 +211,7 @@ article header a {
 
 /* ipad landscape */
 @media (max-width: 1024px) {
-  .container { width: 100%; }
-  header.navbar {
-    margin-bottom: 0px;
-  }
+  #hero { height: auto  }
   #site-content-body .span9 {
     width: 80%;
   }
@@ -228,16 +232,19 @@ article header a {
 
 /* smartphones */
 @media (max-width: 600px) {
+  .navbar .navbar-inner .container { width: 100% }
   #hero { display: none; }
   article header h2 {font-size: 24px; }
   #site-content-body .span9 { width: 100%; }
   #site-content-body .span3 { width: 0%; }
-  .sidebar h3 { display: none;}
-  .sidebar ul { display: none;}
+  #site-content-body { width: 100% }
+  #site-content-body .sidebar { display: none; }
   .pagination { margin-left: 20px; }
   .back-to-top {margin-right: 20px; }
   .blog-post {
     margin-bottom: 10px;
+    border-radius: 0;
+    box-shadow: 0 0 0;
   }
 }
 
