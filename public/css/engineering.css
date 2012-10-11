@@ -9,7 +9,7 @@ body {
   font-weight: 200;
   color: #333;
 }
-}
+
 a {
   color: #399dd8;
   outline: none;
@@ -205,6 +205,9 @@ article header a {
 /* ipad landscape */
 @media (max-width: 1024px) {
   .container { width: 100%; }
+  header.navbar {
+    margin-bottom: 0px;
+  }
   #site-content-body .span9 {
     width: 80%;
   }
@@ -218,6 +221,9 @@ article header a {
 
 /* ipad portrait */
 @media (max-width: 768px) {
+  #site-content-body {
+    margin-top: 10px;
+  }
 }
 
 /* smartphones */
@@ -230,5 +236,8 @@ article header a {
   .sidebar ul { display: none;}
   .pagination { margin-left: 20px; }
   .back-to-top {margin-right: 20px; }
+  .blog-post {
+    margin-bottom: 10px;
+  }
 }
 
