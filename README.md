@@ -7,7 +7,7 @@ This is our Engineering website. Everyone at YP is welcome to contribute.
 
 You have 2 options - forking the repo and submiting a pull request or email me a markdown file.
 
-### 1. fork and sumbit pull request
+### 1. Fork and submit pull request
 
 Fork the repo using the **Fork** botton at the top right corner.
 
