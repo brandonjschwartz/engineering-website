@@ -140,4 +140,5 @@ I don't claim to be an expert in this area (**AT ALL**), however, here a few thi
 3. Generating load from an external connection can be good to test your overall network latency, but be sure your starting point connection can handle large amounts of traffic. For example, generating 100,000 connections at 100QPS from a Cable or DSL line probably isn't the best idea.
 1. Oh and **don't performance test against production!**
 
+> Note: This post was cross-posted from the [RubyOps.net blog entry by the same name](http://www.rubyops.net/performance-testing-with-httperf).
 
