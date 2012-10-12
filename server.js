@@ -1,10 +1,9 @@
-var
-  express  = require( 'express' ),
-  app      = express(),
-  poet     = require( 'poet' )( app );
+var express  = require( 'express' );
+var app      = express();
+var poet     = require( 'poet' )( app );
 
 poet.set({
-  postsPerPage : 3,
+  postsPerPage : 10,
   posts        : __dirname + '/_posts',
   metaFormat   : 'json'
 }).createPostRoute( '/post/:post', 'post' )
