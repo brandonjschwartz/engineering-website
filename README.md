@@ -17,7 +17,7 @@ Fork the repo using the **Fork** botton at the top right corner.
 [install node](http://nodejs.org)
 
     npm install # installs all dependencies
-    ./scripts/start
+    node server.js # run the site locally
 
 Open [http://localhost:9778/](http://localhost:9778/) to view the website
 
@@ -42,14 +42,15 @@ write your blog post using markdown (see example below) and email me - ogolan@yp
 
 We use markdown for writing blog posts.
 
-    ---
-    date: 2012-09-13
-    title: The best restaurants in Glendale
-    authorLink: 'https://github.com/oren'
-    authorName: 'oren'
-    authorImage: 'https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png'
-    layout: post
-    ---
+
+    {{{
+      "title" : "Best places to eat in Glendale",
+      "authorName": "Oren",
+      "authorLink": "https://github.com/oren",
+      "authorImage": "https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+      "tags" : [ "culture" ],
+      "date" : "9-13-2012"
+    }}}
 
     After many months of eating, hours of analyzing hundreds of dishes, 
     and untold numbers of discussions, we have compiled a list of the most compelling places to dine in Glendale—and beyond. 

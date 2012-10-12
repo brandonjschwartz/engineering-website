@@ -28,7 +28,7 @@ app.configure( 'production', function () {
 
 require( './routes' )( app );
 
-app.listen( 3000 );
+app.listen( 9778 );
 
 function notFoundFn ( req, res ) {
   if ( req.accepts( 'html' )) {
@@ -38,4 +38,4 @@ function notFoundFn ( req, res ) {
   }
 }
 
-console.log('Server listening on port ' + '3000');
+console.log('Server listening on port ' + '9778');
