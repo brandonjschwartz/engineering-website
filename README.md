@@ -117,14 +117,15 @@ what a great [website](http://www.google.com)
 
 ![image](http://www.welaf.com/uploads/201007/20/imgs/1279673882_miserable-life-of-a-small-cat.jpg)
 
-**code:**
+**code:** (4 spaces or 2 tabs)
 
-    ```ruby
+<pre>
     require 'kitty'
     cat = Kitty.new("Hello")
     puts cat.miaoo
-    ```
-.
+</pre>
+
+(it's not showing here, but there is also automatic syntax highlight)
 
     require 'kitty'
     cat = Kitty.new("Hello")
