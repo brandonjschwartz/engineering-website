@@ -1,8 +1,7 @@
 extends layout
 
-
 block content
   - function capitalize(str){ return str.charAt(0).toUpperCase() + str.slice(1); }
-  h4 #{capitalize(tag)} category
+  .category-title #{capitalize(tag)} category
   - each post in posts
     include includes/post

@@ -227,6 +227,15 @@ article header a {
   margin-right: 20px;
 }
 
+.category-title {
+  /* background: url(../img/tag-tech.png) no-repeat 0 0; */
+  /* -webkit-background-size: 30px auto !important; */
+  /* -moz-background-size: 30px auto !important; */
+  /* background-size: 30px auto !important; */
+  margin-bottom: 10px;
+  color: #399DD8;
+}
+
 /* ipad portrait */
 @media (max-width: 768px) {
   #site-content-body {
