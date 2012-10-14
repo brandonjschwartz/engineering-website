@@ -5,9 +5,9 @@ html(lang='en')
     - if (typeof post !== "undefined" && post.title !== "undefined")
       title= post.title
     - else if (typeof tag !== "undefined")
-      title= tag + ' | YP Engineering'
+      title= capitalize(tag) + ' | YP Engineering'
     - else if (typeof category !== "undefined")
-      title= category + ' | YP Engineering'
+      title= capitalize(category) + ' | YP Engineering'
     - else if (typeof title !== "undefined" )
       title= title
     - else
@@ -58,7 +58,6 @@ html(lang='en')
       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
-
   body
     header.navbar
       .navbar-inner
