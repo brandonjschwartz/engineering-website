@@ -1,6 +1,4 @@
 $(function () {
-  console.log('hi');
-
   function monthInWord(num) { 
     var monthNames = [ 
       "January", 
