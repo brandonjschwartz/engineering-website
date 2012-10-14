@@ -1,47 +1,63 @@
 !!! 5
 html(lang='en')
-head
-  meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-  meta(charset='utf-8')
-  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
-  link(rel='shortcut icon', href='/img/favicon.png')
+  head
+    //- Output page title
+    - if (typeof post !== "undefined" && post.title !== "undefined")
+      title= post.title
+    - else if (typeof tag !== "undefined")
+      title= tag + ' | YP Engineering'
+    - else if (typeof category !== "undefined")
+      title= category + ' | YP Engineering'
+    - else if (typeof title !== "undefined" )
+      title= title
+    - else
+      title= 'Home | YP Engineering'
 
-  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.min.css')
-  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
+    meta(name='description', content='Yellow Pages Engineering Website')
+    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
+    link(rel='shortcut icon', href='/img/favicon.png')
 
-  - if (settings.env == 'development')
-    link(rel='stylesheet', href='/css/font-awesome.css')
-    link(rel='stylesheet', href='/css/engineering.css')
-    link(rel='stylesheet', href='/css/prettify.css')
-  - else
-    link(rel='stylesheet', href='/css/site.css')
+    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
 
-  title Home | YP Engineering
-  //if lt IE 9
-    script
-      // Help IE < 9 understand HTML5 tags
+    - if (settings.env == 'development')
+      link(rel='stylesheet', href='/css/font-awesome.css')
+      link(rel='stylesheet', href='/css/engineering.css')
+      link(rel='stylesheet', href='/css/prettify.css')
+    - else
+      link(rel='stylesheet', href='/css/site.css')
+
+    //if lt IE 9
+      script
+        // Help IE < 9 understand HTML5 tags
+        (function() {
+        var html5_tags = ["article", "section", "time", "header", "footer"];
+        for (var i=0; i < html5_tags.length; i++) {
+        document.createElement(html5_tags[i]);
+        }
+        }).call(this);
+
+    script(src='http://code.jquery.com/jquery-1.8.1.min.js')
+    script(src='/js/app.js')
+
+    script(type='text/javascript')
+      // Auto hide the address bar on Mobile Safari
+      window.addEventListener("load",function() {
+        setTimeout(function(){
+          window.scrollTo(0, 1);
+        }, 0);
+      });
+    script(type='text/javascript')
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-34877454-1']);
+      _gaq.push(['_trackPageview']);
       (function() {
-      var html5_tags = ["article", "section", "time", "header", "footer"];
-      for (var i=0; i < html5_tags.length; i++) {
-      document.createElement(html5_tags[i]);
-      }
-      }).call(this);
-  script(type='text/javascript')
-    // Auto hide the address bar on Mobile Safari
-    window.addEventListener("load",function() {
-      setTimeout(function(){
-        window.scrollTo(0, 1);
-      }, 0);
-    });
-  script(type='text/javascript')
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-34877454-1']);
-    _gaq.push(['_trackPageview']);
-    (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-    })();
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
 
   body
     header.navbar
@@ -113,12 +129,8 @@ head
           li © 2012 YP Intellectual Property, LLC. All rights reserved.
 
 
-    script(src='http://code.jquery.com/jquery-1.8.1.min.js')
 
     - if (settings.env == 'development')
       script(src='/js/prettify.js')
     - else
       script(src='/js/site.min.js')
-
-
-
