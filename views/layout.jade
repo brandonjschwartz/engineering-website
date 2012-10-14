@@ -1,44 +1,45 @@
 !!! 5
 html(lang='en')
 head
-    meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
-    meta(charset='utf-8')
-    meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
-    link(rel='shortcut icon', href='/img/favicon.png')
-    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.css')
-    link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
-    // link(rel='stylesheet', href='/css/normalize.css')
-    link(rel='stylesheet', href='/css/font-awesome.css')
-    link(rel='stylesheet', href='/css/engineering.css')
-    // link(rel='stylesheet', href='/css/layout.css')
-    link(rel='stylesheet', href='/css/prettify.css')
-    link(href='/vendor/lightbox2/css/lightbox.css', rel='stylesheet')
-    title Home | YP Engineering
-    //if lt IE 9
-      script
-        // Help IE < 9 understand HTML5 tags
-        (function() {
-        var html5_tags = ["article", "section", "time", "header", "footer"];
-        for (var i=0; i < html5_tags.length; i++) {
-        document.createElement(html5_tags[i]);
-        }
-        }).call(this);
-    script(type='text/javascript')
-      // Auto hide the address bar on Mobile Safari
-      window.addEventListener("load",function() {
-      setTimeout(function(){
-      window.scrollTo(0, 1);
-      }, 0);
-      });
-    script(type='text/javascript')
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34877454-1']);
-      _gaq.push(['_trackPageview']);
+  meta(http-equiv='Content-Type', content='text/html; charset=UTF-8')
+  meta(charset='utf-8')
+  meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
+  link(rel='shortcut icon', href='/img/favicon.png')
+  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.css')
+  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
+  // link(rel='stylesheet', href='/css/normalize.css')
+  link(rel='stylesheet', href='/css/font-awesome.css')
+  link(rel='stylesheet', href='/css/engineering.css')
+  // link(rel='stylesheet', href='/css/layout.css')
+  link(rel='stylesheet', href='/css/prettify.css')
+  link(href='/vendor/lightbox2/css/lightbox.css', rel='stylesheet')
+  title Home | YP Engineering
+  //if lt IE 9
+    script
+      // Help IE < 9 understand HTML5 tags
       (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
+      var html5_tags = ["article", "section", "time", "header", "footer"];
+      for (var i=0; i < html5_tags.length; i++) {
+      document.createElement(html5_tags[i]);
+      }
+      }).call(this);
+  script(type='text/javascript')
+    // Auto hide the address bar on Mobile Safari
+    window.addEventListener("load",function() {
+      setTimeout(function(){
+        window.scrollTo(0, 1);
+      }, 0);
+    });
+  script(type='text/javascript')
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-34877454-1']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
   body
     header.navbar
       .navbar-inner
