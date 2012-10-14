@@ -11,9 +11,8 @@ module.exports = function(grunt) {
     cssmin : {
       dist : {
         src: [
-          'public/css/normalize.css',
-          'public/css/layout.css',
           'public/css/font-awesome.css',
+          'public/css/engineering.css',
           'public/css/prettify.css'
         ],
         dest: 'public/css/site.css'
@@ -28,7 +27,6 @@ module.exports = function(grunt) {
     concat: {
       dist: {
         src: [
-          'public/js/jquery.js',
           'public/js/jquery.sharrre.js',
           'public/js/jquery.tweet.js',
           'public/js/jquery.ghRepo.js',

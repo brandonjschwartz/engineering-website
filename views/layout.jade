@@ -5,14 +5,17 @@ head
   meta(charset='utf-8')
   meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
   link(rel='shortcut icon', href='/img/favicon.png')
-  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.css')
+
+  link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.min.css')
   link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
-  // link(rel='stylesheet', href='/css/normalize.css')
-  link(rel='stylesheet', href='/css/font-awesome.css')
-  link(rel='stylesheet', href='/css/engineering.css')
-  // link(rel='stylesheet', href='/css/layout.css')
-  link(rel='stylesheet', href='/css/prettify.css')
-  link(href='/vendor/lightbox2/css/lightbox.css', rel='stylesheet')
+
+  - if (settings.env == 'development')
+    link(rel='stylesheet', href='/css/font-awesome.css')
+    link(rel='stylesheet', href='/css/engineering.css')
+    link(rel='stylesheet', href='/css/prettify.css')
+  - else
+    link(rel='stylesheet', href='/css/site.css')
+
   title Home | YP Engineering
   //if lt IE 9
     script
@@ -109,12 +112,17 @@ head
             a(target='_blank', href='http://corporate.yp.com/about/contact-us/') Contact Us
           li © 2012 YP Intellectual Property, LLC. All rights reserved.
 
+
     script(src='http://code.jquery.com/jquery-1.8.1.min.js')
-    script(src='/vendor/lightbox2/js/lightbox.js')
-    script(src='/js/jquery.sharrre.js')
-    script(src='/js/jquery.tweet.js')
-    script(src='/js/jquery.ghRepo.js')
-    script(src='/js/prettify.js')
-    script(src='/js/ui.js')
+
+    - if (settings.env == 'development')
+      script(src='/js/jquery.sharrre.js')
+      script(src='/js/jquery.tweet.js')
+      script(src='/js/jquery.ghRepo.js')
+      script(src='/js/prettify.js')
+      script(src='/js/ui.js')
+    - else
+      script(src='/js/site.min.js')
+
 
 
