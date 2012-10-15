@@ -13,12 +13,10 @@ So you've been using [jQuery](http://jquery.com) as your Javascript framework an
 The basic formula to create a jQuery plugin is to extend the plugin namespace with a single method:
 
 
-<pre>
-#myplugin.js
-jQuery.fn.myplugin = function(){
-  // Do some cool stuff here
-}
-</pre>
+    #myplugin.js
+    jQuery.fn.myplugin = function(){
+      // Do some cool stuff here
+    }
 
 While that seems all fine and dandy for simple plugins, you may need to create more robust plugins that do many things, often in a non-linear fashion.
 
