@@ -21,7 +21,7 @@ module.exports = function(grunt) {
     stylus: {
       compile : {
         files : {
-          'public/css/layout.css' : 'public/styles/*.styl'
+          'public/css/site.css' : 'public/styles/*.styl'
         }
       }
     },
@@ -29,7 +29,7 @@ module.exports = function(grunt) {
       dist : {
         src: [
           'public/css/font-awesome.css',
-          'public/css/engineering.css',
+          'public/css/site.css',
           'public/css/prettify.css'
         ],
         dest: 'public/css/production.css'
