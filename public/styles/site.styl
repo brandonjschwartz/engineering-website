@@ -37,11 +37,6 @@ a
   border-radius: 5px;
 }
 
-#footer .container {
-  width: 76%;
-  margin: 0 auto;
-}
-
 #yp-brand {
   float: left;
   padding: 0;
@@ -159,13 +154,11 @@ pre {
   font-size: 0.9em;
 }
 
-#footer li a {
-  margin: 0px 5px 0px 5px;
-}
+article header a 
+  margin-left 10px
 
-article header a {
-  margin-left: 10px;
-}
+article header time 
+  font-size 14px
 
 .sidebar .contact {
   margin-top: 30px;
@@ -206,42 +199,43 @@ article header a {
   background: url(../img/tag-people.png) no-repeat 0 0;
 }
 
+#footer
+  padding 10px 0
+  .container 
+    width 76%
+    margin 0 auto
+  li a 
+    margin: 0px 5px 0px 5px;
+
 /* ipad landscape */
-@media (max-width: 1024px) {
-  #hero { height: auto  }
-  #site-content-body .span9 {
-    width: 80%;
-  }
-  #site-content-body .span3 {
-    width: 15%;
-  }
-  .sidebar h3 {
-    font-size: 20px;
-  }
-}
+@media (max-width: 1024px) 
+  #hero height auto  
+  #site-content-body .span9 
+    width 80%
+  
+  #site-content-body .span3 
+    width 15%;
+  
+  .sidebar h3 
+    font-size 20px
 
-.pagination .prev {
-  margin-right: 20px;
-}
+.pagination .prev 
+  margin-right 20px
 
-.category-title {
-  margin-bottom: 10px;
-  color: #399DD8;
-}
+.category-title 
+  margin-bottom 10px
+  color #399DD8
 
 /* ipad portrait */
-@media (max-width: 768px) {
-  #site-content-body {
-    margin-top: 10px;
-  }
-  .sidebar h3 {
-    font-size: 16px;
-  }
-  #social-networks i {
-    display: none;
-    /* font-size: 12px; */
-  }
-}
+@media (max-width: 768px) 
+  #site-content-body 
+    margin-top 10px
+  
+  .sidebar h3 
+    font-size 16px
+  
+  #social-networks i 
+    display none
 
 /* smartphones */
 @media (max-width: 600px) 

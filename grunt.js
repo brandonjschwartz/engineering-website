@@ -50,6 +50,10 @@ module.exports = function(grunt) {
         src : 'public/js/production.js',
         dest : 'public/js/production.min.js'
       }
+    },
+    watch: {
+      files: ['public/styles/*.styl'],
+      tasks: 'stylus'
     }
   });
 

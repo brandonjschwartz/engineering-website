@@ -34,10 +34,6 @@ a {
   padding: 5px 12px;
   border-radius: 5px;
 }
-#footer .container {
-  width: 76%;
-  margin: 0 auto;
-}
 #yp-brand {
   float: left;
   padding: 0;
@@ -153,11 +149,11 @@ pre {
   padding: 10px;
   font-size: 0.9em;
 }
-#footer li a {
-  margin: 0px 5px 0px 5px;
-}
 article header a {
   margin-left: 10px;
+}
+article header time {
+  font-size: 14px;
 }
 .sidebar .contact {
   margin-top: 30px;
@@ -191,11 +187,19 @@ article header a {
 .sidebar .people {
   background: url("../img/tag-people.png") no-repeat 0 0;
 }
+#footer {
+  padding: 10px 0;
+}
+#footer .container {
+  width: 76%;
+  margin: 0 auto;
+}
+#footer li a {
+  margin: 0px 5px 0px 5px;
+}
 /* ipad landscape */
 @media (max-width: 1024px) {
-  #hero {
-    height: auto;
-  }
+  #hero height auto,
   #site-content-body .span9 {
     width: 80%;
   }
@@ -223,7 +227,6 @@ article header a {
   }
   #social-networks i {
     display: none;
-/* font-size: 12px; */
   }
 }
 /* smartphones */
