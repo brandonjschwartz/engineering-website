@@ -12,23 +12,23 @@ Just in case you find yourself in any of the locations below...
 
 Shanghai, Sep 14-16  
 first node conference in China  
-http://www.hujs.org/  
+[http://www.hujs.org/](http://www.hujs.org/)  
 
 Berlin, Oct 5  
 hacking on drones - each team gets http://ardrone2.parrot.com/ and hack for a day!  
-http://nodecopter.com/  
+[http://nodecopter.com/](http://nodecopter.com/)
 
 Dublin, Oct 18-19  
-http://www.nodedublin.com/  
+[http://www.nodedublin.com/](http://www.nodedublin.com/)
 
 NY, Oct 22   
-http://empirejs.org/  
+[http://empirejs.org/](http://empirejs.org/)
 
 Portland, Oct 23-24  
 keeping it realtime conference   
-http://krtconf.com/  
+[http://krtconf.com](http://krtconf.com)
 
 San Francisco, Nov 10-12  
 48 hours of node hackathon. you can join remotely  
-http://nodeknockout.com/
+[http://nodeknockout.com/](http://nodeknockout.com/)
 
