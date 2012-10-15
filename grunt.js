@@ -32,7 +32,7 @@ module.exports = function(grunt) {
           'public/css/engineering.css',
           'public/css/prettify.css'
         ],
-        dest: 'public/css/site.css'
+        dest: 'public/css/production.css'
       }
     },
     concat: {
@@ -42,13 +42,13 @@ module.exports = function(grunt) {
           'public/js/ga.js',
           'public/js/app.js'
         ],
-        dest: 'public/js/site.js'
+        dest: 'public/js/production.js'
       }
     },
     min : {
       dist : {
-        src : 'public/js/site.js',
-        dest : 'public/js/site.min.js'
+        src : 'public/js/production.js',
+        dest : 'public/js/production.min.js'
       }
     }
   });
