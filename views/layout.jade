@@ -39,25 +39,6 @@ html(lang='en')
         }
         }).call(this);
 
-    script(src='http://code.jquery.com/jquery-1.8.1.min.js')
-    script(src='/js/app.js')
-
-    script(type='text/javascript')
-      // Auto hide the address bar on Mobile Safari
-      window.addEventListener("load",function() {
-        setTimeout(function(){
-          window.scrollTo(0, 1);
-        }, 0);
-      });
-    script(type='text/javascript')
-      var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-34877454-1']);
-      _gaq.push(['_trackPageview']);
-      (function() {
-      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-      })();
   body
     header.navbar
       .navbar-inner
@@ -110,7 +91,6 @@ html(lang='en')
               i.icon-github
               a(target='_blank', href='https://github.com/yp-engineering') Github
 
-
     // Footer
     footer#footer.footer
       .container
@@ -127,9 +107,10 @@ html(lang='en')
             a(target='_blank', href='http://corporate.yp.com/about/contact-us/') Contact Us
           li © 2012 YP Intellectual Property, LLC. All rights reserved.
 
-
-
+      script(src='http://code.jquery.com/jquery-1.8.1.min.js')
     - if (settings.env == 'development')
       script(src='/js/prettify.js')
+      script(src='/js/ga.js')
+      script(src='/js/app.js')
     - else
       script(src='/js/site.min.js')

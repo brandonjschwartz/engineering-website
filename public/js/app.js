@@ -1,4 +1,13 @@
 $(function () {
+
+  // Auto hide the address bar on Mobile Safari
+  window.addEventListener("load",function() {
+    setTimeout(function(){
+      window.scrollTo(0, 1);
+    }, 0);
+  });
+
+  prettyPrint();
   function monthInWord(num) { 
     var monthNames = [ 
       "January", 
