@@ -46,4 +46,8 @@ Submit a pull request to http://github.com/yp-engineering/engineering-website.
 
     node server.js
 
+### for development
+
+    grunt watch  # watch stylus files in public/style and compile them to public/css/site.css
+
 
