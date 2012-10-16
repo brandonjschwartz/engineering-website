@@ -52,8 +52,14 @@ module.exports = function(grunt) {
       }
     },
     watch: {
-      files: ['public/styles/*.styl'],
-      tasks: 'stylus'
+      stylus: {
+        files: ['public/styles/*.styl'],
+        tasks: 'stylus'
+      },
+      lint: {
+        files: '<config:lint.files>',
+        tasks: 'lint'
+      }
     }
   });
 
