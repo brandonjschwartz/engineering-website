@@ -29,7 +29,7 @@ function gitPull() {
 };
 
 function restartDocpad() {
-  var forever = spawn('forever', ['restart', 'node_modules/docpad/bin/docpad-server']);
+  var forever = spawn('forever', ['restart', 'server.js']);
 
   forever.stdout.on('data', function (data) {
     console.log('forever stdout: ' + data);
