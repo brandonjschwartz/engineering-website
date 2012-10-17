@@ -97,12 +97,15 @@ Look at the web and see what you like, and then use a css/html inspection tool l
 
 # Credits
 
-Fonts:
+## Slides
+ * Slides available at SlideShare here: [http://www.slideshare.net/clemcke/design-is-crap](http://www.slideshare.net/clemcke/design-is-crap)
+
+##Fonts:
 
 * Century Gothic
 * Mission Script (from losttype.com)
 
-Resources:
+## Resources:
 
 * Robin Williams: Design for Non-Designers
 * Lost Type Co-op
