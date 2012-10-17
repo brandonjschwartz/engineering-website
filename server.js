@@ -9,7 +9,6 @@ poet.set({
 }).createPostRoute( '/post/:post', 'post' )
   .createPageRoute( '/page/:page', 'page' )
   .createTagRoute( '/tag/:tag', 'tag' )
-  .createCategoryRoute( '/category/:category', 'category' )
   .init();
 
 app.set( 'views', __dirname + '/views' );
