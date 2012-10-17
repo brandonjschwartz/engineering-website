@@ -1,5 +1,5 @@
 # Design is CRAP 
-## - design principles for programmers
+## - Design principles for programmers
 ### by Chris Lemcke
 
 # Why you need to know it.
