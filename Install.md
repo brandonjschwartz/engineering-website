@@ -5,17 +5,16 @@ Install node
     git clone git://github.com/creationix/nvm.git ~/nvm
     . ~/nvm/nvm.sh  # add to .bashrc
 
-Fork and clone the project
+Clone the project and install packages
 
-    cd
     git clone git@github.com:<you>/engineering-website.git
     cd engineering-website
-    npm install
+    npm install --production
     npm install forever -g
     
 Run
 
-    source scripts/production-start
+    source scripts/start-production
 
 Stop
 
