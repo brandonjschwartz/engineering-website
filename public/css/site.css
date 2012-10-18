@@ -284,6 +284,9 @@ article header time {
     border-radius: 0;
     box-shadow: 0 0 0;
   }
+  .blog-post .body {
+    padding: 20px 18px;
+  }
   .pagination {
     height: auto;
   }
