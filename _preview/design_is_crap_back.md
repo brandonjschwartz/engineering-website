@@ -1,5 +1,5 @@
 {{{
-  "title" : "Design is CRAP - Design principles for programmers",
+  "title" : "Design is CRAP",
   "authorName": "Chris Lemcke",
   "authorLink": "https://github.com/clemcke",
   "authorImage": "https://secure.gravatar.com/avatar/de39f82072552aa31c680999b9d20030?s=400&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
@@ -7,25 +7,26 @@
   "date" : "10-17-2012"
 }}}
 
+## Design principles for programmers
 
 But I'm a programmer, you say, not a designer!  
-Nope, tough cookies, design is part of the job.  
+
+### Nope, tough cookies, design is part of the job.  
 
 Let me tell you a story.  
 I work at YP on the internal tools team.  We often have data requirements for new tools, but we never have design documents.  This means we have to build our own projects from scratch, and they never see design love from anyone but us.  This means that, for the first time for me, I've been really responsible for the look and feel of my projects.  Yikes!  Like many developers, I'm used to receiving a psd, or at minimum a wireframe before even starting on a project.  So I had to learn to design for the first time.
 
-Scary, right?  However, as a programmer, you are the first line of defense.  
+Scary, right?  However,
+
+###A programmer, you are the first line of defense.
 It's your responsibility as a programmer to make anything you touch as good as possible.  Every new feature, every tweak, and every bug you fix affects the user experience.  So why not make it as good as possible?
 
 It's not too hard, really, just follow these four basic principles.
 
-* Contrast
-* Repetition
-* Alignment
-* Proximity
+![http://i.imgur.com/OKqQM.png](http://i.imgur.com/OKqQM.png)
 
-## Proximity
-**Related elements should be grouped together**  
+#Proximity
+###Related elements should be grouped together
 Group elements that are meaningfully related.  Don't be afraid to use a lot of space to separate different groups!
 
 Let's see an example of terrible design:
