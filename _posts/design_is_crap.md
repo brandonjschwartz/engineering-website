@@ -25,10 +25,9 @@ It's not too hard, really, just follow these four basic principles.
 * Proximity
 
 ## Proximity
-**Related elements should be grouped together**  
-Group elements that are meaningfully related.  Don't be afraid to use a lot of space to separate different groups!
+**Related elements should be grouped together**
 
-Let's see an example of terrible design:
+Group elements that are meaningfully related.  Don't be afraid to use a lot of space to separate different groups! Let's see an example of terrible design:
 
 ![image](http://i.imgur.com/bCsmj.png)
 
@@ -39,16 +38,17 @@ Wow, that's bad!  Let's clean up the spacing using Proximity
 Now, isn't that better already?  
 It doesn't take much to make a big difference!  Let's move on...
 
-# Alignment
-### Every item should have a visual connection to related items on the page.  
+## Alignment
+**Every item should have a visual connection to related items on the page**
+
 Make a visual grid that connects every element to something related on the page.  In the same way as **Repetition**, use visual distinctions to indicate meaningful differences.
 
 ![image](http://i.imgur.com/OTFf7.png)
 
 See how we use indents to separate headers from content?  Also note the use of a horizontal rule to give a visual anchor for the prices.
 
-# Repetition
-### Repeat some aspect of the design throughout the entire piece
+## Repetition
+**Repeat some aspect of the design throughout the entire piece**
 
 Repeat some aspect of the design throughout the entire piece.  Repeat some aspect of the design throughout the entire piece.  Repeat some...okay you get it, this one's pretty straightforward.
 
@@ -56,9 +56,8 @@ Repeat some aspect of the design throughout the entire piece.  Repeat some aspec
 
 Coming along nicely!
 
-# Contrast
-
-### Emphasize the difference between different items
+## Contrast
+**Emphasize the difference between different items**
 
 This is basically the flip side of **Repetition**.  Use emphatically different styles for different types of information.  Don't be afraid to use small fonts, with proper use of spacing, alignment, and repetition, small fonts can be easy to read.  
 
@@ -68,37 +67,21 @@ Let's see what we can do with our example:
 
 Here we use a fancy title font, we get rid of the awful all-caps, and we resize the less-important side text.
 
-#Let's Review
-
-## Contrast
-* Emphasize the difference between different items.
-
-## Repetition
-* Repeat some aspect of the design throughout the entire piece.
-
-## Alignment
-* Every item should have a visual connection to related items on the page.
-
-
-## Proximity
-* Related elements should be grouped together.
-
-# Remember, Design is CRAP
-### But have fun with it!
+## Last touch
 
 Here's a quick logo made from the font Mission Script from pay-what-you-want-site [losttype.com](http://losttype.com)
 
 ![image](http://i.imgur.com/372GE.png)
 
 
-# What's next?  Steal!
+## What's next?  Steal!
 
-Look at the web and see what you like, and then use a css/html inspection tool like chrome or firebug and steal it!  **Don't** use frameworks, pre-rendered classes, or libraries.  Do it yourself, one line at a time.  That's the best way to learn.
+Look at the web and see what you like, and then use a css/html inspection tool like chrome or firebug and steal it! Don't use frameworks, pre-rendered classes, or libraries.  Do it yourself, one line at a time.  That's the best way to learn.
 
-## Resources
+### Resources
 
-* Font -Century Gothic
-* Font - Mission Script (from losttype.com)
+* Century Gothic font
+* Mission Script font (from losttype.com)
 * [Slides](http://www.slideshare.net/clemcke/design-is-crap) of my talk
 * [Lost Type Co-op](http://losttype.com)
 * [The League of Moveable Type](http://www.theleagueofmoveabletype.com)
