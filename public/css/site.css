@@ -162,6 +162,9 @@ pre {
 article header a {
   margin-left: 10px;
 }
+article header a.comments-count {
+  float: right;
+}
 article header time {
   font-size: 14px;
 }

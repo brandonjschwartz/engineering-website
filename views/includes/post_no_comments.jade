@@ -8,14 +8,8 @@ article.blog-post
     a.author(href=post.authorLink, target='_blank')
       img(src=post.authorImage) 
       | #{post.authorName}
+    a.comments-count(href=post.url + '#disqus_thread' , data-disqus-identifier=post.slug)
 
   section.body
+    br
     != post.content
-    br
-    br
-    #disqus_thread
-    script
-      var disqus_identifier = '!{post.slug}';
-    script(src='/js/disqus.js')
-    noscript Please enable JavaScript to view comments
-
