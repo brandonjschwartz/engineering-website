@@ -7,8 +7,6 @@
   "date" : "10-23-2012"
 }}}
 
-# Benchmarking in Ruby
-
 Benchmark (per [Dictionary.com](http://dictionary.reference.com/browse/benchmark)) - *"an established point of reference against which computers or programs can be measured in tests comparing their performance, reliability, etc."*
 
 In my recent work with [caches](http://www.rubyops.net/caching), I've been making sure to benchmark my code before releasing it. It's pretty evident, that anyone working with caches cares about speed and for larger sites, every millisecond (and sometimes even microsecond) can count.
