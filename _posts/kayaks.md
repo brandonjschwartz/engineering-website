@@ -16,6 +16,8 @@ Thanks to Julia Baker and David Shin for organizing, kayaking at Long Beach defi
 ![kayaks3](http://i.imgur.com/Eamfw.jpg)
 ![kayaks4](http://i.imgur.com/C10ni.jpg)
 ![kayaks5](http://i.imgur.com/WgDfn.jpg)
+![kayaks6](http://farm9.staticflickr.com/8187/8123137984_b79c1b0dfa.jpg)
+![kayaks7](http://farm9.staticflickr.com/8472/8123137286_b2280212be.jpg)
 
 Kayaks On The Water  
 [5411 East Ocean Boulevard, Long Beach](http://goo.gl/maps/LlYRG)
