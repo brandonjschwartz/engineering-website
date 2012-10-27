@@ -48,5 +48,9 @@ Submit a pull request to http://github.com/yp-engineering/engineering-website.
 ### for development
 
     grunt watch  # watch stylus files in public/style and compile them to public/css/site.css
+    
+### before deploy to production
+
+    grunt  # compile stylus into css and generate rss feed
 
 

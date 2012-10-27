@@ -1,5 +1,12 @@
 module.exports = function(grunt) {
-  
+
+  // Create a new task.
+  grunt.registerTask('rss', 'generate rss feed', function() {
+    // Tell grunt this task is asynchronous.
+    var done = this.async();
+    require('./rss.js')('./_posts/', 'public/rss.xml', done);
+  });
+
   grunt.initConfig({
     lint: {
       files: ['public/js/app.js', 'grunt.js']
@@ -66,6 +73,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib');
   grunt.loadNpmTasks('grunt-css');
 
-  grunt.registerTask('default', 'lint stylus cssmin concat min');
+  grunt.registerTask('default', 'lint stylus cssmin concat min rss');
 
 };
