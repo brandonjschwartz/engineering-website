@@ -23,13 +23,49 @@ function gitPull() {
   });
 
   git.on('exit', function (code) {
-    console.log('git child process exited with code ' + code);
-    restartDocpad();
+    console.log('git pull. child process exited with code ' + code);
+    npmInstall();
   });
 };
 
-function restartDocpad() {
+function npmInstall() {
+  var forever = spawn('npm', ['install']);
+
+  forever.stdout.on('data', function (data) {
+    console.log('npm install stdout: ' + data);
+  });
+
+  forever.stderr.on('data', function (data) {
+    console.log('npm install stderr: ' + data);
+  });
+
+  forever.on('exit', function (code) {
+    console.log('npm install. child process exited with code ' + code);
+    restartServer();
+  });
+};
+
+function restartServer() {
   var forever = spawn('forever', ['restart', 'server.js']);
+
+  forever.stdout.on('data', function (data) {
+    console.log('forever stdout: ' + data);
+  });
+
+  forever.stderr.on('data', function (data) {
+    console.log('forever stderr: ' + data);
+    if (/Cannot find forever process/.test(data)) {
+      startServer();
+    }
+  });
+
+  forever.on('exit', function (code) {
+    console.log('forever restart. child process exited with code ' + code);
+  });
+};
+
+function startServer() {
+  var forever = spawn('forever', ['start', 'server.js']);
 
   forever.stdout.on('data', function (data) {
     console.log('forever stdout: ' + data);
@@ -40,6 +76,6 @@ function restartDocpad() {
   });
 
   forever.on('exit', function (code) {
-    console.log('forever child process exited with code ' + code);
+    console.log('forever start. child process exited with code ' + code);
   });
 };
