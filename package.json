@@ -10,7 +10,8 @@
     "express": ">= 3.0.0rc5",
     "jade": ">= 0.20.x",
     "poet": ">= 0.2.x",
-    "rss": ">= 0.0.x"
+    "rss": ">= 0.0.x",
+    "json-front-matter": "~0.1.3"
   },
   "devDependencies": {
     "grunt-css": ">=0.2.1",

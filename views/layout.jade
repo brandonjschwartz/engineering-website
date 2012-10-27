@@ -18,6 +18,7 @@ html(lang='en')
     meta(charset='utf-8')
     meta(name='viewport', content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=1')
     link(rel='shortcut icon', href='/img/favicon.png')
+    link(rel="alternate", type="application/rss+xml", title="RSS Feed for engineering.yp.com", href="/rss.xml")
 
     link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/bootstrap.min.css')
     link(rel='stylesheet', type='text/css', href='/vendor/twitter-bootstrap/css/docs.css')
@@ -75,6 +76,9 @@ html(lang='en')
               a(href=tagUrl('culture')) #{'Culture'}
             li.people
               a(href='#') #{'People'}
+
+          a.rss(href='/rss.xml')
+            img(src='/img/rss.png')
 
           h3.contact Contact Us
           ul#social-networks.unstyled

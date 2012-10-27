@@ -11,6 +11,8 @@ poet.set({
   .createTagRoute( '/tag/:tag', 'tag' )
   .init();
 
+require('./rss.js')();
+
 app.set( 'views', __dirname + '/views' );
 app.set( 'view engine', 'jade' );
 app.use( express.static( __dirname + '/public' ));
