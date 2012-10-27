@@ -1,20 +1,25 @@
+// read all files in _posts folder and use the rss package to generate rss.xml
+
+// core module
 var fs = require('fs');
+
+// non-core packages
 var RSS = require('rss');
-var path = './_posts/';
-// var jsonFm  = require('./node_modules/poet/node_modules/json-front-matter/lib/json-front-matter.js').parse;
 var jsonFm  = require('json-front-matter').parse;
+
+var path = './_posts/';
 var totalFiles = 0;
 var posts = [];
 
 /* lets create an rss feed */
 var feed = new RSS({
-        title: 'YP Engineering Website',
-        description: 'YP Engineering Website',
-        feed_url: 'http://engineering.yp.com/rss.xml',
-        site_url: 'http://engineering.yp.com',
-        image_url: 'http://engineering.yp.com/img/rss.png',
-        author: 'Yellow Pages'
-    });
+  title: 'YP Engineering Website',
+  description: 'YP Engineering Website',
+  feed_url: 'http://engineering.yp.com/rss.xml',
+  site_url: 'http://engineering.yp.com',
+  image_url: 'http://engineering.yp.com/img/rss.png',
+  author: 'Yellow Pages'
+});
 
 function generateRss() {
   fs.readdir( path, function ( err, files ) {
