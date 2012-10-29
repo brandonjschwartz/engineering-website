@@ -29,7 +29,7 @@ function gitPull() {
 };
 
 function npmInstall() {
-  var forever = spawn('npm', ['install']);
+  var forever = spawn('npm', ['install', '--production']);
 
   forever.stdout.on('data', function (data) {
     console.log('npm install stdout: ' + data);
