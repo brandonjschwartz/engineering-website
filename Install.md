@@ -6,7 +6,10 @@ become nextgen user
 Install node
 
     git clone git://github.com/creationix/nvm.git ~/nvm
-    . ~/nvm/nvm.sh  # add to .bash_profile
+    # add to .bash_profile
+    . ~/nvm/nvm.sh
+    alias shasum='sha1sum'
+
     nvm install 0.8.14
 
 Clone the project and install packages
