@@ -1,9 +1,13 @@
 ## install on production server
+become nextgen user
+
+    sudo rootsh -iu nextgen
 
 Install node
 
     git clone git://github.com/creationix/nvm.git ~/nvm
-    . ~/nvm/nvm.sh  # add to .bashrc
+    . ~/nvm/nvm.sh  # add to .bash_profile
+    nvm install 0.8.14
 
 Clone the project and install packages
 
