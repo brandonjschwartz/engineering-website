@@ -25,7 +25,8 @@ modify a wider set of parameters are available through advanced settings. This i
 settings for the HTTP method utilized and all parameters available through the SolrMeter 
 settings menu. 
 
-![Operation Time Line in SolrMeter](http://i.imgur.com/FyjjL.png)
+
+[![solr](http://i.imgur.com/FyjjL.png)](http://i.imgur.com/FyjjL.png)
 
 The load testing component of SolrMeter is driven by queries provided by the user.  To 
 help the user generate queries, a tool for extracting queries from Solr log files is available 
