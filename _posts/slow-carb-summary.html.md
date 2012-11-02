@@ -3,8 +3,8 @@
 	"authorName" : "Chris Dolan",
 	"authorLink" : "https://github.com/aelien27",
 	"authorImages": "http://en.gravatar.com/userimage/11263843/485df645844bd9e801190abc7aaf0d2c.jpg?size=200",
-	"tags" : [ "people" ],
-	"date" : "10-31-2012"
+	"tags" : [ "people", "culture" ],
+	"date" : "11-2-2012"
 }}}
 
 ![Before](http://i.imgur.com/q8rWL.jpg)
