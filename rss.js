@@ -52,7 +52,8 @@ function generateRss(postsFolder, rssFile, cb) {
 
         posts.push({
             title:  t.attributes.title,
-            description: t.body.replace(/\n.*/g, ''),
+            // description: t.body.replace(/\n.*/g, ''),
+            description: t.body,
             url: '/post/' + fileName,
             author: t.attributes.authorName,
             date: new Date(t.attributes.date)

@@ -1,2 +1,846 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 01 Nov 2012 21:34:33 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Halloween Madness]]></title><description><![CDATA[What a wacky fun Halloween this year at our Glendale office!  ]]></description><link>/post/halloween</link><guid isPermaLink="true">/post/halloween</guid><dc:creator><![CDATA[Faridi Hamedy]]></dc:creator><pubDate>Thu, 01 Nov 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[SolrMeter: Performance Testing for Solr]]></title><description><![CDATA[Testing is integral to development. For those working with information retrieval systems, ]]></description><link>/post/solrmeter_performance_testing_solr</link><guid isPermaLink="true">/post/solrmeter_performance_testing_solr</guid><dc:creator><![CDATA[Pradeep Teregowda]]></dc:creator><pubDate>Tue, 30 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Fun day in Long Beach]]></title><description><![CDATA[The Ad Delivery Team hasn’t had a team outing for a while.  ]]></description><link>/post/kayaks</link><guid isPermaLink="true">/post/kayaks</guid><dc:creator><![CDATA[Lauren Yiu]]></dc:creator><pubDate>Thu, 25 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Benchmarking in Ruby]]></title><description><![CDATA[Benchmark (per [Dictionary.com](http://dictionary.reference.com/browse/benchmark)) - *"an established point of reference against which computers or programs can be measured in tests comparing their performance, reliability, etc."*]]></description><link>/post/benchmarking-in-ruby</link><guid isPermaLink="true">/post/benchmarking-in-ruby</guid><dc:creator><![CDATA[Josh]]></dc:creator><pubDate>Tue, 23 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Design is CRAP - Design principles for programmers]]></title><description><![CDATA[But I'm a programmer, you say, not a designer!  ]]></description><link>/post/design_is_crap</link><guid isPermaLink="true">/post/design_is_crap</guid><dc:creator><![CDATA[Chris Lemcke]]></dc:creator><pubDate>Mon, 22 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Building Object-Oriented jQuery Plugins]]></title><description><![CDATA[So you've been using [jQuery](http://jquery.com) as your Javascript framework and now you need to write a plugin. If you come from an Object-Oriented background like me, you may feel that jQuery's plugins leave a lot to be desired.]]></description><link>/post/jquery-oo-plugins</link><guid isPermaLink="true">/post/jquery-oo-plugins</guid><dc:creator><![CDATA[Hector]]></dc:creator><pubDate>Tue, 25 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Screen Cheatsheet]]></title><description><![CDATA[Here's my screen cheat sheet. It's simultaneous incredibly useful and ridiculous to configure.  ]]></description><link>/post/screen</link><guid isPermaLink="true">/post/screen</guid><dc:creator><![CDATA[min]]></dc:creator><pubDate>Wed, 19 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Performance Testing with Httperf]]></title><description><![CDATA[### Introduction]]></description><link>/post/httperf</link><guid isPermaLink="true">/post/httperf</guid><dc:creator><![CDATA[Josh]]></dc:creator><pubDate>Tue, 18 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Ruby Meetup]]></title><description><![CDATA[![meetup](http://i.imgur.com/sAxiL.jpg)]]></description><link>/post/ruby-meetup</link><guid isPermaLink="true">/post/ruby-meetup</guid><dc:creator><![CDATA[Alf]]></dc:creator><pubDate>Mon, 17 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Preview markdown files locally]]></title><description><![CDATA[I don't like to push my markdown files to github every time i make a change, just to realize ]]></description><link>/post/markdown</link><guid isPermaLink="true">/post/markdown</guid><dc:creator><![CDATA[Oren]]></dc:creator><pubDate>Sat, 15 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Upcoming node.js events]]></title><description><![CDATA[Just in case you find yourself in any of the locations below...  ]]></description><link>/post/node-events</link><guid isPermaLink="true">/post/node-events</guid><dc:creator><![CDATA[Oren]]></dc:creator><pubDate>Thu, 13 Sep 2012 07:00:00 GMT</pubDate></item></channel></rss>
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Fri, 02 Nov 2012 18:29:03 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[That Weird Diet I Was On, a Summary]]></title><description><![CDATA[![Before](http://i.imgur.com/q8rWL.jpg)
+![After](http://i.imgur.com/27Hjj.jpg)
+(Same exact guy)
+
+Over a fifteen-month period, I lost 139 pounds of fat and put on 13 pounds of lean muscle.  Hold your applause.  I did it _all wrong_.  I could've done it in ten months, but I'm lazy.  Some of the advice I'm going to give you, I periodically would ignore, myself.  I think you should stick to it, though.  This approach should really appeal to engineers and _especially_ testers, as we're metrics-driven people who enjoy combining tiny atomic behaviors to produce a significant result.
+
+Here's a brief overview of what I did.
+
+## Motivation
+I'm a video gamer from way back.  I've always been a little fascinated with the high-jumping back-flipping pole-swinging heroes of that digital world.  I made a conscious decision that I wanted to do some of that stuff myself before I was too old or damaged for it to be a possiblity.  Enter [parkour](http://en.wikipedia.org/wiki/Parkour).  It's perfect for me, since I'm non-competitive and prone to bursts of enthusiastic jumping-on-stuff anyway.
+
+## Ingredients
+1x [The Four Hour Body](http://fourhourbody.com/), by Tim Ferriss
+1x 45 lb. kettlebell
+2x pair running shoes
+
+### Micro Book Review
+The Four Hour Body was written by the dude who wrote The Four Hour Workweek.  I'm a big [Lifehacker](http://www.lifehacker.com) fan, and they're big Tim Ferriss fans.  Some of the stuff in that book is crazy.  Some of it works.  In some cases, both are true.  I've tried a lot of it, but some of it I wouldn't try with YOUR body.
+
+## The Slow-Carb Diet (The First 90%)
+
+### Five simple rules:
+1. Avoid "white" carbohydrates.
+2. Eat the same few meals over and over again.
+3. Don’t drink calories.
+4. Don’t eat fruit.
+5. Take one day off per week.
+
+Eat four meals daily, spaced about once every four hours.  Drink more water than you think you need.  Get 8 hours of sleep per night.
+
+There's a lot of science behind these little rules.  If you care, read the book or read the Internet.  I cared.  I did a whole heckuva lotta reading.  It probably helped to motivate me.  The big difference between slow-carb and the more common-sense caloric restriction diets is that slow-carb will not cannibalize an ounce of muscle.  Another big difference is that taking a "cheat day" prevents the depletion of willpower that causes most diets to fail.  Cheesecake is great, and you still get cheesecake.  You just don't get it until your weekly cheat day.  Then you're encouraged to eat the whole dang cheesecake yourself.
+
+### Examples
+Here's a typical day's eating for me:
+
+- Breakfast
+  - 3 whole eggs, fried in macadamia oil
+  - Black beans from the can
+  - Baby spinach in olive oil with salt & pepper
+  - Vitamins B & D, Calcium, Magnesium, Potassium supplements
+- 1st Lunch, 2nd Lunch, Dinner
+  - Tri-tip steak
+  - Black beans from the can
+  - Steamed brocolli, steamed cauliflower
+
+If I had nothing ready to eat, these were my most common meals from fast-food places:
+
+**Chipotle:** Fajita bowl with black beans, steak, fajita veggies (no rice), mild salsa, guacamole, lettuce
+**El Pollo Loco:**  Family meal deal w/ 8 pcs. mixed, no tortillas, pinto beans, and steamed veggies
+
+## Aww man, Exercise?! (The Last 10%)
+1. Two-arm Russian Kettlebell Swings
+2. Turkish get-ups
+3. Pushups
+4. Pullups
+5. Myotatic crunches
+6. Running
+
+I'm no physical trainer.  I can't tell you whether you should actually *do* any of these.  I know that these are the exercises I did, and I did rotating circuits with progressively-increasing loads.
+
+For what it's worth, I lost about 80 lbs. before I started exercising _at all_.
+
+In my case, I had two concerns:
+1. The bigger they are, the harder they fall
+2. Losses + gains simply resemble weaker losses.
+
+If you've got a lot of fat to lose, diet alone will get you a huge part of the way.
+
+## Protips
+1. There will be a plateau about 6-8 weeks into the diet.  It'll pass.  Just don't change anything.
+2. Eat your first meal within an hour of waking and go protein-heavy with it.
+3. Snap pictures of every meal (including cheat days) and upload them to Tumblr or Instagram or whatever.  Blah blah science accountability blah.  It works.
+4. Take before and after photos.  When the "Before" ceases to embarrass you, you know you're making progress.
+5. Weigh yourself and measure the circumferences of each upper arm, each thigh, your chest, waist, and hips _daily_.  Those inches will show you that, even on days you're not losing _weight_, you're still reshaping your body in a meaningful way.
+6. Hold off on buying new clothes until you absolutely can't go out in your old stuff anymore.  People won't notice you're skinnier until you buy new clothes.
+
+## Conclusion
+- This is a thing that works.
+- It's not the _only_ thing that works.
+- It appealed to me because it was made of little hacks that, when taken together, produce a huge result.
+- Food is made of science.
+- Bodies are made of science.
+- My blood pressure is normal for the first time in my life.
+- I don't secretly dread being photographed anymore.
+- PARKOUR!
+
+## Next Steps
+Yellowpages.com Parkour Club?  **MAYBE!**
+]]></description><link>/post/slow-carb-summary.html</link><guid isPermaLink="true">/post/slow-carb-summary.html</guid><dc:creator><![CDATA[Chris Dolan]]></dc:creator><pubDate>Fri, 02 Nov 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Halloween Madness]]></title><description><![CDATA[What a wacky fun Halloween this year at our Glendale office!  
+Teams came together to provide spooky fun with creative themes like the Mad Hospital, the Witches Brew, the Hunger Games, and Milli Vanilli.  
+
+Keep up the ghoul work!
+
+![pic1](http://i.imgur.com/aJVal.jpg)
+![pic2](http://i.imgur.com/hFXHJ.jpg)
+![pic3](http://i.imgur.com/IECnG.jpg)
+![pic4](http://i.imgur.com/KW8iK.jpg)
+![pic5](http://i.imgur.com/2Pr7s.jpg)
+
+
+
+]]></description><link>/post/halloween</link><guid isPermaLink="true">/post/halloween</guid><dc:creator><![CDATA[Faridi Hamedy]]></dc:creator><pubDate>Thu, 01 Nov 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[SolrMeter: Performance Testing for Solr]]></title><description><![CDATA[Testing is integral to development. For those working with information retrieval systems, 
+there have not been many tools or support for testing available. In this regard, SolrMeter 
+is a particularly welcome tool.  In terms of existing performance monitoring and testing 
+tools for Solr, availability has been patchy and many of the tools available are not free.
+With the growing popularity of Solr based applications, the ability to identify and improve 
+performance of Solr instances is valuable.
+
+There are several differences between web load testing, performance monitoring tools and 
+SolrMeter. SolrMeter includes both a loading component and a monitoring component in a single 
+package. The integrated console provides access to sub consoles for queries, updates, commits, 
+optimization and results in the same page.  
+For setting up a test, the console provides us with access to only the intended queries per 
+minute parameter, other parameters being accessible through the settings menu. Drill downs to 
+modify a wider set of parameters are available through advanced settings. This includes 
+settings for the HTTP method utilized and all parameters available through the SolrMeter 
+settings menu. 
+
+![Operation Time Line in SolrMeter](http://i.imgur.com/FyjjL.png)
+
+The load testing component of SolrMeter is driven by queries provided by the user.  To 
+help the user generate queries, a tool for extracting queries from Solr log files is available 
+under the Tools tab.  One of the major differences to other web application load testing tools 
+such as Jmeter or openSTA, which provide a ramp up of load over time, is that by default 
+queries are made to the instance in a randomized manner (hence the need for tracking actual 
+queries per minute). This can somewhat be confusing, and makes it difficult to under stand 
+the results generated.
+
+In terms of inputs, the query file allows both simple keywords, phrases and boolean expressions, 
+to be used along with faceting and filters. More complex queries can be emulated with faceting and 
+filters provided within the file. There is limited support for parameterization through the extra 
+params file.  For updates, the file format is limited and uses a semicolon separated values with 
+colon separated key value pairs.
+
+Results from running queries are shown through a series of graphs, tables, available as a sub console 
+in the main window.  The Histogram, Pie Chart, Query Time history are the most relevant when a query 
+load test is performed. These graphs along with the query statistics table provide a overview of 
+the query performance of the instance. In addition, the cache history panel, which obtains cache
+ performance data from Solr interface, can be useful in tuning cache performance for queries. The 
+overall information for updates and queries is available with the operation time line. Results for 
+individual sub consoles such as query, updates are also available at the sub consoles, particularly 
+relevant when the query mechanism is set to random.
+
+Overall, SolrMeter provides several features which can be useful for performance tuning Solr 
+instances, the open source nature of SolrMeter means that features can be added and existing 
+features fine tuned.
+
+References:
+
+* [SolrMeter](http://code.google.com/p/solrmeter)
+* [Solr](http://lucene.apache.org/solr)
+
+]]></description><link>/post/solrmeter_performance_testing_solr</link><guid isPermaLink="true">/post/solrmeter_performance_testing_solr</guid><dc:creator><![CDATA[Pradeep Teregowda]]></dc:creator><pubDate>Tue, 30 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Fun day in Long Beach]]></title><description><![CDATA[The Ad Delivery Team hasn’t had a team outing for a while.  
+Movies and laser tag don’t satisfy us anymore.  We need to do something outdoor and fun.  
+Thanks to Julia Baker and David Shin for organizing, kayaking at Long Beach definitely is one of the best team outing events we had.
+
+![kayaks1](http://farm9.staticflickr.com/8052/8123088176_ab25c9a756_z.jpg)
+![kayaks2](http://i.imgur.com/JvZ4v.jpg)
+![kayaks3](http://i.imgur.com/Eamfw.jpg)
+![kayaks4](http://i.imgur.com/C10ni.jpg)
+![kayaks5](http://i.imgur.com/WgDfn.jpg)
+![kayaks6](http://farm9.staticflickr.com/8187/8123137984_b79c1b0dfa.jpg)
+![kayaks7](http://farm9.staticflickr.com/8472/8123137286_b2280212be.jpg)
+
+Kayaks On The Water  
+[5411 East Ocean Boulevard, Long Beach](http://goo.gl/maps/LlYRG)
+
+Magic Lamp Lebanese Mediterranean Grill  
+[5020 E Second St, Long Beach](http://goo.gl/maps/xA92Q)
+]]></description><link>/post/kayaks</link><guid isPermaLink="true">/post/kayaks</guid><dc:creator><![CDATA[Lauren Yiu]]></dc:creator><pubDate>Thu, 25 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Benchmarking in Ruby]]></title><description><![CDATA[Benchmark (per [Dictionary.com](http://dictionary.reference.com/browse/benchmark)) - *"an established point of reference against which computers or programs can be measured in tests comparing their performance, reliability, etc."*
+
+In my recent work with [caches](http://www.rubyops.net/caching), I've been making sure to benchmark my code before releasing it. It's pretty evident, that anyone working with caches cares about speed and for larger sites, every millisecond (and sometimes even microsecond) can count.
+
+[Ruby] has built in benchmarking capibilities (see [the API for Benchmark](http://www.ruby-doc.org/stdlib-1.9.3/libdoc/benchmark/rdoc/Benchmark.html) for details beyond what I cover here). While Benchmark has several different methods of running benchmarks, I tend to focus on *Benchmark.bm*, which is a pretty straigh forward iteration through your code samples.
+
+You can easily find good basic examples in the documentation, but I'll include them here for your convience.
+
+### Basic Example
+
+Benchmark Code:
+
+    1: require 'benchmark'
+    2: n = 50000
+    3: Benchmark.bm do |x|
+    4:   x.report { for i in 1..n; a = "1"; end }
+    5:   x.report { n.times do   ; a = "1"; end }
+    6:   x.report { 1.upto(n) do ; a = "1"; end }
+    7: end
+
+
+Which results in (depending on your machine specs):
+
+        user     system      total        real
+    1.033333   0.016667   1.016667 (  0.492106)
+    1.483333   0.000000   1.483333 (  0.694605)
+    1.516667   0.000000   1.516667 (  0.711077)
+
+
+Great, so what's it all mean?
+
+Well, if we look at the code sample line by line:
+
+1. we require benchmark so it's availble for use
+2. we set *n* to *50000* to defie the number of times to itterate the various loops were going to be benchmarking in this run
+3. we open a *Benchmark.bm* block with *x*
+4. define a report block, which contains your first loop -- a *for* loop
+5. define your second loop -- *n.times*
+6. define your thrid loop -- *upto(n)*
+7. close your benchmark block
+
+Simple enough -- we've started a benchmark block and defined thee things to benchmark.
+
+Now for the results -- there's four columns of output here, "user" (or user CPU time), "system" (or system CPU time), "total" (or the sum of user and system CPU time) and "real" (or the actual real time elapsed).
+
+So simply put, the conclusion of this test is that the *for* loop is going to be the fastest.
+
+### Advanced Example
+
+This is a simplified version of what I'm using for [Duality], [Mongocached] and [Diskcached]. All of which benchmark themselves against [Memcached] and in some cases eachother.
+
+
+In this example, I'll be running a benchmark of [Diskcached], [Mongocached] and [Memcached] running a cache request, or *get('some_key')*.
+
+
+Benchmark Code:
+
+    require 'benchmark'
+    require 'diskcached'
+    require 'mongocached'
+    require 'memcached'
+
+    # init diskcached
+    diskcache = Diskcached.new('/tmp/bm_cache')
+
+    # init mongocached with defaults -- localhost
+    mongocache = Mongocached.new()
+
+    # init memcached
+    memcache = Memcached.new("localhost:11211")
+
+    # create a data object to be cached
+    cache_content = "some string to be saved in cached"
+
+    # set the number of times to itterate over the cache get
+    #   I do this because these actions are very fast, so a
+    #   single call, isn't really enough to show a difference.
+    #
+    #   For this, I typically use 100,000, as it allows you to
+    #   easily translate all interations into a single
+    #   intteration.
+    #
+    #   1 second for all, is 1 microsecond for a single iteration
+    #   using "fuzzy logic".
+    iterations = 100000
+
+    # set each cache, so we have something to get
+    diskcache.set("bm_key", cache_content)
+    mongocache.set("bm_key", cache_content)
+    memcache.set("bm_key", cache_content)
+
+    # now for the meat
+    Benchmark.bm do |bm|
+      # first report - diskcached
+      bm.report('disk') do
+        (1..iterations).each do
+          diskcache.get("bm_key")
+        end
+      end
+
+      # second report - mongocached
+      bm.report('mong') do
+        (1..iterations).each do
+          mongocache.get("bm_key")
+        end
+      end
+
+      # third report - memcached
+      bm.report('memc') do
+        (1..iterations).each do
+          memcache.get("bm_key")
+        end
+      end
+    end
+
+
+So what are we doing here?
+
+* First we setup our caches to be benchmarked by initializing them and inserting some data to be fetched.
+* Inside *Benchmark.bm* we create a report for each cache, and run *100000* cache fetches as fast as we can.
+
+It's pretty much that simple.
+
+It should be noted that this isn't a real emualtion of how this code will preform in production, but it should make it pretty clear which is faster and possible surface any gross inefficiencies.
+
+
+Now, the results of this test for those that are curious (and to prove it all works):
+> Note: this was run on a Debian virtual host with 8 cores.
+
+
+          user       system    total       real
+    disk  6.130000   2.180000   8.310000 (  8.501748)
+    mong  29.650000  4.150000  33.800000 ( 49.266912)
+    memc  2.330000   2.720000   5.050000 (  9.508415)
+
+
+Okay, now what are our takeaway from this. [Mongocached] is quite a bit slower with reads, while [Diskcached] and [Memcached] are about the same.
+
+
+### Closing
+
+This is my little write up on how I benchmark. I would love comments and feedback from those who know more about it. I'm always down to learn.
+
+Also, I have a template I use for benchmarking small samples of code in a gist -- I call it my [Benchmark A/B Test Suite](https://gist.github.com/3157875) -- enjoy!
+
+> Note: This post was cross-posted from the [RubyOps.net blog entry by the same name](http://www.rubyops.net/benchmarking-in-ruby).
+
+
+[Ruby]: http://www.rubyops.net/ruby
+[Duality]: http://www.rubyops.net/duality-two-caches-at-once
+[Mongocached]: http://www.rubyops.net/mongocached-simple-cache-using-mongodb
+[Diskcached]: http://www.rubyops.net/diskcached-simple-disk-cacheing-for-ruby
+[Memcached]: http://memcached.org/
+]]></description><link>/post/benchmarking-in-ruby</link><guid isPermaLink="true">/post/benchmarking-in-ruby</guid><dc:creator><![CDATA[Josh]]></dc:creator><pubDate>Tue, 23 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Design is CRAP - Design principles for programmers]]></title><description><![CDATA[But I'm a programmer, you say, not a designer!  
+Nope, tough cookies, design is part of the job.  
+
+Let me tell you a story.  
+I work at YP on the internal tools team.  We often have data requirements for new tools, but we never have design documents.  This means we have to build our own projects from scratch, and they never see design love from anyone but us.  This means that, for the first time for me, I've been really responsible for the look and feel of my projects.  Yikes!  Like many developers, I'm used to receiving a psd, or at minimum a wireframe before even starting on a project.  So I had to learn to design for the first time.
+
+Scary, right?  However, as a programmer, you are the first line of defense.  
+It's your responsibility as a programmer to make anything you touch as good as possible.  Every new feature, every tweak, and every bug you fix affects the user experience.  So why not make it as good as possible?
+
+It's not too hard, really, just follow these four basic principles.
+
+* Contrast
+* Repetition
+* Alignment
+* Proximity
+
+## Proximity
+**Related elements should be grouped together**
+
+Group elements that are meaningfully related.  Don't be afraid to use a lot of space to separate different groups! Let's see an example of terrible design:
+
+![image](http://i.imgur.com/bCsmj.png)
+
+Wow, that's bad!  Let's clean up the spacing using Proximity
+
+![image](http://i.imgur.com/Hqk5C.png)
+
+Now, isn't that better already?  
+It doesn't take much to make a big difference!  Let's move on...
+
+## Alignment
+**Every item should have a visual connection to related items on the page**
+
+Make a visual grid that connects every element to something related on the page.  In the same way as **Repetition**, use visual distinctions to indicate meaningful differences.
+
+![image](http://i.imgur.com/OTFf7.png)
+
+See how we use indents to separate headers from content?  Also note the use of a horizontal rule to give a visual anchor for the prices.
+
+## Repetition
+**Repeat some aspect of the design throughout the entire piece**
+
+Repeat some aspect of the design throughout the entire piece.  Repeat some aspect of the design throughout the entire piece.  Repeat some...okay you get it, this one's pretty straightforward.
+
+![image](http://i.imgur.com/OKi2j.png)
+
+Coming along nicely!
+
+## Contrast
+**Emphasize the difference between different items**
+
+This is basically the flip side of **Repetition**.  Use emphatically different styles for different types of information.  Don't be afraid to use small fonts, with proper use of spacing, alignment, and repetition, small fonts can be easy to read.  
+
+Let's see what we can do with our example:
+
+![image](http://i.imgur.com/3aYcW.png)
+
+Here we use a fancy title font, we get rid of the awful all-caps, and we resize the less-important side text.
+
+## Last touch
+
+Here's a quick logo made from the font Mission Script from pay-what-you-want-site [losttype.com](http://losttype.com)
+
+![image](http://i.imgur.com/372GE.png)
+
+
+## What's next?  Steal!
+
+Look at the web and see what you like, and then use a css/html inspection tool like chrome or firebug and steal it! Don't use frameworks, pre-rendered classes, or libraries.  Do it yourself, one line at a time.  That's the best way to learn.
+
+### Resources
+
+* Century Gothic font
+* Mission Script font (from losttype.com)
+* [Slides](http://www.slideshare.net/clemcke/design-is-crap) of my talk
+* [Lost Type Co-op](http://losttype.com)
+* [The League of Moveable Type](http://www.theleagueofmoveabletype.com)
+* [Robin Williams: Design for Non-Designers](http://www.amazon.com/The-Non-Designers-Design-Book-Edition/dp/0321534042/)
+* [Twitter Bootstrap](http://twitter.github.com/bootstrap/index.html)
+
+]]></description><link>/post/design_is_crap</link><guid isPermaLink="true">/post/design_is_crap</guid><dc:creator><![CDATA[Chris Lemcke]]></dc:creator><pubDate>Mon, 22 Oct 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Building Object-Oriented jQuery Plugins]]></title><description><![CDATA[So you've been using [jQuery](http://jquery.com) as your Javascript framework and now you need to write a plugin. If you come from an Object-Oriented background like me, you may feel that jQuery's plugins leave a lot to be desired.
+
+The basic formula to create a jQuery plugin is to extend the plugin namespace with a single method:
+
+
+    #myplugin.js
+    jQuery.fn.myplugin = function(){
+      // Do some cool stuff here
+    }
+
+While that seems all fine and dandy for simple plugins, you may need to create more robust plugins that do many things, often in a non-linear fashion.
+
+Some plugins get around this by adding tons of methods to jQuery's plugin namespace.
+
+
+    $('#test').plugin();
+    $('#test').pluginAdd('stuff');
+    $('#test').pluginRemove('other stuff');
+    $('#test').pluginDoSomethingCool();
+
+I personally don't like that approach because it pollutes the jQuery plugin namespace with lots of methods --  it's best to stick to just one plugin method per plugin.
+
+Other plugins use the first parameter of the plugin to call methods:
+
+    $('#test').plugin();
+    $('#test').plugin('add', 'stuff');
+    $('#test').plugin('remove', 'other stuff');
+    $('#test').plugin('doSomethingCool');
+
+This approach is a little awkward, especially if the plugin accepts an `options` object the first time it is created. This approachs means you would have to either write a switch of all the methods you want to expose, or blindly accept any string as a method name.
+
+To get around these hurdles, you can use this basic template for jQuery plugins that provides access to an Object-Oriented interface if needed while still maintaining jQuery's simplicity of a single method in the plugin namespace.
+
+The first thing you need to do is wrap all your plugin code in an anonymous function. This will help keep things nice and tidy without creating global variables.
+
+    #myplugin.js
+    (function($){
+      // Your plugin code goes here
+    })(jQuery);
+
+Next, create your plugin as a class, where the first parameter is a single DOM element.
+
+    #myplugin.js
+    (function($){
+      var MyPlugin = function(element){
+        var elem = $(element);
+        var obj = this;
+
+        // Public method
+        this.publicMethod = function(){
+          console.log('publicMethod() called!');
+        };
+      };
+    })(jQuery);
+
+To make your new object-oriented class available as a jQuery plugin, write a simple wrapper function in the plugin namespace:
+
+    #myplugin.js
+    (function($){
+      var MyPlugin = function(element){
+        var elem = $(element);
+        var obj = this;
+
+        // Public method
+        this.publicMethod = function(){
+          console.log('publicMethod() called!');
+        };
+      };
+
+      $.fn.myplugin = function(){
+        return this.each(function(){
+          var myplugin = new MyPlugin(this);
+        });
+      };
+    })(jQuery);
+
+Now, when you call `$(selector).myplugin()`, the jQuery plugin will loop through the matched elements and instantiate an instance of `MyPlugin` for each one, passing the element as the first argument. And by returning `this`, you can ensure that your plugin is chainable (e.g. `$(selector).myplugin().show()`).
+
+But now there's a problem of how to get the object `myplugin` once it's been created. For this, I usually store the object in the elements data. This provides easy access to the object while allowing you to prevent accidental double instantiation in the event that the plugin was called again on the same element.
+
+    #myplugin.js
+    (function($){
+      var MyPlugin = function(element){
+        var elem = $(element);
+        var obj = this;
+
+        // Public method
+        this.publicMethod = function(){
+          console.log('publicMethod() called!');
+        };
+      };
+
+      $.fn.myplugin = function(){
+        return this.each(function(){
+          var element = $(this);
+
+          // Return early if this element already has a plugin instance
+          if (element.data('myplugin')) return;
+
+          var myplugin = new MyPlugin(this);
+
+          // Store plugin object in this element's data
+          element.data('myplugin', myplugin);
+        });
+      };
+    })(jQuery);
+
+Now you have easy access to the object should you need to run methods on it.
+
+    $('#test').myplugin();
+    var myplugin = $('#test').data('myplugin');
+    myplugin.publicMethod(); // prints "publicMethod() called!" to console
+
+If you need to get fancy and add an options argument or other required arguments, just pass them from the jQuery plugin to your plugin's constructor:
+
+    #myplugin.js
+    (function($){
+      var MyPlugin = function(element, options){
+        var elem = $(element);
+        var obj = this;
+
+        // Merge options with defaults
+        var settings = $.extend({
+          param: 'defaultValue'
+        }, options || {});
+
+        // Public method
+        this.publicMethod = function(){
+          console.log('publicMethod() called!');
+        };
+      };
+
+      $.fn.myplugin = function(options){
+        return this.each(function(){
+          var element = $(this);
+
+          // Return early if this element already has a plugin instance
+          if (element.data('myplugin')) return;
+
+          // pass options to plugin constructor
+          var myplugin = new MyPlugin(this, options);
+
+          // Store plugin object in this element's data
+          element.data('myplugin', myplugin);
+        });
+      };
+    })(jQuery);
+
+You may also want to expose some of your object's methods while keeping others private. To make a private method, create a local function within your object using the `var` keyword:
+
+    #myplugin.js
+    (function($){
+      var MyPlugin = function(element, options){
+        var elem = $(element);
+        var obj = this;
+        var settings = $.extend({
+          param: 'defaultValue'
+        }, options || {});
+
+        // Public method - can be called from client code
+        this.publicMethod = function(){
+          console.log('public method called!');
+        };
+
+        // Private method - can only be called from within this object
+        var privateMethod = function(){
+          console.log('private method called!');
+        };
+      };
+
+      $.fn.myplugin = function(options){
+        return this.each(function(){
+          var element = $(this);
+
+          // Return early if this element already has a plugin instance
+          if (element.data('myplugin')) return;
+
+          // pass options to plugin constructor
+          var myplugin = new MyPlugin(this, options);
+
+          // Store plugin object in this element's data
+          element.data('myplugin', myplugin);
+        });
+      };
+    })(jQuery);
+
+To see an example of a plugin written in this fashion, check out my [Tagger](http://www.virgentech.com/code/view/id/3) plugin.
+
+> *Note: This post was cross-posted from the [VirgenTech.com blog entry by the same name](http://www.virgentech.com/blog/2009/10/building-object-oriented-jquery-plugin.html).*
+]]></description><link>/post/jquery-oo-plugins</link><guid isPermaLink="true">/post/jquery-oo-plugins</guid><dc:creator><![CDATA[Hector]]></dc:creator><pubDate>Tue, 25 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Screen Cheatsheet]]></title><description><![CDATA[Here's my screen cheat sheet. It's simultaneous incredibly useful and ridiculous to configure.  
+Actually reminds me of my other favorite tool with this syndrome: vim.
+
+### Configuration
+
+I like to bind C-o instead of C-a for screen commands.  
+I feel that C-o is easier for my old hands to hit.
+
+Here's the skinny on what goes inside that cryptic screenrc:  
+Use C-o to issue commands to screen
+
+    escape ^Oo
+ 
+I also bind F5 and F6 to previous and next window:
+
+F5 for previous window
+
+    bindkey -k k5 prev
+
+F6 for next window
+
+    bindkey -k k6 next
+
+### SSH
+
+To be able to use ssh-agent within screen, you'll need this in your screenrc:
+
+    setenv SSH_AUTH_SOCK $HOME/.ssh/screen_agent
+    screen -t remote ssh-agent ssh-agent -a $SSH_AUTH_SOCK $SHELL
+
+### Internal commands
+
+    C-o "         Shows a list of sessions.
+    C-o w         Shows name of session the lower left.
+    C-o c         Creates a new session.
+    C-o d         Detaches the current session.
+    C-o A         Names the current session.
+    C-o n         Cycle to next session.
+    C-o p         Cycle to previous session.
+    C-o F         Fit the session to the current terminal.
+    C-o :quit     Quit all running sessions.
+    C-o S         Open a new region in a session.
+    C-o <TAB>     Enter a newly created region.
+    C-o X         Close a region in screen.
+    C-o ]         Enables copy mode for copying or scrolling; use PgUp, or PgDn, etc.
+                  Press <ENTER> to mark text for copying.
+                  Press <ENTER> again to copy the text.
+                  Press C-o ] again to paste.
+
+### External commands
+
+    screen -ls    List sessions.
+    screen -r     Reattach a session.
+    screen -r foo Reattach to foo.
+    screen -S foo Create a screen named foo.
+ 
+**Conclusion**  
+Clear as mud right?
+
+]]></description><link>/post/screen</link><guid isPermaLink="true">/post/screen</guid><dc:creator><![CDATA[min]]></dc:creator><pubDate>Wed, 19 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Performance Testing with Httperf]]></title><description><![CDATA[### Introduction
+
+> *"[Httperf](http://www.hpl.hp.com/research/linux/httperf/) -- a tool for measuring web server performance. It provides a flexible facility for generating various HTTP workloads and for measuring server performance. The focus of httperf is not on implementing one particular benchmark but on providing a robust, high-performance tool that facilitates the construction of both micro- and macro-level benchmarks. The three distinguishing characteristics of httperf are its robustness, which includes the ability to generate and sustain server overload, support for the HTTP/1.1 and SSL protocols, and its extensibility to new workload generators and performance measurements."*
+>
+> *Source: [Httperf Homepage](http://www.hpl.hp.com/research/linux/httperf/)*
+
+##### Httperf's Default Scope
+It's important to note that by default httperf only tests the standard http payload of your application -- e.g. the rendered HTML of the URL you are testing. Much like "curl", it does not load assets (images, javascript or css) by default. In this document, I will be referring to this as the "**base payload**". There are ways to configure it to load additional requests as part of the same session, which I will be covering. 
+
+
+### Standard Usage
+**Basic command-line usage:**
+
+    $ httperf --server www.rubyops.net --port 80 --num-conns 10 --rate 1
+
+**Results:**
+
+    httperf --client=0/1 --server=www.rubyops.net --port=80 --uri=/ --rate=1 \ 
+            --send-buffer=4096 --recv-buffer=16384 --num-conns=10 --num-calls=1
+
+    Maximum connect burst length: 1
+
+    Total: connections 10 requests 10 replies 10 test-duration 9.286 s
+
+    Connection rate: 1.1 conn/s (928.6 ms/conn, <=1 concurrent connections)
+    Connection time [ms]: min 284.2 avg 303.2 max 376.2 median 284.5 stddev 38.4
+    Connection time [ms]: connect 91.8
+    Connection length [replies/conn]: 1.000
+
+    Request rate: 1.1 req/s (928.6 ms/req)
+    Request size [B]: 68.0
+
+    Reply rate [replies/s]: min 1.0 avg 1.0 max 1.0 stddev 0.0 (1 samples)
+    Reply time [ms]: response 99.1 transfer 112.3
+    Reply size [B]: header 241.0 content 29147.0 footer 0.0 (total 29388.0)
+    Reply status: 1xx=0 2xx=10 3xx=0 4xx=0 5xx=0
+
+    CPU time [s]: user 1.99 system 7.27 (user 21.5% system 78.3% total 99.7%)
+    Net I/O: 31.0 KB/s (0.3*10^6 bps)
+
+    Errors: total 0 client-timo 0 socket-timo 0 connrefused 0 connreset 0
+    Errors: fd-unavail 0 addrunavail 0 ftab-full 0 other 0
+
+
+In this example, I'm running ten connections _[\-\-num-conns 10]_ through [www.rubyops.net](http://www.rubyops.net/) _[\-\-server www.rubyops.net]_ at a rate of one connection per second _[\-\-rate 1]_. 
+
+Breaking down the results, I typically focus on the following rows:
+
+1. "Connection rate" -- this is mostly useful when not passing "--rate", which sends connections as fast as possible.
+1. "Connection time [ms]" -- this is the meat of the test. It's a breakdown of various metrics related to the test against your base payload.
+1. "Reply size" -- this is useful when testing change which are geared towards reducing the base payload of your application. Things like adding 'gzip' compression, uglifying JavaScript or 'haml', etc.
+1. "Reply status" -- it's important to ensure that you're getting 200's when testing (or perhaps 302s if that's expected).
+
+#### Being a Hog!
+
+While my examples don't include this, using the "\-\-hog" flag when running httperf on a host dedicated to generating load is a very good idea. This tells httperf to use as many TCP connections as possible, thus avoiding bottlenecks. This flag should probably be omitted if generating load on the same box your application is running on.
+
+### Testing Pages with AJAX
+
+In more advanced usages you can create a a series of URIs to pass to emulate a single session. This is particularly useful when you're performance testing a page with several AJAX calls. 
+
+To do this, you need to create a connections file with all URIs you want to hit.
+
+**sessions.log**
+
+    /
+            /foo
+            /bar
+            /bah
+
+You then need specify the log file you want to use in the place of "\-\-uri" to tell 'httperf' what paths to use.
+
+    httperf --server www.rubyops.net --wsesslog 10,1,sessions.log
+
+
+Obviously, I'm not implementing "/foo", "/bar" and "/bah" as AJAX on my site, but you get the idea. 
+
+So what am I doing here? With "\-\-wsesslog", the first to field is the number of connections to make, basically the same as "\-\-num-conns" from the previous example. The second field is defined as "burst-to-burst user think time", which most simply means the number of times to access the URI before moving on to the next -- e.g. 1 would be one request per cycle through the list, 0.25 would be four requests per cycle through the list. 
+
+Okay, simple enough. So what does 'httperf' do with that? Well instead of trying to explain it myself, I'm going quote  [httperf's man page](http://www.hpl.hp.com/research/linux/httperf/httperf-man.txt); *"When \-\-wsess or \-\-wsesslog is specified, httperf generates and measures sessions instead of individual calls and additional statistics are printed at the end of a test."*
+
+### Replaying Production Logs
+
+Httperf makes replaying production logs somewhat simple with the "\-\-wlog" option, which is used to generate a sequence of URIs to access. The one oddity, and why I say "somewhat simple" is that it expects an ASCII NUL separated [\0] file (as opposed to "new line" separated [\n], see examples below for details).
+
+The first step is to generate your list. I use [Nginx](/tag/nginx), so that's what I'm going to focus on here. That said, this should be pretty adaptable to most web servers. Here's the command I use to generate a traffic log from Nginx's access.log:
+
+    $ awk '{ print $7 }' /path/to/logs/access.log > urls.log
+
+This assumes -- of course -- that your request path is in the seventh column.
+
+In rare caces you need to clean up a leading or trailing quote like so:
+
+    $ awk '{ print $7 }' /path/to/logs/access.log | sed 's/^\"//g' | \
+      sed 's/\"$//g' > urls.log
+
+
+So with that, we have a list of URIs from [www.rubyops.net](http://www.rubyops.net/), which we've called "urls.log". From this, we need to generate a file which is ASCII NUL separated which we'll call "wlog.log":
+
+Start with urls.log.
+
+     /
+     /tag
+     /tag/ruby
+     /archive
+     /2012
+     /2012/07
+
+Convert it to wlog.log -- replace line breaks with ASCII NUL characters.
+
+        $ tr "\n" "\0" < urls.log > wlog.log
+
+Now we can run our test.
+
+        $ httperf --server www.rubyops.net --wlog Y,wlog.log
+        
+Note, the "Y" (or "N") switch is simply telling httperf to loop through the urls in your log file (or not).
+
+### Best Practices
+
+I don't claim to be an expert in this area (**AT ALL**), however, here a few things I've picked up in my travels, which has made my life easier in regards to performance testing best practices. They aren't always hard rules and I've broken all of them out of necessity at one point or another.
+
+5. Don't performance test against production applications!
+6. Don't performance test against production services!
+7. Don't performance test against production databases!
+7. **Don't performance test against production ANYTHING!**
+4. If possible, try to performance test in an environment which is identical to production in every way -- same configuration, same network, same OS, same hardware (including CPU, RAM, etc.) -- to make your tests as accurate as possible.
+1. Whenever possible, generate load (i.e. run httperf) on a separate machine from the host that the application is running on. This seems like a no-brainer, but you'd be surprised…
+2. Use "\-\-hog" any time you're generating load from a separate host and your request rate is high. Eat up those TCP connections, don't be shy!
+3. Generating load from an external connection can be good to test your overall network latency, but be sure your starting point connection can handle large amounts of traffic. For example, generating 100,000 connections at 100QPS from a Cable or DSL line probably isn't the best idea.
+1. Oh and **don't performance test against production!**
+
+> Note: This post was cross-posted from the [RubyOps.net blog entry by the same name](http://www.rubyops.net/performance-testing-with-httperf).
+
+]]></description><link>/post/httperf</link><guid isPermaLink="true">/post/httperf</guid><dc:creator><![CDATA[Josh]]></dc:creator><pubDate>Tue, 18 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Ruby Meetup]]></title><description><![CDATA[![meetup](http://i.imgur.com/sAxiL.jpg)
+
+On Thursday, October 11, 2012 we will be hosting the monthly Ruby meetup at our office in Glendale.  
+Come hungry and enjoy great food and awesome hackers!
+
+### Schedule
+
+7:00 – 7:15 Open  
+7:15 – 7:30 Introductions  
+7:30 – 9:00 Presentations  
+9:00 – 10:00 Open / Networking  
+
+
+### Presentations
+
+We need presentations for this meetup! Each meetup features 3-4 presentations of 30 minutes each, and should pertain to Ruby / Ruby on Rails, or be of general interest to the Ruby community. Please contact Alf Mikula if you are interested in presenting. Include a title, brief summary of your proposed presentation, and a brief bio about yourself. Please see past meetups for examples.
+
+[Meetup website](http://www.meetup.com/laruby/events/82438922/)
+]]></description><link>/post/ruby-meetup</link><guid isPermaLink="true">/post/ruby-meetup</guid><dc:creator><![CDATA[Alf]]></dc:creator><pubDate>Mon, 17 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Preview markdown files locally]]></title><description><![CDATA[I don't like to push my markdown files to github every time i make a change, just to realize 
+I forgot a space or something tiny like that.. and my 'git log' is cluttered with 'readme' commits.    
+enter [GFMS](https://github.com/ypocat/gfms) - Github Flavored Markdown Server.
+
+it's a small node server that let's you preview your markdown files locally.
+
+    npm install gfms -g
+    cd <a folder with markdown files>
+    gfms -p 1234
+    http://localhost:1234/
+
+just make a change to your md file and watch the rendered html on the browser. 
+no need to hit refresh! (thanks to WebSocket)
+
+[![gfms](http://i.imgur.com/uJxaM.png)](http://i.imgur.com/uJxaM.png)
+
+
+
+]]></description><link>/post/markdown</link><guid isPermaLink="true">/post/markdown</guid><dc:creator><![CDATA[Oren]]></dc:creator><pubDate>Sat, 15 Sep 2012 07:00:00 GMT</pubDate></item><item><title><![CDATA[Upcoming node.js events]]></title><description><![CDATA[Just in case you find yourself in any of the locations below...  
+
+Shanghai, Sep 14-16  
+first node conference in China  
+[http://www.hujs.org/](http://www.hujs.org/)  
+
+Berlin, Oct 5  
+hacking on drones - each team gets http://ardrone2.parrot.com/ and hack for a day!  
+[http://nodecopter.com/](http://nodecopter.com/)
+
+Dublin, Oct 18-19  
+[http://www.nodedublin.com/](http://www.nodedublin.com/)
+
+NY, Oct 22   
+[http://empirejs.org/](http://empirejs.org/)
+
+Portland, Oct 23-24  
+keeping it realtime conference   
+[http://krtconf.com](http://krtconf.com)
+
+San Francisco, Nov 10-12  
+48 hours of node hackathon. you can join remotely  
+[http://nodeknockout.com/](http://nodeknockout.com/)
+
+]]></description><link>/post/node-events</link><guid isPermaLink="true">/post/node-events</guid><dc:creator><![CDATA[Oren]]></dc:creator><pubDate>Thu, 13 Sep 2012 07:00:00 GMT</pubDate></item></channel></rss>
