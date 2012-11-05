@@ -38,6 +38,7 @@ go ahead and create app.js and saveUser.js from the code samples above.
 now add a simple index.html that uses app.js
 
     <!DOCTYPE html>
+    <html lang="en">
       <head>
       </head>
 
@@ -69,6 +70,7 @@ that's nice but we need to save the output into a file, right? lets do that with
 now we can use bundle.js insted of app.js in our html file:
 
     <!DOCTYPE html>
+    <html lang="en">
       <head>
       </head>
 
