@@ -1,5 +1,5 @@
 {{{
- "title" : "SolrMeter: Performance Testing for Solr",
+ "title" : "Evaluating SolrMeter for Performance Testing",
  "authorName" : "Pradeep Teregowda",
  "authorLink" :"",
  "authorImage" :"",
@@ -7,54 +7,27 @@
  "date": "10-30-2012"
 }}}
 
-Testing is integral to development. For those working with information retrieval systems, 
-there have not been many tools or support for testing available. In this regard, SolrMeter 
-is a particularly welcome tool.  In terms of existing performance monitoring and testing 
-tools for Solr, availability has been patchy and many of the tools available are not free.
-With the growing popularity of Solr based applications, the ability to identify and improve 
-performance of Solr instances is valuable.
+In this post I’m going to review SolrMeter, a performance measurement and testing tool for the popular Solr platform. Currently, there is a lack of such tools for systems using Solr. In case you are not familiar with Solr, it is best described as an enterprise search platform built on top of Apache Lucene.
 
-There are several differences between web load testing, performance monitoring tools and 
-SolrMeter. SolrMeter includes both a loading component and a monitoring component in a single 
-package. The integrated console provides access to sub consoles for queries, updates, commits, 
-optimization and results in the same page.  
-For setting up a test, the console provides us with access to only the intended queries per 
-minute parameter, other parameters being accessible through the settings menu. Drill downs to 
-modify a wider set of parameters are available through advanced settings. This includes 
-settings for the HTTP method utilized and all parameters available through the SolrMeter 
-settings menu. 
+Unlike most tools available for Web load testing and performance monitoring, SolrMeter includes both a loading component and a monitoring component in a single package. An integrated console in SolrMeter provides readouts for queries, updates, commits optimization and performance results on the same application screen as seen below.
+
+
 
 ![Operation Time Line in SolrMeter](http://i.imgur.com/FyjjL.png)
+### Operation Time Line in SolrMeter
 
-The load testing component of SolrMeter is driven by queries provided by the user.  To 
-help the user generate queries, a tool for extracting queries from Solr log files is available 
-under the Tools tab.  One of the major differences to other web application load testing tools 
-such as Jmeter or openSTA, which provide a ramp up of load over time, is that by default 
-queries are made to the instance in a randomized manner (hence the need for tracking actual 
-queries per minute). This can somewhat be confusing, and makes it difficult to under stand 
-the results generated.
+On this integrated console, you only need to provide a single parameter for Intended Queries per Minute to fire-off a performance test. All other parameters to run this test are available through Settings in the Edit menu. In the same way, we only need to input Intended Updates per Minute to kick-off a performance test on Updates. You can set additional parameters, HTTP Method Utilized, including through Advanced Settings menu in the Settings screen.
+ 
+To specify query inputs to Query Console, we can use simple keywords, phrases or Boolean expressions along with filters and query faceting with the input query file. That aside, SolrMeter offers only limited support for an external parameter file. Only a few file formats for Update Console are acceptable and they must use (key,value) pairs to specify params.
 
-In terms of inputs, the query file allows both simple keywords, phrases and boolean expressions, 
-to be used along with faceting and filters. More complex queries can be emulated with faceting and 
-filters provided within the file. There is limited support for parameterization through the extra 
-params file.  For updates, the file format is limited and uses a semicolon separated values with 
-colon separated key value pairs.
+SolrMeter displays performance test results on tabs for Histogram, Pie-charts, Query Time History and more. Along with Query Statistics, these charts provide a complete view of query performance. The cache history panel is pretty useful in tuning cache performance for queries. And, overall information for updates and queries is represented on Operation Time Line tab.
 
-Results from running queries are shown through a series of graphs, tables, available as a sub console 
-in the main window.  The Histogram, Pie Chart, Query Time history are the most relevant when a query 
-load test is performed. These graphs along with the query statistics table provide a overview of 
-the query performance of the instance. In addition, the cache history panel, which obtains cache
- performance data from Solr interface, can be useful in tuning cache performance for queries. The 
-overall information for updates and queries is available with the operation time line. Results for 
-individual sub consoles such as query, updates are also available at the sub consoles, particularly 
-relevant when the query mechanism is set to random.
+One minor inconvenience in all this is that unlike JMeter and openSTA, SolrMeter randomizes the number of queries generated per second while achieving the specified QPM target. This is easily alleviated by modifying software settings in Settings menu OR modifying SolrMeter source-code.
 
-Overall, SolrMeter provides several features which can be useful for performance tuning Solr 
-instances, the open source nature of SolrMeter means that features can be added and existing 
-features fine tuned.
+Overall, SolrMeter offers several features useful for performance tuning Solr instances. And, because SolrMeter is open-source, features can be added and existing features can be refined easily.
 
 References:
 
-* [SolrMeter](http://code.google.com/p/solrmeter)
-* [Solr](http://lucene.apache.org/solr)
-
+* SolrMeter http://code.google.com/p/solrmeter/
+* Solr http://lucene.apache.org/solr/
+ 
