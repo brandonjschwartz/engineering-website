@@ -13,7 +13,7 @@
 This weekend Node Knockout hackathon was happening.   
 163 teams all over the world hack for 48 hours whatever they feel like.  
 
-Here is one fun game created by [Substack](https://github.com/substack) and [Dominic](https://github.com/dominictarr) -   
+Here is one fun game created by [Substack](https://github.com/substack), [Dominic](https://github.com/dominictarr), and [Raynos](https://github.com/Raynos) -   
 It's a browser-based, multi-player adventure game where you can cast spells on any object around you by changing the object's javascript code!  
 You can even turn your friend to a monster or a rock if they pisses you off..
 Click on anything around you to see it's code and start hacking!
