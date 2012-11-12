@@ -5,9 +5,13 @@ article.blog-post
     h2
       a.title(href=post.url) #{post.title}
     time #{monthInWord(post.date.getMonth())} #{post.date.getDate()}, #{post.date.getFullYear()}
-    a.author(href=post.authorLink, target='_blank')
-      img(src=post.authorImage) 
-      | #{post.authorName}
+    - if (post.authorLink === '')
+      a.author.no-link #{post.authorName}
+    - else
+      a.author(href=post.authorLink, target='_blank')
+        img(src=post.authorImage) 
+        | #{post.authorName}
+      
     a.comments-count(href=post.url + '#disqus_thread' , data-disqus-identifier=post.slug)
 
   section.body
