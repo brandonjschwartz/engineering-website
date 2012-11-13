@@ -28,7 +28,7 @@ hashComments:3,cStyleComments:!0,multilineStrings:!0,tripleQuotedStrings:!0,rege
 PR_NOCODE:"nocode",PR_PLAIN:"pln",PR_PUNCTUATION:"pun",PR_SOURCE:"src",PR_STRING:"str",PR_TAG:"tag",PR_TYPE:"typ"}})();
 
 var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-23782413-1']);
+_gaq.push(['_setAccount', 'UA-34877454-1']);
 _gaq.push(['_trackPageview']);
 
 (function() {
