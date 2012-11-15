@@ -1,6 +1,7 @@
 var express  = require( 'express' );
 var app      = express();
 var poet     = require( 'poet' )( app );
+var config  = require('./config.js');
 
 poet.set({
   postsPerPage : 10,
@@ -27,7 +28,7 @@ app.configure( 'production', function () {
 
 require( './routes' )( app );
 
-app.listen( 9778 );
+app.listen( config.port );
 
 function notFoundFn ( req, res ) {
   if ( req.accepts( 'html' )) {
@@ -37,4 +38,4 @@ function notFoundFn ( req, res ) {
   }
 }
 
-console.log('Server listening on port ' + '9778');
+console.log('Server listening on port ' + config.port, ' Environment: ', process.env.NODE_ENV);
