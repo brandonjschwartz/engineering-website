@@ -1,5 +1,7 @@
 var http = require('http');
 var spawn = require('child_process').spawn;
+process.env.NODE_ENV = process.env.NODE_ENV || 'development';
+var port = 3000;
 
 http.createServer(function(req, res) {
   if (req.method === 'POST' && req.url === '/update') {
@@ -7,9 +9,9 @@ http.createServer(function(req, res) {
   }
 
   res.end();
-}).listen(3000);
+}).listen(port);
 
-console.log('listening on http://localhost:3000');
+console.log('update-service listening on port ' + port, ' Environment: ', process.env.NODE_ENV);
 
 function gitPull() {
   var git = spawn('git', ['pull', 'origin', 'master']);
@@ -49,11 +51,11 @@ function restartServer() {
   var forever = spawn('forever', ['restart', 'server.js']);
 
   forever.stdout.on('data', function (data) {
-    console.log('forever stdout: ' + data);
+    console.log('forever restart. stdout: ' + data);
   });
 
   forever.stderr.on('data', function (data) {
-    console.log('forever stderr: ' + data);
+    console.log('forever restart. stderr: ' + data);
     if (/Cannot find forever process/.test(data)) {
       startServer();
     }
@@ -65,14 +67,14 @@ function restartServer() {
 };
 
 function startServer() {
-  var forever = spawn('forever', ['start', 'server.js']);
+  var forever = spawn('forever', ['start', 'server.js'], {env: process.env});
 
   forever.stdout.on('data', function (data) {
-    console.log('forever stdout: ' + data);
+    console.log('forever start. stdout: ' + data);
   });
 
   forever.stderr.on('data', function (data) {
-    console.log('forever stderr: ' + data);
+    console.log('forever start. stderr: ' + data);
   });
 
   forever.on('exit', function (code) {
