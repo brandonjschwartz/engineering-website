@@ -7,7 +7,7 @@
   "date" : "11-14-2012"
 }}}
 
-![ootd](http://i.imgur.com/RSLiD.jpg)
+![ootd](http://i.imgur.com/BiD9f.jpg)
 
 Outfit Of The day by Sara!
 

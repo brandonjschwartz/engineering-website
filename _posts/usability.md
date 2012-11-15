@@ -1,13 +1,15 @@
 {{{
   "title" : "The Usability Toolbox, Part One: Usability Lab",
   "authorName": "Natalie Dunbar",
-  "authorLink": "https://github.com/oren",
-  "authorImage": "https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
+  "authorLink": "",
+  "authorImage": "http://i.imgur.com/BiD9f.jpg",
   "tags" : [ "product" ],
   "date" : "11-14-2012"
 }}}
 
 by Natalie Dunbar | User Experience Design
+
+![dilbert](http://twiki.org/p/pub/Codev/TWikiUsability/reboot.gif)
 
 If you had a way to engage users of your products and services, particularly (and especially) before they launch, and you could observe those users could as they interact with a live or prototype version of whatever you’re building, what would it be worth to you?
 

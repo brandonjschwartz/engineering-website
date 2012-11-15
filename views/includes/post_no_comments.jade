@@ -6,6 +6,7 @@ article.blog-post
       a.title(href=post.url) #{post.title}
     time #{monthInWord(post.date.getMonth())} #{post.date.getDate()}, #{post.date.getFullYear()}
     - if (post.authorLink === '')
+      img(src=post.authorImage) 
       a.author.no-link #{post.authorName}
     - else
       a.author(href=post.authorLink, target='_blank')
