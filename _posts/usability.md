@@ -4,7 +4,7 @@
   "authorLink": "",
   "authorImage": "http://i.imgur.com/BiD9f.jpg",
   "tags" : [ "product" ],
-  "date" : "11-14-2012"
+  "date" : "11-15-2012"
 }}}
 
 by Natalie Dunbar | User Experience Design
