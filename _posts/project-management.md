@@ -11,7 +11,7 @@ People often ask me "What does a product manager do?". And, someone recently con
 
 So, let me break it down. A Product Manager (**PM**) is responsible for coming up with the product concept (Ideation), selling the concept (Communication) and ensuring timely launch (Execution) of the product.
 
-![project management](http://i.imgur.com/c5WUF.jpg) **<span style="color:#3366ff">Ideation</span>**  At a minimum, a PM is responsible for the product concept - coming up with the vision or refining an existing idea. He will take a vague idea and turn it into detailed, specific requirements & features. Not only that, he will prioritize these requirements and associate them with real world situations (Use Cases) for when someone or something may interact with the product. These Use Cases have to carry sufficient detail so that they clearly convey the scope and product features. This way smart Engineers can build it into something in real-life. And, the Quality Assurance (QA) folks need to refer to these Use Cases to figure out how to test the product and ensure that it does what its supposed to do.
+![project management](http://i.imgur.com/6kPIt.jpg) **<span style="color:#3366ff">Ideation</span>**  At a minimum, a PM is responsible for the product concept - coming up with the vision or refining an existing idea. He will take a vague idea and turn it into detailed, specific requirements & features. Not only that, he will prioritize these requirements and associate them with real world situations (Use Cases) for when someone or something may interact with the product. These Use Cases have to carry sufficient detail so that they clearly convey the scope and product features. This way smart Engineers can build it into something in real-life. And, the Quality Assurance (QA) folks need to refer to these Use Cases to figure out how to test the product and ensure that it does what its supposed to do.
 
 **<span style="color:#3366ff">Communication</span>**  Its extremely important that a PM gets buy-in from the stakeholders on the product. Nobody wants to do the work unless they are convinced it's worth their while. So, it falls to the PM to identify market opportunity, benefits and ROI (return on investment) if this product were to be created. Then, he will turn all this data into a convincing rationale to create this product.
 
@@ -31,5 +31,5 @@ If AB Test/bucket test is being performed before full launch, a PM will define t
 
 My buddy, Uday S, says "A Product Manager is the CEO of his product". He nailed it.
 
-*This blog post is a reproduction of my original post at [www.curryNcapital.com](http://www.curryncapital.com)*
+*This blog post is a reproduction of my original post at [www.curryNcapital.com](http://curryncapital.com/2012/11/20/pmresponsibilities)*
 
