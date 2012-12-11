@@ -1,15 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 11 Dec 2012 16:44:07 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Quang Gip is a Yellow Pager!]]></title><description><![CDATA[![quang](http://i.imgur.com/SwDZP.png)
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 11 Dec 2012 22:01:07 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Quang Gip is a Yellow Pager!]]></title><description><![CDATA[![quang](http://i.imgur.com/SwDZP.png)
 
-Here's a little about myself.
-
-I'm currently working in the software engineer in test team in Jonny's team.  My previous job was a qa engineering and a release engineer, which I managed testing and source code management.  I hope to apply the same experience and contribute at my current job.
+I'm currently working as a software engineer on the search team.  My previous job was a qa engineering and a release engineer, which I managed testing and source code management.  I hope to apply the same experience and contribute at my current job.
 
 Outside of work, I enjoy going to the gym and doing photography in my spare time.  I also post-process my own photos.  I'm not a picky person in general, but I am in my photography because I strive for perfection even though it doesn't exist :)
 
-That's pretty much me in a nutshell.  :]
-
-How do I know when it's Friday?  When I get looks like this...  
+That's pretty much me in a nutshell.
 ]]></description><link>/post/quang</link><guid isPermaLink="true">/post/quang</guid><dc:creator><![CDATA[Yellow Pages]]></dc:creator><pubDate>Tue, 11 Dec 2012 08:00:00 GMT</pubDate></item><item><title><![CDATA[What does a Product Manager do?]]></title><description><![CDATA[People often ask me "What does a product manager do?". And, someone recently confessed that when I told her I was a Product Manager, she wondered "What does that mean?".
 
 So, let me break it down. A Product Manager (**PM**) is responsible for coming up with the product concept (Ideation), selling the concept (Communication) and ensuring timely launch (Execution) of the product.
