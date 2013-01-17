@@ -11,7 +11,7 @@ Imagine an industry buzzword that described millions of human brains thinking in
 
 ![image](http://25.media.tumblr.com/QPxunWAveljvzdz7Mtqb4fP8o1_500.jpg)
 
-Microtask crowdsourcing breaks a daunting project into small, simple tasks and distributes them to a "crowd" of anonymous internet citizens. Using [Amazon Mechanical Turk](www.mturk.com), and other crowdsourcing platforms YP employees have quietly but steadily developed experience and expertise with a variety of use cases since 2006.  
+Microtask crowdsourcing breaks a daunting project into small, simple tasks and distributes them to a "crowd" of anonymous internet citizens. Using [Amazon Mechanical Turk](http://www.mturk.com), and other crowdsourcing platforms YP employees have quietly but steadily developed experience and expertise with a variety of use cases since 2006.  
 
 **Hours of Operation Standardization** - A simple formatting task that would serve as training data for parsing algorithms.  
 
@@ -29,7 +29,7 @@ Microtask crowdsourcing breaks a daunting project into small, simple tasks and d
 
 **Query/Geo segmentation** - Training data for a Single Search Box.  
 
-As you can see, our most common use is measuring subtleties in datasets that computer algorithms are unable to detect. Microtasking means that the work is short, simple, and repetitive, but more complex forms of crowdsourcing are beginning to evolve and build their niche. Sites like [99designs](http://www.99designs.com) for logo designs, [uTest](utest.com) for QA, [TopCoder](http://www.topcoder.com/) for software development, and [Kaggle](http://www.kaggle.com/) for data science are targeting a more qualified workforce and moving crowdsourcing into new territory.  
+As you can see, our most common use is measuring subtleties in datasets that computer algorithms are unable to detect. Microtasking means that the work is short, simple, and repetitive, but more complex forms of crowdsourcing are beginning to evolve and build their niche. Sites like [99designs](http://www.99designs.com) for logo designs, [uTest](http://www.utest.com) for QA, [TopCoder](http://www.topcoder.com/) for software development, and [Kaggle](http://www.kaggle.com/) for data science are targeting a more qualified workforce and moving crowdsourcing into new territory.  
 
 ## Join the Crowd, Be Assimilated or Resist Futily  
 
