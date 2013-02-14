@@ -21,7 +21,7 @@ Price Range:  $
 ![Imgur](http://i.imgur.com/tJ7qd.jpg)
 ![Imgur](http://i.imgur.com/CjArq.jpg)
 
-This place is no itty bitty bakery!  20,000 square feet of mouth watering desserts, sandwiches, soups, coffee!  You can find Cuban, French, Danish, and Italian delicacies here at Porto's Bakery.  A ffamily run business since the 1990's, this jem brings in thousands of people from all over Southern California and has now grown into 2 other cities.  You are missing out if you haven't given this place a try.  Go support a local family business.
+This place is no itty bitty bakery!  20,000 square feet of mouth watering desserts, sandwiches, soups, coffee!  You can find Cuban, French, Danish, and Italian delicacies here at Porto's Bakery.  A family run business since the 1990's, this gem brings in thousands of people from all over Southern California and has now grown into 2 other cities.  You are missing out if you haven't given this place a try.  Go support a local family business.
 
 ## Raffi's Place Restaurant  
 211 E Broadway, Glendale, CA 91205 
