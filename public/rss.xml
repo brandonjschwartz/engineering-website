@@ -1,5 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Fri, 11 Jan 2013 16:40:39 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Turn that "Grunt" upside down!]]></title><description><![CDATA[![grunt](http://a2.ec-images.myspacecdn.com/images02/56/4931bf18944e44d4b4908fdb0decebac/l.jpg)
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Thu, 14 Feb 2013 18:35:39 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Glendale's Best Eateries]]></title><description><![CDATA[Most of the engineering teams are located in Glendale, CA.
+Glendale (Eastern end of the San Fernando Valley) is the 3rd largest city in Los Angeles with 191,719 people.
+Also a home for the largest Armenian population.  (1 in 4 are Armenian!)
+With a large city comes big demands for great places to "get your grub on".
+
+Here are my picks for the best eateries in town:
+
+## Porto's Bakery  
+315 N Brand Blvd, Glendale, CA 91203 
+Price Range:  $
+
+![Imgur](http://i.imgur.com/tJ7qd.jpg)
+![Imgur](http://i.imgur.com/CjArq.jpg)
+
+This place is no itty bitty bakery!  20,000 square feet of mouth watering desserts, sandwiches, soups, coffee!  You can find Cuban, French, Danish, and Italian delicacies here at Porto's Bakery.  A ffamily run business since the 1990's, this jem brings in thousands of people from all over Southern California and has now grown into 2 other cities.  You are missing out if you haven't given this place a try.  Go support a local family business.
+
+## Raffi's Place Restaurant  
+211 E Broadway, Glendale, CA 91205 
+Price Range:  $$
+
+![Imgur](http://i.imgur.com/e3PAG.jpg)
+![Imgur](http://i.imgur.com/bvIKa.jpg)
+![Imgur](http://i.imgur.com/VFyMs.jpg)
+
+Raffi's place is a unique place the best Persian food in the valley.  Kabob Bargh (fillet Mignon), Kabob Koobideh (ground meat), Mast o moosir(yogurt and shallots), Basmati rice, Baklava, Soltani kabob(fillet Mignon and ground beef), hummus..... need I say more???  This place is packed every night but it is worth the wait!  
+
+## Sushi Nishiya
+1712 Victory Blvd Glendale, CA 91201
+Price Range:  $$$$
+
+![Imgur](http://i.imgur.com/kgxPz.jpg)
+![Imgur](http://i.imgur.com/Oy26t.jpg)
+
+I have always been a fan of Japanese food and I must say that this is one of the best.  So who cares if this place is ridiculously expensive right?  If you want FRESH fish this is the place to go in the valley.  This place does not match the price tag to the rent they pay as it is located in a run down strip mall but we all know that sometimes these kind of places are better than the fancy schmancy restaurants.  Omakase in Japanese is a phrase they use to say "I'll leave it to you".  This restaurant is unique in that everything is "omakase" and the sushi chef will only serve you the freshest fish of the day. Some people compare Sushi Nishiya to authentic sushi restaurants in Japan. Listen to me and try it out, you will not regret it.  
+
+Happy eating everyone!
+    
+
+]]></description><link>/post/restaurants</link><guid isPermaLink="true">/post/restaurants</guid><dc:creator><![CDATA[Xiangning]]></dc:creator><pubDate>Thu, 14 Feb 2013 08:00:00 GMT</pubDate></item><item><title><![CDATA[Turn that "Grunt" upside down!]]></title><description><![CDATA[![grunt](http://a2.ec-images.myspacecdn.com/images02/56/4931bf18944e44d4b4908fdb0decebac/l.jpg)
 
 ## What is Grunt?
 Grunt is a build tool for JavaScript projects. It automate all the annoying tasks so you don't have to think about them.
@@ -205,7 +243,7 @@ Now go ahead and start using it!
 
 ![image](http://25.media.tumblr.com/QPxunWAveljvzdz7Mtqb4fP8o1_500.jpg)
 
-Microtask crowdsourcing breaks a daunting project into small, simple tasks and distributes them to a "crowd" of anonymous internet citizens. Using [Amazon Mechanical Turk](www.mturk.com), and other crowdsourcing platforms YP employees have quietly but steadily developed experience and expertise with a variety of use cases since 2006.  
+Microtask crowdsourcing breaks a daunting project into small, simple tasks and distributes them to a "crowd" of anonymous internet citizens. Using [Amazon Mechanical Turk](http://www.mturk.com), and other crowdsourcing platforms YP employees have quietly but steadily developed experience and expertise with a variety of use cases since 2006.  
 
 **Hours of Operation Standardization** - A simple formatting task that would serve as training data for parsing algorithms.  
 
@@ -223,7 +261,7 @@ Microtask crowdsourcing breaks a daunting project into small, simple tasks and d
 
 **Query/Geo segmentation** - Training data for a Single Search Box.  
 
-As you can see, our most common use is measuring subtleties in datasets that computer algorithms are unable to detect. Microtasking means that the work is short, simple, and repetitive, but more complex forms of crowdsourcing are beginning to evolve and build their niche. Sites like [99designs](http://www.99designs.com) for logo designs, [uTest](utest.com) for QA, [TopCoder](http://www.topcoder.com/) for software development, and [Kaggle](http://www.kaggle.com/) for data science are targeting a more qualified workforce and moving crowdsourcing into new territory.  
+As you can see, our most common use is measuring subtleties in datasets that computer algorithms are unable to detect. Microtasking means that the work is short, simple, and repetitive, but more complex forms of crowdsourcing are beginning to evolve and build their niche. Sites like [99designs](http://www.99designs.com) for logo designs, [uTest](http://www.utest.com) for QA, [TopCoder](http://www.topcoder.com/) for software development, and [Kaggle](http://www.kaggle.com/) for data science are targeting a more qualified workforce and moving crowdsourcing into new territory.  
 
 ## Join the Crowd, Be Assimilated or Resist Futily  
 
