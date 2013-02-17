@@ -12,7 +12,13 @@
 It's important to get an idea of the maintainability and complexity of your codebase.
 I am using a great tool called [plato](https://github.com/jsoverson/plato) that doing exatly that. You run it against your js files and it generate a beautiful website that gives you a visual insight about the health of your project.
 
-    plato -d report-folder *.js mocks/*.js test/integration/*.js test/unit/*.js lwes/*.js
+First, install it
+
+    npm install plato -g
+
+Now run it and give it your project's Javascript files:
+
+    plato -d report-folder *.js
 
 Here is a snapshot of a project I worked on: 
 
@@ -151,7 +157,7 @@ This function have many if-else statements that each can be extracted into it's 
 
 Let's generate the report again:
 
-    plato -d report-folder *.js mocks/*.js test/integration/*.js test/unit/*.js lwes/*.js
+    plato -d report-folder *.js
 
 ![project after](http://i.imgur.com/Z8EVEGj.png)
 
