@@ -7,8 +7,6 @@
   "date" : "2-19-2013"
 }}}
 
-# Javascript Source Analysis
-
 It's important to get an idea of the maintainability and complexity of your codebase.
 I am using a great tool called [plato](https://github.com/jsoverson/plato) that doing exatly that. You run it against your js files and it generate a beautiful website that gives you a visual insight about the health of your project.
 
