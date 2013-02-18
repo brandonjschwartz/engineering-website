@@ -172,7 +172,7 @@ Now you can automate it by adding it to your make file and running it with `make
 
 <pre>
     report: 
-      plato -d report-folder *.js mocks/*.js test/integration/*.js test/unit/*.js lwes/*.js
+      plato -d report-folder *.js
 </pre>
 
 The last step can be to add it to your Continuous Integration server.
