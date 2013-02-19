@@ -175,4 +175,4 @@ Now you can automate it by adding it to your make file and running it with `make
       plato -d report-folder *.js
 </pre>
 
-The last step can be to added it to your Continuous Integration server.
+The last step can be to add it to your Continuous Integration server.
