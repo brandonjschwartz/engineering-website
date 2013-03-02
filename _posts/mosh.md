@@ -17,45 +17,65 @@ Here goes...
 
 ## How To
 
+### Install yum packages
+    $ sudo yum install openssl-devel ncurses-devel zlib-devel
+
+### Compile and install autconf
+
+    $ wget http://ftp.gnu.org/gnu/autoconf/autoconf-2.69.tar.gz
+    $ tar xzf autoconf-2.69.tar.gz
+    $ cd autoconf-2.69
+    $ ./configure
+    $ make
+    $ sudo make install
+
+### Compile and install libtool
+
+    $ wget http://ftpmirror.gnu.org/libtool/libtool-2.4.2.tar.gz
+    $ tar xzf libtool-2.4.2.tar.gz
+    $ cd libtool-2.4.2
+    $ ./configure
+    $ make
+    $ sudo make install
+
 ### Compile and install Protocol Buffers (an open-source Google project for data interchange)
 
     $ wget https://protobuf.googlecode.com/files/protobuf-2.5.0.tar.gz
-	$ tar xzvf protobuf-2.5.0.tar.gz
-	$ cd protobuf-2.5.0
-	$ ./autogen.sh
-	$ ./configure
-	$ make
-	$ make check
-	$ sudo make install
+    $ tar xzf protobuf-2.5.0.tar.gz
+    $ cd protobuf-2.5.0
+    $ ./autogen.sh
+    $ ./configure
+    $ make
+    $ sudo make install
 
 ### Compile and install Mosh
 
-    $ git clone https://github.com/keithw/mosh
-	$ cd mosh
-	$ ./autogen.sh
-	$ PKG_CONFIG_PATH=/usr/local/lib/pkgconfig ./configure
-	$ make
-	$ make check
-	$ sudo make install
+    $ wget http://github.com/downloads/keithw/mosh/mosh-1.2.3.tar.gz
+    $ tar xzf mosh-1.2.3.tar.gz
+    $ cd mosh-1.2.3
+    $ ./autogen.sh
+    $ PKG_CONFIG_PATH=/usr/local/lib/pkgconfig ./configure
+    $ make
+    $ sudo make install
 
 ### Create wrapper scripts to set LD_LIBRARY_PATH for execution
 
-	# mosh-client
+    # mosh-client
     $ sudo mv /usr/local/bin/mosh-client /usr/local/bin/mosh-client.exe
-	$ echo '#!/bin/sh' > /usr/local/bin/mosh-client
-	$ echo 'LD_LIBRARY_PATH=/usr/local/lib exec /usr/local/bin/mosh-client.exe "$@"' >> /usr/local/bin/mosh-client
-	$ sudo chmod +x /usr/local/bin/mosh-client
+    $ echo '#!/bin/sh' > /usr/local/bin/mosh-client
+    $ echo 'LD_LIBRARY_PATH=/usr/local/lib exec /usr/local/bin/mosh-client.exe "$@"' >> /usr/local/bin/mosh-client
+    $ sudo chmod +x /usr/local/bin/mosh-client
 
-	# mosh-server
+    # mosh-server
     $ sudo mv /usr/local/bin/mosh-server /usr/local/bin/mosh-server.exe
-	$ echo '#!/bin/sh' > /usr/local/bin/mosh-server
-	$ echo 'LD_LIBRARY_PATH=/usr/local/lib exec /usr/local/bin/mosh-server.exe "$@"' >> /usr/local/bin/mosh-server
-	$ sudo chmod +x /usr/local/bin/mosh-server
+    $ echo '#!/bin/sh' > /usr/local/bin/mosh-server
+    $ echo 'LD_LIBRARY_PATH=/usr/local/lib exec /usr/local/bin/mosh-server.exe "$@"' >> /usr/local/bin/mosh-server
+    $ sudo chmod +x /usr/local/bin/mosh-server
 
 ## Usage
 
-	# from client
-	$ mosh user@hostname
+    # from client
+    $ mosh user@hostname
 
 Now you should have a resiliant connection to your remote host! Use it just like SSH.
 
