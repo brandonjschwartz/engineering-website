@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 05 Mar 2013 17:49:44 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Application Security Automation]]></title><description><![CDATA[Web application security is a serious problem, and it's not going away.  Almost
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 05 Mar 2013 18:09:20 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Application Security Automation]]></title><description><![CDATA[Web application security is a serious problem, and it's not going away.  Almost
 every day we see articles on WSJ regarding breaches, including WSJ itself.
 
 
@@ -85,7 +85,7 @@ tracked to completion.
 
 
 -YP Information Security
-]]></description><link>/post/sec</link><guid isPermaLink="true">/post/sec</guid><dc:creator><![CDATA[Mikhael and Jim]]></dc:creator><pubDate>Thu, 04 Apr 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[Javascript Source Analysis]]></title><description><![CDATA[It's important to get an idea of the maintainability and complexity of your codebase.
+]]></description><link>/post/sec</link><guid isPermaLink="true">/post/sec</guid><dc:creator><![CDATA[Mikhael and Jim]]></dc:creator><pubDate>Mon, 04 Mar 2013 08:00:00 GMT</pubDate></item><item><title><![CDATA[Javascript Source Analysis]]></title><description><![CDATA[It's important to get an idea of the maintainability and complexity of your codebase.
 I am using a great tool called [plato](https://github.com/jsoverson/plato) that doing exatly that. You run it against your js files and it generate a beautiful website that gives you a visual insight about the health of your project.
 
 First, install it
