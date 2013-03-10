@@ -1,10 +1,10 @@
 {{{
-  "title" : "Getting mosh (mobile-shell) running on an SSVM",
+  "title" : "Why I love mosh (mobile-shell)",
   "authorName": "Chris Dolan",
   "authorLink": "https://github.com/aelien27",
   "authorImage": "http://www.gravatar.com/avatar/6e262ce095cdf3cafb8e3bf59ca0ef07.png",
   "tags" : [ "linux","ssh","shell" ],
-  "date" : "02-27-2013"
+  "date" : "03-08-2013"
 }}}
 
 # What is it?
