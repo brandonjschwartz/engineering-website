@@ -1,5 +1,5 @@
 {{{
-  "title" : "Live 10Conf",
+  "title" : "Live 10Conf - start at 2 PM",
   "authorName": "Oren",
   "authorLink": "https://github.com/oren",
   "authorImage": "https://secure.gravatar.com/avatar/ea28a1533185f15e9364a8db6f9c0bae?s=140&d=https://a248.e.akamai.net/assets.github.com%2Fimages%2Fgravatars%2Fgravatar-user-420.png",
@@ -7,4 +7,4 @@
   "date" : "3-11-2013"
 }}}
 
-<iframe width="420" height="315" src="http://www.youtube.com/embed/DR8GW8rvXK0" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="http://www.youtube.com/embed/hNMc2E_4kq8" frameborder="0" allowfullscreen></iframe>
