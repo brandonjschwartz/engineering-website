@@ -7,7 +7,8 @@
   "date" : "3-11-2013"
 }}}
 
-10Conf is 1 hour of 10 minutets talks.  
+2nd YP.com 10conf - March 11, 2013 2pm  
+1 hour, 5 presenters, 10 minute of random talks
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/rPw-uf0yUd0" frameborder="0" allowfullscreen></iframe>
 
