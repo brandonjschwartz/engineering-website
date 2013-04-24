@@ -10,7 +10,7 @@
 On April 10th, 5 members of the YP Ad Delivery team - David Shin, Andy Wong, Kim Tran, Asim Memon, and Nadia Adhami, visited the California Science Museum in downtown.
 They were eager to see the Space Shuttle Endeavour placed at its permanent home where a new addition, [Samuel Oschin Air and Space Center](http://www.californiasciencecenter.org/GenInfo/Membership/Campaign/Campaign.php), was built to house the space shuttle.
 
-Endeavour, known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw a SSME - the most advanced, efficient rocket engine in the world, which helped push the shuttle into orbit.
+Endeavour, known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw the [SSME](http://en.wikipedia.org/wiki/Space_Shuttle_Main_Engine) - the most advanced, efficient rocket engine in the world, which helped push the shuttle into orbit.
 
 The team had lunch prior to the visit at a local restaurant where Andy and Kim reminisced over their college days at USC, the neighboring university.
 This exhibit also felt close to home for Nadia as she worked for JPL/NASA for 10 years on various missions including Magellan, Galileo , and Mars Observer.
