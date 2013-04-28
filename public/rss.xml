@@ -1,14 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Wed, 24 Apr 2013 16:45:02 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Science Museum Exhibit - Space Shuttle Endeavor]]></title><description><![CDATA[On April 10th, 5 members of the YP Ad Delivery team  - David Shin, Andy Wong, Kim Tran, Asim Memon, and Nadia Adhami – visited the California Science Museum in downtown.
-They were eager to see the Space Shuttle Endeavour, placed at its permanent home where a new addition, [Samuel Oschin Air and Space Center](http://www.californiasciencecenter.org/GenInfo/Membership/Campaign/Campaign.php), was built to house the space shuttle.   
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Sun, 28 Apr 2013 01:29:49 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[YP Harlem Shake]]></title><description><![CDATA[Sometimes Friday afternoons can be quiet and lonely in our Glendale office.
 
-Endeavour - known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw a SSME - the most advanced, efficient rocket engine in the world, which helped push the shuttle up to orbit.
+<iframe width="560" height="315" src="http://www.youtube.com/embed/bTSzsLDRWqs" frameborder="0" allowfullscreen></iframe>
+
+... we are [hiring dancers](http://corporate.yp.com/careers) for our next shake!
+]]></description><link>/post/harlem</link><guid isPermaLink="true">/post/harlem</guid><dc:creator><![CDATA[Yellow Pages]]></dc:creator><pubDate>Sat, 27 Apr 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[Science Museum Exhibit - Space Shuttle Endeavor]]></title><description><![CDATA[On April 10th, 5 members of the YP Ad Delivery team - David Shin, Andy Wong, Kim Tran, Asim Memon, and Nadia Adhami, visited the California Science Museum in downtown.
+They were eager to see the Space Shuttle Endeavour placed at its permanent home where a new addition, [Samuel Oschin Air and Space Center](http://www.californiasciencecenter.org/GenInfo/Membership/Campaign/Campaign.php), was built to house the space shuttle.
+
+Endeavour, known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw the [SSME](http://en.wikipedia.org/wiki/Space_Shuttle_Main_Engine) - the most advanced, efficient rocket engine in the world, which helped push the shuttle into orbit.
+
+The team had lunch prior to the visit at a local restaurant where Andy and Kim reminisced over their college days at USC, the neighboring university.
+This exhibit also felt close to home for Nadia as she worked for JPL/NASA for 10 years on various missions including Magellan, Galileo , and Mars Observer.
+
+Photos: courtesy of David Shin.
 
 ![space1](http://farm9.staticflickr.com/8379/8640619513_a68f7b2795_z.jpg)
+![space6](http://farm9.staticflickr.com/8117/8640620311_926caf1728_z.jpg)
 ![space2](http://farm9.staticflickr.com/8100/8640621291_72d8d72d7a_z.jpg)
 ![space3](http://farm9.staticflickr.com/8247/8640621779_6ee65776d0_z.jpg)
 ![space4](http://farm9.staticflickr.com/8381/8640621493_91b2dfc34b_z.jpg)
 ![space5](http://farm9.staticflickr.com/8522/8640622673_39d1e957f6_z.jpg)
+
 
 ]]></description><link>/post/space</link><guid isPermaLink="true">/post/space</guid><dc:creator><![CDATA[Nadia]]></dc:creator><pubDate>Wed, 24 Apr 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[Decisions, Decisions...]]></title><description><![CDATA[*The 4 Villains of Decision Making*
 
