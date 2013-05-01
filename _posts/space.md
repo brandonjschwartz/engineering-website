@@ -12,7 +12,7 @@ They were eager to see the Space Shuttle Endeavour placed at its permanent home 
 
 Endeavour, known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw the [SSME](http://en.wikipedia.org/wiki/Space_Shuttle_Main_Engine) - the most advanced, efficient rocket engine in the world, which helped push the shuttle into orbit.
 
-On the way to the museum, the team ate delicious chicken sandwiches at a local restaurant while Andy reminisced over his college days at UCLA, the neighboring university.
+On the way to the museum, the team ate delicious chicken sandwiches at a local restaurant while Andy reminisced over his college days at USC, the neighboring university.
 This exhibit also felt close to home for Nadia as she worked for JPL/NASA for 10 years on various missions including Magellan, Galileo , and Mars Observer.
 
 Photos: courtesy of David Shin.
