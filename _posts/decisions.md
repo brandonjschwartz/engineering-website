@@ -11,18 +11,20 @@
 
 ----------
 
-Still deciding what idea to invest your time in Hackathon?  
 Have a big decision coming up?
+Still deciding what idea to invest your time in Hackathon?  
  
-[Here] is great new resource from Chip Heath and Dan Heath (the Heath Brothers), that may help - "[Decisive: How to Make Better Choices in Life and Work]". 
+[Here] is great new resource from Chip Heath and Dan Heath (the Heath Brothers), that may help - [Decisive: How to Make Better Choices in Life and Work]. 
 
 Note: I used [Dillinger] to generate the markdown for this post. No pun intended given the subtitle.
 
 ### Introducing the Villains
 
+According to the brothers, there are 4 villains of decision making.
+
 ![Some other villains...](http://static.comicvine.com/uploads/original/6/65968/2666246-Marvel-Villains-by-Dr-Warez-marvel-comics-30563363-2560-1485.jpg)
 
-According to the brothers, the 4 villains of decision making are: 
+The 4 villains: 
  
 1. **The Spotlight Effect** - forming decisions too early with too little information, or having *too narrow* a frame of reference.   
  
@@ -57,7 +59,7 @@ Give your decisions the best chance to succeed in the long run by planning how t
 Hopefully this will provide some fodder for thinking about your Hackathon efforts, and as it was for me, some fine-tuning your own decision making process in work and life. 
  
  
-By the way, for another great resource from the Heath Brothers (*perhaps for presenting your hack*) check out "[Made to Stick: Why Some Ideas Survive and Others Die]". 
+By the way, for another great resource from the Heath Brothers (*perhaps for presenting your hack*) check out [Made to Stick: Why Some Ideas Survive and Others Die]. 
  
  
 *Disclaimer: I don't know the Heath Brothers and will not profit in any way if you buy their books.* 
