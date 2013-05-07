@@ -28,9 +28,9 @@ engineering-website directory on your local machine:
     npm install # installs all dependencies
     node server.js # run the site locally
 
-If you get the following error:
+  If you get the following error:
     Error: Cannot find module './config.js'
-run this command in the /engineering_website directory:
+  run this command in the /engineering_website directory:
     cp config.example.js config.js
 
 5. Open [http://localhost:9778/](http://localhost:9778/) to view the website
