@@ -5,38 +5,51 @@ This is our Engineering website. Everyone at YP is welcome to contribute.
 
 ## How to add/edit a blog post?
 
-You have 2 options - forking the repo and submiting a pull request or email me a markdown file.
+You have 2 options - cloning the repo and pushing to origin master or email a markdown file to an admin.
 
-### 1. Fork and submit pull request
+### Option 1. 
+To Clone Repo and Push Your Post:
 
-Fork the repo using the **Fork** botton at the top right corner.
+1. Use (or create if you don't have one) an external github account.
+2. Ensure you have permissions to clone the repo - add your public ssh key to your external github account. 
 
-    git clone git@github.com/<you>/engineering-website.git
+You'll know this is a problem if you get the following error: 
+    Permission denied (publickey).
+    fatal: The remote end hung up unexpectedly
+
+3. Clone the repo using the following command (or follow instructions on github page) and go to the 
+engineering-website directory on your local machine:
+
+    git clone git@github.com:yp-engineering/engineering-website.git
     cd engineering-website
 
-[install node](http://nodejs.org)
+4.[install node](http://nodejs.org)
 
     npm install # installs all dependencies
     node server.js # run the site locally
 
-Open [http://localhost:9778/](http://localhost:9778/) to view the website
+If you get the following error:
+    Error: Cannot find module './config.js'
+run this command in the /engineering_website directory:
+    cp config.example.js config.js
 
-Create or edit a blog post. all posts are in _posts
+5. Open [http://localhost:9778/](http://localhost:9778/) to view the website
+
+6. Create or edit a blog post. All posts are in _posts. Or to simply see how this works run the command:
 
     touch _posts/best-restaurants.html.md
 
-if it looks good on your localhost commit and push your changes
+7. If it looks good on your localhost commit and push your changes
 
     git add .
     git commit -am "best restaurants"
     git push
 
-now go to your repository on github and sumbit a pull request (hit the 'pull request' button)
-fill in a title and a comment for the request and hit the 'send pull request' button.
+Now let us know the content is ready to push to production, or wait till we see the git activity: ogolan@yp.com or ncunningham@yp.com
 
-### 2. email me a markdown file
+### Option 2. email a markdown file
 
-write your blog post using markdown (see example below) and email me - ogolan@yp.com
+write your blog post using markdown (see example below) and email - ogolan@yp.com or ncunningham@yp.com
 
 ## Example for blog post
 
