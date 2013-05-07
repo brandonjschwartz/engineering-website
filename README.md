@@ -13,7 +13,7 @@ To Clone Repo and Push Your Post:
 1. Use (or create if you don't have one) an external github account.
 2. Ensure you have permissions to clone the repo - add your public ssh key to your external github account. 
 
-You'll know this is a problem if you get the following error: 
+  You'll know this is a problem if you get the following error: 
     Permission denied (publickey).
     fatal: The remote end hung up unexpectedly
 
@@ -23,7 +23,7 @@ engineering-website directory on your local machine:
     git clone git@github.com:yp-engineering/engineering-website.git
     cd engineering-website
 
-4.[install node](http://nodejs.org)
+4. [install node](http://nodejs.org)
 
     npm install # installs all dependencies
     node server.js # run the site locally
