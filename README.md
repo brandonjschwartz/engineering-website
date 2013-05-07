@@ -45,6 +45,13 @@ run this command in the /engineering_website directory:
     git commit -am "best restaurants"
     git push
 
+If you get the following error at this stage:
+
+    ERROR: Permission to yp-engineering/engineering-website.git denied to <you>.
+    fatal: The remote end hung up unexpectedly
+
+Send an email to ogolan@yp.com or ncunningham@yp.com requesting that your external git account be added as an owner on the yp-engineering git team.
+
 Now let us know the content is ready to push to production, or wait till we see the git activity: ogolan@yp.com or ncunningham@yp.com
 
 ### Option 2. email a markdown file
