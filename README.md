@@ -7,39 +7,43 @@ This is our Engineering website. Everyone at YP is welcome to contribute.
 
 You have 2 options - cloning the repo and pushing to origin master or email a markdown file to an admin.
 
-### Option 1. 
-To Clone Repo and Push Your Post:
+### Option 1 - Clone Repo and Push Your Post:
 
-1. Use (or create if you don't have one) an external github account.
-2. Ensure you have permissions to clone the repo - add your public ssh key to your external github account. 
+1 - Use (or create if you don't have one) an external github account.
 
-  You'll know this is a problem if you get the following error: 
+2 - Ensure you have permissions to clone the repo - add your public ssh key to your external github account. 
+
+You'll know this is a problem if you get the following error: 
+
     Permission denied (publickey).
     fatal: The remote end hung up unexpectedly
 
-3. Clone the repo using the following command (or follow instructions on github page) and go to the 
+3 - Clone the repo using the following command (or follow instructions on github page) and go to the 
 engineering-website directory on your local machine:
 
     git clone git@github.com:yp-engineering/engineering-website.git
     cd engineering-website
 
-4. [install node](http://nodejs.org)
+4 - [install node](http://nodejs.org)
 
     npm install # installs all dependencies
     node server.js # run the site locally
 
-  If you get the following error:
+If you get the following error:
+
     Error: Cannot find module './config.js'
-  run this command in the /engineering_website directory:
+
+run this command in the /engineering_website directory:
+    
     cp config.example.js config.js
 
-5. Open [http://localhost:9778/](http://localhost:9778/) to view the website
+5 - Open [http://localhost:9778/](http://localhost:9778/) to view the website
 
-6. Create or edit a blog post. All posts are in _posts. Or to simply see how this works run the command:
+6 - Create or edit a blog post. All posts are in _posts. Or to simply see how this works run the command:
 
     touch _posts/best-restaurants.html.md
 
-7. If it looks good on your localhost commit and push your changes
+7 - If it looks good on your localhost commit and push your changes
 
     git add .
     git commit -am "best restaurants"
@@ -50,13 +54,13 @@ If you get the following error at this stage:
     ERROR: Permission to yp-engineering/engineering-website.git denied to <you>.
     fatal: The remote end hung up unexpectedly
 
-Send an email to ogolan@yp.com or ncunningham@yp.com requesting that your external git account be added as an owner on the yp-engineering git team.
+send an email to ogolan@yp.com or ncunningham@yp.com requesting that your external git account be added as an owner on the yp-engineering git team.
 
-Now let us know the content is ready to push to production, or wait till we see the git activity: ogolan@yp.com or ncunningham@yp.com
+8 - Let us know the content is ready to push to production, or wait till we see the git activity: ogolan@yp.com or ncunningham@yp.com
 
 ### Option 2. email a markdown file
 
-write your blog post using markdown (see example below) and email - ogolan@yp.com or ncunningham@yp.com
+Write your blog post using markdown (see example below) and email - ogolan@yp.com or ncunningham@yp.com
 
 ## Example for blog post
 
@@ -155,5 +159,4 @@ what a great [website](http://www.google.com)
 
     hello
     world
-
 
