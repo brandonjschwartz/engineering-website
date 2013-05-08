@@ -54,7 +54,7 @@ If you get the following error at this stage:
     ERROR: Permission to yp-engineering/engineering-website.git denied to <you>.
     fatal: The remote end hung up unexpectedly
 
-send an email to ogolan@yp.com or ncunningham@yp.com requesting that your external git account be added as an owner on the yp-engineering git team.
+send an email to ogolan@yp.com or ncunningham@yp.com requesting that your external git account be added to the yp-engineering\owners team.
 
 8 - Let us know the content is ready to push to production, or wait till we see the git activity: ogolan@yp.com or ncunningham@yp.com
 
