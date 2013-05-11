@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Sun, 28 Apr 2013 01:29:49 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[YP Harlem Shake]]></title><description><![CDATA[Sometimes Friday afternoons can be quiet and lonely in our Glendale office.
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Sat, 11 May 2013 02:39:02 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[YP Hadouken and Vadering]]></title><description><![CDATA[We celebrated their 1 year anniversary as a independent company on May 9, 2013. Employees celebrated by attempting the art of [Hadouken](http://www.huffingtonpost.com/2013/03/29/hadouken-meme_n_2979482.html) and [Vaderingi](http://technabob.com/blog/2013/04/11/vadering-is-the-new-planking/)! Goodie bags, food trucks, and some crazy employees!
+
+<iframe width="640" height="360" src="http://www.youtube.com/embed/BCs2v5JNJyM" frameborder="0" allowfullscreen></iframe>
+]]></description><link>/post/vadering</link><guid isPermaLink="true">/post/vadering</guid><dc:creator><![CDATA[Yellow Pages]]></dc:creator><pubDate>Sat, 11 May 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[YP Harlem Shake]]></title><description><![CDATA[Sometimes Friday afternoons can be quiet and lonely in our Glendale office.
 
 <iframe width="560" height="315" src="http://www.youtube.com/embed/bTSzsLDRWqs" frameborder="0" allowfullscreen></iframe>
 
@@ -9,7 +12,7 @@ They were eager to see the Space Shuttle Endeavour placed at its permanent home 
 
 Endeavour, known as the Orbiter Vehicle-105, completed 25 missions into space, including the first service mission to the Hubble Space Telescope and the first mission as a U.S.-built component to the International Space Station. The YP team also saw the [SSME](http://en.wikipedia.org/wiki/Space_Shuttle_Main_Engine) - the most advanced, efficient rocket engine in the world, which helped push the shuttle into orbit.
 
-The team had lunch prior to the visit at a local restaurant where Andy and Kim reminisced over their college days at USC, the neighboring university.
+On the way to the museum, the team ate delicious chicken sandwiches at a local restaurant while Andy reminisced over his college days at USC, the neighboring university.
 This exhibit also felt close to home for Nadia as she worked for JPL/NASA for 10 years on various missions including Magellan, Galileo , and Mars Observer.
 
 Photos: courtesy of David Shin.
@@ -26,18 +29,20 @@ Photos: courtesy of David Shin.
 
 ----------
 
-Still deciding what idea to invest your time in Hackathon?  
 Have a big decision coming up?
+Still deciding what idea to invest your time in Hackathon?  
  
-[Here] is great new resource from Chip Heath and Dan Heath (the Heath Brothers), that may help - "[Decisive: How to Make Better Choices in Life and Work]". 
+[Here] is great new resource from Chip Heath and Dan Heath (the Heath Brothers), that may help - [Decisive: How to Make Better Choices in Life and Work]. 
 
 Note: I used [Dillinger] to generate the markdown for this post. No pun intended given the subtitle.
 
 ### Introducing the Villains
 
+According to the brothers, there are 4 villains of decision making.
+
 ![Some other villains...](http://static.comicvine.com/uploads/original/6/65968/2666246-Marvel-Villains-by-Dr-Warez-marvel-comics-30563363-2560-1485.jpg)
 
-According to the brothers, the 4 villains of decision making are: 
+The 4 villains: 
  
 1. **The Spotlight Effect** - forming decisions too early with too little information, or having *too narrow* a frame of reference.   
  
@@ -72,7 +77,7 @@ Give your decisions the best chance to succeed in the long run by planning how t
 Hopefully this will provide some fodder for thinking about your Hackathon efforts, and as it was for me, some fine-tuning your own decision making process in work and life. 
  
  
-By the way, for another great resource from the Heath Brothers (*perhaps for presenting your hack*) check out "[Made to Stick: Why Some Ideas Survive and Others Die]". 
+By the way, for another great resource from the Heath Brothers (*perhaps for presenting your hack*) check out [Made to Stick: Why Some Ideas Survive and Others Die]. 
  
  
 *Disclaimer: I don't know the Heath Brothers and will not profit in any way if you buy their books.* 
