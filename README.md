@@ -24,7 +24,7 @@ engineering-website directory on your local machine:
     git clone git@github.com:yp-engineering/engineering-website.git
     cd engineering-website
 
-4 - [install node](http://nodejs.org)
+4 - [install node](http://nodejs.org) and run it locally
 
     npm install # installs all dependencies
     node server.js # run the site locally
