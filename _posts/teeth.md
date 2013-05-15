@@ -1,15 +1,13 @@
 {{{
   "title" : "Brushing tips",
-  "authorName": "Chris",
-  "authorLink": "https://github.com/aelien27",
-  "authorImage": "http://en.gravatar.com/userimage/11263843/485df645844bd9e801190abc7aaf0d2c.jpg?size=200",
+  "authorName": "",
+  "authorLink": "",
+  "authorImage": "",
   "tags" : [ "people" ],
   "date" : "05-15-2013"
 }}}
 
 ![teeth](http://goeshealth.com/wp-content/uploads/2012/09/healthy-teeth-285x300.jpg)
-
-I got bored and looked up 'brushing for realz'. Here are my findings:
 
 * Prefer flossing before brushing.
 * Floss from the top of the tooth down and don't re-use the same strip on the next tooth.

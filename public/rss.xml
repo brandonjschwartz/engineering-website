@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Wed, 15 May 2013 20:44:19 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Brushing tips]]></title><description><![CDATA[![teeth](http://goeshealth.com/wp-content/uploads/2012/09/healthy-teeth-285x300.jpg)
-
-I got bored and looked up 'brushing for realz'. Here are my findings:
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Wed, 15 May 2013 22:20:14 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[Brushing tips]]></title><description><![CDATA[![teeth](http://goeshealth.com/wp-content/uploads/2012/09/healthy-teeth-285x300.jpg)
 
 * Prefer flossing before brushing.
 * Floss from the top of the tooth down and don't re-use the same strip on the next tooth.
@@ -11,7 +9,7 @@ I got bored and looked up 'brushing for realz'. Here are my findings:
 * Don't rinse.
 * If a flouride rinse, straight after brushing teeth. Otherwise, wait 30 mins.
 * Use mouthwash apart from brushing times, too.
-]]></description><link>/post/teeth</link><guid isPermaLink="true">/post/teeth</guid><dc:creator><![CDATA[Chris]]></dc:creator><pubDate>Wed, 15 May 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[YP Hadouken and Vadering]]></title><description><![CDATA[On May 9th, 2013 we celebrated our 1 year anniversary as an independent company. 
+]]></description><link>/post/teeth</link><guid isPermaLink="true">/post/teeth</guid><dc:creator><![CDATA[Yellow Pages]]></dc:creator><pubDate>Wed, 15 May 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[YP Hadouken and Vadering]]></title><description><![CDATA[On May 9th, 2013 we celebrated our 1 year anniversary as an independent company. 
 
 Goodie bags, food trucks, fun and games, and some crazy employees who celebrated by attempting the art of [Hadouken](http://www.huffingtonpost.com/2013/03/29/hadouken-meme_n_2979482.html) and [Vadering](http://technabob.com/blog/2013/04/11/vadering-is-the-new-planking/)! 
 
