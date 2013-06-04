@@ -19,10 +19,10 @@ You might be an engineer or in operations, but you are also in sales.
 This is what [Daniel Pink], New York Times bestselling author, asserts in his new book [To Sell is Human: The Surprising Truth About Moving Others].
 
 ![Book Cover](http://danpink-cdn.s3.amazonaws.com/wp-content/themes/danpink/images/tsih-3d-small.png)
-The jacket cover claims the book will
+The jacket cover claims the book will:
 > ...change how you see the world and transform what you do at work, at school, and at home.
 
-That's pretty bold, but it does look like a good read. And it seems applicable to our mission at YP - helping businesses and communities grow.
+That's a pretty bold claim, and I'll reserve judgment till I've read it. But, so far its a good read and very applicable to our mission at YP - helping businesses and communities grow.
 
 Too busy to read it? 
 
