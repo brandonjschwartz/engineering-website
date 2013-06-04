@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Mon, 03 Jun 2013 23:28:45 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[We are All in Sales]]></title><description><![CDATA[We are All in Sales
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 04 Jun 2013 23:04:54 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[We are All in Sales]]></title><description><![CDATA[We are All in Sales
 =========
  
 In 1949 Arthur Miller wrote in [Death of a Salesman]:
@@ -11,13 +11,14 @@ You might be an engineer or in operations, but you are also in sales.
 This is what [Daniel Pink], New York Times bestselling author, asserts in his new book [To Sell is Human: The Surprising Truth About Moving Others].
 
 ![Book Cover](http://danpink-cdn.s3.amazonaws.com/wp-content/themes/danpink/images/tsih-3d-small.png)
-The jacket cover claims the book will "...change how you see the world and transform what you do at work, at school, and at home." That pretty bold, but it looks like a good read. And it seems applicable to our mission at YP - helping businesses and communities grow.
+The jacket cover claims the book will:
+> ...change how you see the world and transform what you do at work, at school, and at home.
+
+That's a pretty bold claim, and I'll reserve judgment till I've finished it. But, so far its a good read and very applicable to our mission at YP - helping businesses and communities grow.
 
 Too busy to read it? 
 
-If you only have time for "cliffnotes", Pink was interviewed by a member of our editorial team - they are responsible for the great content we see on the YP home page. 
-
-Check it out. [Click here for the interview.]
+If you only have time for "cliffnotes", Pink was interviewed by a member of our editorial team - they are responsible for the great content we see on the YP home page. Check it out. [Click here for the interview.]
 
 Do you agree? Why / why not?
 
@@ -27,17 +28,7 @@ Do you agree? Why / why not?
 
 [Click here for the interview.]: http://www.yellowpages.com/news/living/interview-with-daniel-pink-ny-times-bestselling-author/
 
-  [To Sell is Human: The Surprising Truth About Moving Others]: http://www.amazon.com/To-Sell-Is-Human-Surprising/dp/1594487154/ref=sr_1_1?ie=UTF8&qid=1370019840&sr=8-1&keywords=to+sell+is+human]]></description><link>/post/sales</link><guid isPermaLink="true">/post/sales</guid><dc:creator><![CDATA[Nathan Cunningham]]></dc:creator><pubDate>Mon, 03 Jun 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[Brushing tips]]></title><description><![CDATA[![teeth](http://goeshealth.com/wp-content/uploads/2012/09/healthy-teeth-285x300.jpg)
-
-* Prefer flossing before brushing.
-* Floss from the top of the tooth down and don't re-use the same strip on the next tooth.
-* Use toothpaste with ADA seal of approval only. No other feature matters.
-* Brush after non-acidic food meals. Wait 30 mins. after eating something acidic or brush before.
-* Brush in a circular motion up to the gumline. Be gentle. You're taking things off the surfaces.
-* Don't rinse.
-* If a flouride rinse, straight after brushing teeth. Otherwise, wait 30 mins.
-* Use mouthwash apart from brushing times, too.
-]]></description><link>/post/teeth</link><guid isPermaLink="true">/post/teeth</guid><dc:creator><![CDATA[Yellow Pages]]></dc:creator><pubDate>Wed, 15 May 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[YP Hadouken and Vadering]]></title><description><![CDATA[On May 9th, 2013 we celebrated our 1 year anniversary as an independent company. 
+  [To Sell is Human: The Surprising Truth About Moving Others]: http://www.amazon.com/To-Sell-Is-Human-Surprising/dp/1594487154/ref=sr_1_1?ie=UTF8&qid=1370019840&sr=8-1&keywords=to+sell+is+human]]></description><link>/post/sales</link><guid isPermaLink="true">/post/sales</guid><dc:creator><![CDATA[Nathan Cunningham]]></dc:creator><pubDate>Mon, 03 Jun 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[YP Hadouken and Vadering]]></title><description><![CDATA[On May 9th, 2013 we celebrated our 1 year anniversary as an independent company. 
 
 Goodie bags, food trucks, fun and games, and some crazy employees who celebrated by attempting the art of [Hadouken](http://www.huffingtonpost.com/2013/03/29/hadouken-meme_n_2979482.html) and [Vadering](http://technabob.com/blog/2013/04/11/vadering-is-the-new-planking/)! 
 
