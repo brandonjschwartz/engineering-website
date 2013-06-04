@@ -26,9 +26,7 @@ That's a pretty bold claim, and I'll reserve judgment till I've finished it. But
 
 Too busy to read it? 
 
-If you only have time for "cliffnotes", Pink was interviewed by a member of our editorial team - they are responsible for the great content we see on the YP home page. 
-
-Check it out. [Click here for the interview.]
+If you only have time for "cliffnotes", Pink was interviewed by a member of our editorial team - they are responsible for the great content we see on the YP home page. Check it out. [Click here for the interview.]
 
 Do you agree? Why / why not?
 
