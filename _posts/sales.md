@@ -22,7 +22,7 @@ This is what [Daniel Pink], New York Times bestselling author, asserts in his ne
 The jacket cover claims the book will
 > ...change how you see the world and transform what you do at work, at school, and at home.
 
-That pretty bold, but it looks like a good read. And it seems applicable to our mission at YP - helping businesses and communities grow.
+That's pretty bold, but it does look like a good read. And it seems applicable to our mission at YP - helping businesses and communities grow.
 
 Too busy to read it? 
 
