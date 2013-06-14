@@ -19,7 +19,7 @@ Let's see a practical example. I have to keep it short since Liz's scrolling fun
 I'll start with writing a small program, than I'll extract it's main feature into it's own function on a separate file.
 Later on I'll add a test to our function and I'll finish by publishing this module to NPM (similar to creating a ruby gem, but awesome).
 
-Here is the situation - your boss just asked you to build a web crawler that goes over many Amazon product pages and saves some basic information into a DB (let's assume your company has an agreement with Amazon to do that). Here is an example of a product page on Amazon:
+Here is the situation - your boss just asked you to build a web crawler that goes over many Amazon product pages and saves some basic information into a DB (let's assume your company has an agreement with Amazon to do that or you are an Amazon employee). Here is an example of a product page on Amazon:
 
 ![amazon](http://i.imgur.com/jAfIhGh.png)
 
@@ -27,6 +27,7 @@ Your pointy-haired boss just sent you a giant text file with 20 million URLS and
 Where do you start? Let's focus on the scraping part and build a simple program that can scrape a single listing page on YP.
 I'll be using an npm package called cheerio that gives us a jQuery syntax to select DOM elements.
 
+`npm install cheerio`
 
 copy this file and run with `node index.js`
 
