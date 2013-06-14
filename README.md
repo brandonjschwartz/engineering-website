@@ -42,6 +42,7 @@ run this command in the /engineering_website directory:
 6 - Create or edit a blog post. All posts are in _posts. Or to simply see how this works run the command:
 
     touch _posts/best-restaurants.html.md
+    update the rss feed - require('./rss.js')('./_posts/', 'public/rss.xml')
 
 7 - If it looks good on your localhost commit and push your changes
 

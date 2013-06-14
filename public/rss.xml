@@ -1,5 +1,121 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Tue, 04 Jun 2013 23:14:08 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[We are All in Sales]]></title><description><![CDATA[We are All in Sales
+<rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[YP Engineering Website]]></title><description><![CDATA[YP Engineering Website]]></description><link>http://engineering.yp.com</link><image><url>http://engineering.yp.com/img/rss.png</url><title>YP Engineering Website</title><link>http://engineering.yp.com</link></image><generator>NodeJS RSS Module</generator><lastBuildDate>Fri, 14 Jun 2013 17:40:45 GMT</lastBuildDate><atom:link href="http://engineering.yp.com/rss.xml" rel="self" type="application/rss+xml"/><item><title><![CDATA[How to organize a Javascript project?]]></title><description><![CDATA[![modules](http://trustonteachestech.files.wordpress.com/2013/05/lego-bricks.jpg)
+
+Node.js has a fantastic way to organize the code-base. it's called CommonJS.
+The idea is simple - break down your project into small functions and put them in separate files.
+Notice that the title says Javascript and not Node. the reason is you can apply this coding style to your client side code.
+I wrote about it here.
+
+Let's see a practical example. I have to keep it short since Liz's scrolling functionality is broken so I'll break this into 4 or 5 blog posts.
+
+I'll start with writing a small program, than I'll extract it's main feature into it's own function on a separate file.
+Later on I'll add a test to our function and I'll finish by publishing this module to NPM (similar to creating a ruby gem, but awesome).
+
+Here is the situation - your boss just asked you to build a web crawler that goes over many Amazon product pages and saves some basic information into a DB (let's assume your company has an agreement with Amazon to do that). Here is an example of a product page on Amazon:
+
+![amazon](http://i.imgur.com/jAfIhGh.png)
+
+Your pointy-haired boss just sent you a giant text file with 20 million URLS and wish you good luck.
+Where do you start? Let's focus on the scraping part and build a simple program that can scrape a single listing page on YP.
+I'll be using an npm package called cheerio that gives us a jQuery syntax to select DOM elements.
+
+
+copy this file and run with `node index.js`
+
+    // index.js
+
+    'use strict';
+
+    // core module for making http requests
+    var http = require('http');
+
+    // npm package for accessing the DOM but on the server
+    var cheerio = require('cheerio')
+
+    var url = 'http://www.amazon.com/Crick-ettes-Sampler-Pack--Cheese-Vinegar/dp/B005HBTNH8/ref=sr_1_11?ie=UTF8&qid=1371230119&sr=8-11&keywords=crickets'
+    var html = '';
+
+    http.get(url, function(res) {
+      res.on('data', function (chunk) {
+        html += chunk;
+      });
+
+      res.on('end', function (chunk) {
+        var $ = cheerio.load(html);
+
+        var name = $('#btAsinTitle').text();
+        console.log(name);
+
+        var price = $('.priceLarge').text();
+        console.log(price);
+
+      });
+    }).on('error', function(e) {
+        console.log("Got error: " + e.message);
+    });
+
+    // output
+    // Crick-ettes Sampler Gift Pack- Sour Cream & Onion, Bacon & Cheese, & Salt N' Vinegar
+    // $11.48
+
+That was easy - we make an http call, load the html into cheerio, select the business name and phone and print them.  Next time we'll try to turn this file into a module, so we can do something like this:
+
+    var scrape = require('./scrape.js');
+    scrape(url);
+]]></description><link>/post/modules</link><guid isPermaLink="true">/post/modules</guid><dc:creator><![CDATA[Oren]]></dc:creator><pubDate>Fri, 14 Jun 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[Working from Android]]></title><description><![CDATA[If you're reading this, there's actually a better chance that you're on a mobile device than desktop PC. The world has moved on since then. I'm going to show you how I can not only consume information from my Android tablet (a rooted WiFi-only [Nexus 7](http://www.google.com/nexus/7)), but how I can actually do the vast majority of my job from this device, if necessary.
+
+## Network Connection
+At my company, we disallow WiFi users access to vital intranet resources by default, requiring the user to maintain a (Cisco) VPN connection. Fortunately, this capability is build into Android as of version 4.0.
+
+(These instructions are particularly YP-centric. YMMV!)
+
+![Android VPN settings](/img/vpn_settings.png "VPN Settings")
+
+Go ahead and crib these settings. If you are a YP.com engineer and need to know the masked values, they can be found in the corporate wiki.
+
+![Android VPN configured](/img/vpn_main.png "VPN Configured")
+
+This is what it will look like when complete. Upon first tap, it will be necessary to provide your personalized authentication. If you elect to store your username and password, you will not be prompted again.
+
+It's a bit of a pain to open Settings, click More, and select VPN every time you want to connect to the VPN. I've made it a bit easier by adding a shortcut to the VPN activity on my homescreen. You can see that below. That's a little too much "basic Android" for me to include here, but anyone feeling generous enough can go ahead and add those instructions in the comments.
+
+![My WFA homescreen](/img/homescreen_icons.png "My Work-From-Android homescreen")
+
+## Essential Applications
+
+### Mosh (server-side)
+Ever since learning about [Mosh](http://mosh.mit.edu/), I've found it invaluable for development on-the-go. "Mosh" is short for "Mobile Shell", and provides a sort of self-healing SSH connection. If you've ever tried SSHing into a remote server with spotty Internet, you'd REALLY appreciate Mosh. Installing it on an older CentOs machine is like pulling teeth. I'll give that its own blog post. The remainder of this guide will assume you've already got Mosh working on your server.
+
+### Irssi Connectbot (with Mosh)
+There are a lot of terminals out there for Android, but only one I've found has native Mosh support. This is a custom hack of a custom hack of a terminal emulator called ConnectBot.
+
+It can be downloaded [here](http://dan.drown.org/android/mosh/). You'll need to enable Unknown Sources in your Android settings in order to install it from the linked APK.
+
+**Note: This is not the Irssi ConnectBot which can be found in the Google Play Store. This is a customization of that program and cannot be installed beside the market version.**
+
+#### Passwordless Access
+
+For the sake of convenience, you'll probably want to set up a keypair for use with your terminal connection. Passwords are for the birds.
+
+![Keypair Create](/img/keypair_create.png "Creating a keypair")
+Create the key according to your idea of good-enough security. This thing is going to be living on your mobile device, so remember, it's still no more secure than your pocket is.
+
+![Copying the Public Key](/img/pubkey_copy.png "Copying the public key")
+You can get the public key into your pastebuffer by long-pressing the created key. Use this to add the public key to the list of authorized keys on the server. You can then associate this key with your created connection profile, removing the need to store or type a password.
+
+Once you've got Mosh working, the command-line purist is done with setup. I am far from a command-line purist, so I'll include some other Android applications I rely on.
+
+### GNU Screen (or Tmux) (server-side)
+Persistent terminal multiplexing is a complex topic, and not suitable for this post. I use [GNU Screen](http://www.gnu.org/software/screen/) myself, but others in my office prefer [Tmux](http://tmux.sourceforge.net/) for its somewhat broader flexibility and better defaults.
+
+(If you happen to use GNU screen, the Irssi ConnectBot client provides a long-press menu which makes controlling Screen a snap.)
+
+### AndroIRC
+If you happen to need IRC connectivity, [AndroIRC](https://play.google.com/store/apps/details?id=com.androirc&hl=en) is probably the most reliable application out there for IRC connections over Android. Setup is intuitive, so I won't go into it here.
+
+## Helpful hardware
+If you've got a Nexus 7 like me, I recommend getting a Bluetooth keyboard for it. Eschewing that, [Hacker's Keyboard](https://play.google.com/store/apps/details?id=org.pocketworkstation.pckeyboard&hl=en) is a great soft keyboard designed for engineers, programmers, and IT staff. It's got a ton of great features that make it a lot easier to work inside a terminal.
+]]></description><link>/post/working_from_android</link><guid isPermaLink="true">/post/working_from_android</guid><dc:creator><![CDATA[Chris Dolan]]></dc:creator><pubDate>Wed, 05 Jun 2013 07:00:00 GMT</pubDate></item><item><title><![CDATA[We are All in Sales]]></title><description><![CDATA[We are All in Sales
 =========
  
 In 1949 Arthur Miller wrote in [Death of a Salesman]:
