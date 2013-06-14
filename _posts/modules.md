@@ -12,7 +12,7 @@
 Node.js has a fantastic way to organize the code-base. it's called CommonJS.
 The idea is simple - break down your project into small functions and put them in separate files.
 Notice that the title says Javascript and not Node. The reason is you can apply this coding style to your client side code.
-I wrote about it here.
+I wrote about it [here](http://engineering.yp.com/post/browserify).
 
 Let's see a practical example. I have to keep it short since Liz's scrolling functionality is broken, so I'll break this into 4 or 5 blog posts.
 
