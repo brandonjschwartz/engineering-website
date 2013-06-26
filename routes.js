@@ -18,9 +18,4 @@ module.exports = function ( app ) {
     });
   });
 
-  app.get( '/categories', function ( req, res ) {
-    res.render( 'categories', {
-      title: 'Categories | YP Engineering'
-    });
-  });
 };

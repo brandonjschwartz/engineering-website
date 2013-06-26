@@ -1,6 +1,6 @@
 {
-  "name": "jsantell.com",
-  "version": "0.0.1",
+  "name": "engineering.yp.com",
+  "version": "0.1.0",
   "private": true,
   "engines": [
     "node >= 0.6.12"
